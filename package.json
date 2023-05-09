@@ -14,7 +14,6 @@
     "exceljs": "^4.3.0",
     "gh-pages": "^5.0.0",
     "jsontoxml": "^1.0.1",
-    "xlsx": "^0.18.5",
-    "type": "module"
+    "xlsx": "^0.18.5"
   }
 }
