@@ -1,13 +1,13 @@
 console.log("Working...");
 
-// import {XLSX} from 'xlsx';
-// import {axios} from 'axios';
+import {XLSX} from 'xlsx';
+import {axios} from 'axios';
 
 // import {axios} from './node_modules/xlsx/dist/axios.min.js';
 // import {XLSX} from './node_modules/xlsx/dist/xlsx.full.min.js';
 
-const axios = require('axios');
-const XLSX = require('xlsx');
+// const axios = require('axios');
+// const XLSX = require('xlsx');
 
 async function displayJsonToHtmlTable(jsonData){
     if (typeof document !== 'undefined') {
