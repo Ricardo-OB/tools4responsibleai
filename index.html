@@ -359,6 +359,7 @@
 
     <script>
         async function displayJsonToHtmlTable(jsonData){
+            console.log(jsonData);
             let table = document.getElementById("display_excel_data");
             if (jsonData.length > 0){
                 let htmlData = `<tr>
@@ -402,7 +403,7 @@
                 console.log(row["NAME"]);
             }
 
-            console.log(jsonDataRaw.length)
+            console.log(jsonDataRaw.length);
 
             return jsonDataRaw;
         }
