@@ -3,8 +3,8 @@ console.log("Working...");
 // import {XLSX} from 'xlsx';
 // import {axios} from 'axios';
 
-// import {axios} from './node_modules/xlsx/dist/axios.min.js';
-// import {XLSX} from './node_modules/xlsx/dist/xlsx.full.min.js';
+// import axios from '../node_modules/xlsx/dist/axios.min.js';
+// import XLSX from '../node_modules/xlsx/dist/xlsx.full.min.js';
 
 const axios = require('axios');
 const XLSX = require('xlsx');
@@ -48,16 +48,17 @@ async function testAxiosXlsx(url) {
     let firstSheetName = workbook.SheetNames[0];
     let jsonDataRaw = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName]);
 
-    // console.log(jsonDataRaw);
+    console.log(jsonDataRaw);
 
-    // for (let i=0; i<jsonDataRaw.length; i++){
-    //     let row = jsonDataRaw[i];
-    //     console.log(row["NAME"]);
-    // }
+    for (let i=0; i<jsonDataRaw.length; i++){
+        let row = jsonDataRaw[i];
+        console.log(row["NAME"]);
+    }
 
     return jsonDataRaw;
 }
 
 const url_main = "https://github.com/Ricardo-OB/tools-ethical-dev-ai/raw/master/csv/herramientas_prueba.xlsx";
-let json = testAxiosXlsx(url_main);
-displayJsonToHtmlTable(json);
+const url_main_csv = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/herramientas_prueba.csv';
+let json = testAxiosXlsx(url_main_csv);
+//displayJsonToHtmlTable(json);
