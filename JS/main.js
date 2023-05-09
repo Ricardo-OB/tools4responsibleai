@@ -1,9 +1,10 @@
 console.log("Working...");
 
-import {axios} from 'axios';
-import XLSX from 'xlsx';
+//import {axios} from 'axios';
+//import XLSX from 'xlsx';
 
 const {axios} = require("axios");
+const {XLSX} = require('xlsx');
 //import jsontoxml from "jsontoxml";
 
 function displayJsonToHtmlTable(jsonData){
