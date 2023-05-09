@@ -7,6 +7,30 @@
 
 4. Crear gitignore
 
-5. Crear repo remoto y vincular
+5. Crear repo remoto y vincular (no olvidar hacer add y commit antes)
 
 6. Ejecutar $npx gh-pages -d . (el punto es para que suba todo de la carpeta raiz)
+
+El paquete gh-pages crea una nueva rama con la pagina web (ver settings --> pages)
+
+--- Actualizar Pagina ----
+
+1. Agregar carpetas o archivos
+
+2. git add .
+
+3. git commit -m "actualizacion pagina"
+
+4. git push origin master
+
+5. $npx gh-pages -d .
+
+Notas: para evitar hacer esto es posible crear un script en package.json (npx gh-pages -d . hace commit y push en la rama de la pagina web)
+
+"scripts": {
+    "deploy": "gh-pages -d ."
+}
+
+Recordar que es necesario hacer commit cuando se modifique package.json
+
+6. Para correr el script ejecutar $npm run deploy
