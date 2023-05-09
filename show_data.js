@@ -53,5 +53,8 @@ async function testAxiosXlsx(url) {
 }
 
 const url_main = "https://github.com/Ricardo-OB/tools-ethical-dev-ai/raw/master/csv/herramientas_prueba.xlsx";
+console.log("Reading...")
 let json = testAxiosXlsx(url_main);
+console.log("Processing...")
 displayJsonToHtmlTable(json);
+console.log("Done...")
