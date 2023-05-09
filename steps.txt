@@ -1,0 +1,12 @@
+1. Crear index.html y otros archivofa-spin
+
+2. Instalar npm gh-pages https://www.npmjs.com/package/gh-pages
+(Es necesario tener instalado nodeJS)
+
+3. Ejecutar $npm init -y (Create a package.json file)
+
+4. Crear gitignore
+
+5. Crear repo remoto y vincular
+
+6. Ejecutar $npx gh-pages -d . (el punto es para que suba todo de la carpeta raiz)
