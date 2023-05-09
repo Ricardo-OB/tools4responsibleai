@@ -1,8 +1,8 @@
 console.log("Working...");
 
-const axios = require("axios");
-const XLSX = require("xlsx");
-const jsontoxml = require("jsontoxml");
+import axios from "axios";
+import XLSX from "xlsx";
+import jsontoxml from "jsontoxml";
 
 async function testAxiosXlsx(url) {
     const options = { 
