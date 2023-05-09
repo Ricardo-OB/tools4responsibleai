@@ -1,8 +1,7 @@
 console.log("Working...");
 
-import {axios} from ".\node_modules\axios\dist\axios.min.js";
-import {XLSX} from './node_modules/xlsx/dist/xlsx.full.min.js';
-//import jsontoxml from "jsontoxml";
+import {axios} from "../node_modules/axios/dist/axios.min.js";
+import {XLSX} from '../node_modules/xlsx/dist/xlsx.full.min.js';
 
 async function displayJsonToHtmlTable(jsonData){
     if (typeof document !== 'undefined') {
