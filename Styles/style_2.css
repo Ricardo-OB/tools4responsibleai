@@ -1,0 +1,198 @@
+
+body{
+    background-color: #74C69D;
+}
+
+.center{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.firstCircle{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    background-color: red;
+    border: 3px solid white;
+}
+
+.firstCircle:hover{
+    width: 628px;
+    height: 628px;
+    transition: width 0.5s, height 0.5s;
+}
+
+
+.firstCircle:hover ~ .firstDivider {
+    right: 29%;
+    transition: 0.5s;
+}
+
+
+.secondCircle{
+    position: absolute;
+    width: 510px;
+    height: 510px;
+    border-radius: 50%;
+    background-color: rgb(0, 0, 255);
+    border: 3px solid rgb(255, 255, 255);
+}
+
+.secondCircle:hover{
+    width: 538px;
+    height: 538px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.thirdCircle{
+    position: absolute;
+    width: 420px;
+    height: 420px;
+    border-radius: 50%;
+    background-color: rgb(229, 255, 0);
+    border: 3px solid white;
+}
+
+.thirdCircle:hover{
+    width: 448px;
+    height: 448px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.fourCircle{
+    position: absolute;
+    width: 330px;
+    height: 330px;
+    border-radius: 50%;
+    background-color: rgb(0, 255, 0);
+    border: 3px solid white;
+
+}
+
+.fourCircle:hover{
+    width:358px;
+    height: 358px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.fiveCircle{
+    position: absolute;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+    background-color: rgb(255, 196, 0);
+    border: 3px solid white;
+}
+
+.fiveCircle:hover{
+    width: 268px;
+    height: 268px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.sixCircle{
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 242);
+    border: 3px solid white;
+}
+
+.sixCircle:hover{
+    width: 178px;
+    height: 178px;
+    transition: width 0.5s, height 0.5s;
+}
+
+.firstDivider{
+    position: absolute;
+    top: 50%;
+    left: 55%;
+    right: 30%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 18%;
+    transform: translateY(-50%);
+}
+
+.secondDivider{
+    position:absolute;
+    top: 50%;
+    left: 30%;
+    right: 55%;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 18%;
+    transform: translateY(-50%);
+}
+
+.thirdDivider{
+    position: absolute;
+    top: 13%;
+    bottom: 57.5%;
+    left: 56.5%;
+    width: 3px; /* Grosor de la línea */
+    border-radius: 18%;
+    background-color: rgb(255, 255, 255); /* Color de la línea */
+    transform-origin: center center;
+    transform: rotate(35deg);
+}
+
+.fourDivider{
+    position: absolute;
+    top: 15%;
+    bottom: 57.5%;
+    left: 41.8%;
+    width: 3px; /* Grosor de la línea */
+    border-radius: 18%;
+    background-color: rgb(255, 255, 255); /* Color de la línea */
+    transform-origin: center center;
+    transform: rotate(-35deg);
+}
+
+.fiveDivider{
+    position: absolute;
+    top: 57.5%;
+    bottom: 14.7%;
+    left: 42%;
+    width: 3px; /* Grosor de la línea */
+    border-radius: 18%;
+    background-color: rgb(255, 255, 255); /* Color de la línea */
+    transform-origin: center center;
+    transform: rotate(38deg);
+}
+
+.sixDivider{
+    position: absolute;
+    top: 57.5%;
+    bottom: 14.9%;
+    left: 58%;
+    width: 3px; /* Grosor de la línea */
+    border-radius: 18%;
+    background-color: rgb(255, 255, 255); /* Color de la línea */
+    transform-origin: center center;
+    transform: rotate(-39deg);
+}
+
+.numberCircle {
+    font: 32px Arial, sans-serif;
+
+    width: 2em;
+    height: 2em;
+    box-sizing: initial;
+
+    background: #fff;
+    border: 0.1em solid #666;
+    color: #666;
+    text-align: center;
+    border-radius: 50%;
+
+    line-height: 2em;
+    box-sizing: content-box;
+}
+
