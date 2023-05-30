@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="shortcut icon" href="#">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+    <link rel="stylesheet" href="Styles/style_2.css">
+    <title>All Tools</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="table-responsive">
+            <table class="table table-hover" id="display_excel_data">
+                <tbody class="table-group-divider"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        async function processCSV(url) {
+            const options = {
+                url,
+                responseType: "arraybuffer"
+            }
+            let axiosResponse = await axios(options);
+            const workbook = XLSX.read(axiosResponse.data);
+
+            let firstSheetName = workbook.SheetNames[0];
+            let jsonDataRaw = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName]);
+
+            console.log(jsonDataRaw);
+
+            for (let i=0; i<jsonDataRaw.length; i++){
+                let row = jsonDataRaw[i];
+                console.log(row["NAME"]);
+            }
+
+            console.log(jsonDataRaw.length);
+
+            let table = document.getElementById("display_excel_data");
+
+            if (jsonDataRaw.length > 0){
+                let htmlData = `<tr>
+                                    <th>ID</th>
+                                    <th>NAME</th>
+                                    <th>TASK</th>
+                                    <th>SECTOR</th>
+                                    <th>LEVEL_DEV</th>
+                                    <th>DOI/URL</th>
+                                    <th>YEAR</th>
+                                    <th>AUTHOR(S)</th>
+                                    <th>OTHER_LINKS</th>
+                                </tr>`;
+                for (let i=0; i<jsonDataRaw.length; i++){
+                    let row = jsonDataRaw[i];
+                    htmlData += '<tr><td>'+ row["ID"] + '</td><td>' + row["NAME"] +'</td><td>' + row["TASK"] + '</td><td>' + row["SECTOR"] + '</td><td>'+ row["LEVEL_DEV"] + '</td><td>' + row["DOI/URL"] +'</td><td>' + row["YEAR"] + '</td><td>' + row["AUTHOR(S)"] + '</td><td>'+ row["OTHER_LINKS"] + '</td></tr>';
+                }
+                table.innerHTML = htmlData;
+            } else {
+                table.innerHTML = 'There is no data in Excel';
+            }
+        }
+
+        const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/herramientas_prueba.csv';
+        processCSV(url_main);
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>
