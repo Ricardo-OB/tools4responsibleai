@@ -7,7 +7,13 @@ body{
     background: linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -moz-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -webkit-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#265077", endColorstr="#1E4258", GradientType=1 );;
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#265077", endColorstr="#1E4258", GradientType=1 );
+}
+
+.cardsAuthors{
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 #firstSection{
@@ -23,6 +29,15 @@ body{
 }
 
 .container{
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+.btn{
+    background: rgba(79, 142, 201, 0.973);
+    border-color: #ffffff00;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 25x;
     font-family: 'Chakra Petch', sans-serif;
 }
 .navbar{
@@ -54,7 +69,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100vh; /* Ajusta la altura según tu diseño */
 }
 
 .firstCircle{
@@ -71,13 +86,6 @@ body{
     height: 878px;
     transition: width 0.5s, height 0.5s;
 }
-
-
-.firstCircle:hover ~ .firstDivider {
-    right: 29%;
-    transition: 0.5s;
-}
-
 
 .secondCircle{
     position: absolute;
@@ -145,7 +153,7 @@ body{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #f1faee;
+    background-color: #ffffff;
     border: 3px solid white;
 }
 
@@ -157,73 +165,165 @@ body{
 
 .firstDivider{
     position: absolute;
-    top: 50%;
-    left: 55%;
-    right: 30%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 18%;
-    transform: translateY(-50%);
+    left: 53.6%;
+    right: 18%;
+    top: 50%; /* Ajusta la posición vertical de la línea */
+    bottom: 0%;
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
 }
 
 .secondDivider{
-    position:absolute;
-    top: 50%;
-    left: 30%;
-    right: 55%;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 18%;
-    transform: translateY(-50%);
+    position: absolute;
+    left: 18%;
+    right: 53.6%;
+    top: 50%; /* Ajusta la posición vertical de la línea */
+    bottom: 0%;
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
 }
 
 .thirdDivider{
     position: absolute;
-    top: 13%;
-    bottom: 57.5%;
-    left: 56.5%;
-    width: 3px; /* Grosor de la línea */
-    border-radius: 18%;
-    background-color: rgb(255, 255, 255); /* Color de la línea */
-    transform-origin: center center;
-    transform: rotate(35deg);
+    width: 376px; /* Ancho de la línea */
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+    transform: rotate(-55deg); /* Ajuste de la posición y rotación */
+    left: 46%;
+    right: 0%;
+    bottom: 0%;
+    top: 29.2%;
 }
 
 .fourDivider{
     position: absolute;
-    top: 15%;
-    bottom: 57.5%;
-    left: 41.8%;
-    width: 3px; /* Grosor de la línea */
-    border-radius: 18%;
-    background-color: rgb(255, 255, 255); /* Color de la línea */
-    transform-origin: center center;
-    transform: rotate(-35deg);
+    width: 376px; /* Ancho de la línea */
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+    transform: rotate(-55deg); /* Ajuste de la posición y rotación */
+    left: 25.6%;
+    right: 0%;
+    bottom: 0%;
+    top: 70.7%;
 }
 
 .fiveDivider{
     position: absolute;
-    top: 57.5%;
-    bottom: 14.7%;
-    left: 42%;
-    width: 3px; /* Grosor de la línea */
-    border-radius: 18%;
-    background-color: rgb(255, 255, 255); /* Color de la línea */
-    transform-origin: center center;
-    transform: rotate(38deg);
+    width: 376px; /* Ancho de la línea */
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+    transform: rotate(55deg); /* Ajuste de la posición y rotación */
+    left: 25.6%;
+    right: 0%;
+    bottom: 0%;
+    top: 29.2%;
 }
 
 .sixDivider{
     position: absolute;
-    top: 57.5%;
-    bottom: 14.9%;
-    left: 58%;
-    width: 3px; /* Grosor de la línea */
-    border-radius: 18%;
-    background-color: rgb(255, 255, 255); /* Color de la línea */
-    transform-origin: center center;
-    transform: rotate(-39deg);
+    width: 376px; /* Ancho de la línea */
+    height: 2px; /* Altura de la línea */
+    background-color: white; /* Color de la línea */
+    transform: rotate(55deg); /* Ajuste de la posición y rotación */
+    left: 46%;
+    right: 0%;
+    bottom: 0%;
+    top: 70.7%;
 }
+
+.original_border_left{
+    width: 280px;
+    height: 100px;
+    border-top-width: 120px;
+    border-top: 5px double #000000;
+    border-left: 5px double #000000;
+
+}
+
+.original_border_rigth{
+    width: 280px;
+    height: 100px;
+    border-top-width: 120px;
+    border-top: 5px double #000000;
+    border-right: 5px double #000000;
+
+}
+
+
+.titleCircle_1{
+    position: absolute;
+    padding-top: 2.5px;
+    padding-left: 5px;
+    width: 14%; /* Ancho de la línea */
+    height: 6%; /* Altura de la línea */
+    left: 45%;
+    right: 0%;
+    top: -3.5% ;
+    bottom: 5%;
+
+}
+
+.titleCircle_2{
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 5px;
+    width: 12%; /* Ancho de la línea */
+    height: 6%; /* Altura de la línea */
+    left: 82%;
+    right: 0%;
+    top: 23%;
+    bottom: 5%;
+}
+
+.titleCircle_3{
+    position: absolute;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 15px;
+    width: 12%; /* Ancho de la línea */
+    height: 6%; /* Altura de la línea */
+    left: 5%;
+    right: 0%;
+    top: 23%;
+    bottom: 5%;
+}
+
+.titleCircle_4{
+    position: absolute;
+    padding-top: 5px;
+    padding-left: 5px;
+    width: 17%; /* Ancho de la línea */
+    height: 6%; /* Altura de la línea */
+    left: 82%;
+    right: 0%;
+    top: 70%;
+    bottom: 5%;
+}
+.titleCircle_5{
+    position: absolute;
+    padding-top: 2.5px;
+    padding-left: 5px;
+    width: 9%; /* Ancho de la línea */
+    height: 6%; /* Altura de la línea */
+    left: 45%;
+    right: 0%;
+    top: 98% ;
+    bottom: 5%;
+}
+.titleCircle_6{
+    position: absolute;
+    text-align: right;
+    padding-top: 5px;
+    padding-right: 15px;
+    width: 9%; /* Ancho de la línea */
+    height: 6%; /* Altura de la línea */
+    left: 9%;
+    right: 0%;
+    top: 70%;
+    bottom: 5%;
+}
+
+
 
 .numberCircle {
     font: 32px Arial, sans-serif;
