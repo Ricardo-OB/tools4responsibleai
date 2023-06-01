@@ -537,16 +537,17 @@ footer{
     justify-content: center;
     padding-right: 100px;
 }
+
 .logos a {
     display: inline-block;
     border-radius: 50%;
     text-align: center;
     transition: transform 0.3s;
-  }
+}
+
 .logos a:hover {
     transform: translateY(-10px);
-  }
-/* ///FOOTER */
+}
 
 
 
