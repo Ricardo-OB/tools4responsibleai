@@ -14,6 +14,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
+    <script>
+      function showCardTool(id) {
+          let card = document.getElementById("card-tool");
+          let featureCard = document.getElementById("featured-card");
+          if (card.style.display == 'block') {
+            card.style.display = 'none';
+          } else {
+            card.style.display = 'block';
+            featureCard.innerText = "Tool " + id;
+          }
+      }
+    </script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -38,7 +50,7 @@
     </div>
   </nav>
   <main>
-    <section class="py-3 text-center container .text-light">
+    <section class="py-3 text-center container text-light">
       <div class="row py-lg-3 mb-5 mt-5"  id="firstSection">
         <div class="col-lg-10 col-md-12 mb-5 mt-5 mx-auto">
           <h1 class="fw-light text-light mb-5" id="titleBold">Tools to Develop an Ethical AI</h1>
@@ -55,14 +67,14 @@
         </div>
       </div>
     </section>
-    <section class="py-5 text-center container .text-light" id="section2">
+    <section class="py-5 text-center container text-light" id="section2">
       <div class="row py-lg-5 mt-5" id="secondSection">
         <h2 class="fw-light text-light" id="titleBold">Tipology</h2>
         <div class="center">
           <div class="firstCircle">
             <div class="badge p-1 badgeAll" id="badge_E"><span>E</span></div>
             <div class="miniCircle_245 littleCircleH">
-              <span class="number text-light">245</span>
+              <span class="number text-light" id="245" onclick="showCardTool(id)">245</span>
             </div>
           </div>
           <div class="secondCircle">
@@ -77,31 +89,28 @@
           <div class="fiveCircle">
             <div class="badge p-1 badgeAll" id="badge_B"><span>B</span></div>
             <div class="miniCircle_1 littleCircleH">
-              <span class="number text-light">1</span>
+              <span class="number text-light" id="1" onclick="showCardTool(id)">1</span>
             </div>
             <div class="miniCircle_2 littleCircleH">
-              <span class="number text-light">2</span>
+              <span class="number text-light" id="2" onclick="showCardTool(id)">2</span>
             </div>
             <div class="miniCircle_3 littleCircleH">
-              <span class="number text-light">3</span>
+              <span class="number text-light" id="3" onclick="showCardTool(id)">3</span>
             </div>
             <div class="miniCircle_4 littleCircleH">
-              <span class="number text-light">4</span>
+              <span class="number text-light" id="4" onclick="showCardTool(id)">4</span>
             </div>
             <div class="miniCircle_5 littleCircleH">
-              <span class="number text-light">5</span>
+              <span class="number text-light" id="5" onclick="showCardTool(id)">5</span>
             </div>
             <div class="miniCircle_6 littleCircleH">
-              <span class="number text-light">6</span>
+              <span class="number text-light" id="6" onclick="showCardTool(id)">6</span>
             </div>
             <div class="miniCircle_7 littleCircleH">
-              <span class="number text-light">7</span>
+              <span class="number text-light" id="7" onclick="showCardTool(id)">7</span>
             </div>
             <div class="miniCircle_8 littleCircleH">
-              <span class="number text-light">8</span>
-            </div>
-            <div class="miniCircle_9 littleCircleH">
-              <span class="number text-light">9</span>
+              <span class="number text-light" id="8" onclick="showCardTool(id)">8</span>
             </div>
           </div>
           <div class="sixCircle">
@@ -113,23 +122,44 @@
           <div class="fourDivider"></div>
           <div class="fiveDivider"></div>
           <div class="sixDivider"></div>
-          <div class="titleCircle_1 text-light original_border_left ">
+          <div class="titleCircle_1 text-light original_border_left">
             <p>Business and problem understanding</p>
           </div>
-          <div class="titleCircle_2 text-light original_border_left ">
+          <div class="titleCircle_2 text-light original_border_left">
             <p>Planning and design</p>
           </div>
-          <div class="titleCircle_3 text-light original_border_rigth ">
+          <div class="titleCircle_3 text-light original_border_rigth">
             <p>Deployment and monitoring</p>
           </div>
-          <div class="titleCircle_4 text-light original_border_left ">
+          <div class="titleCircle_4 text-light original_border_left">
             <p>Collection, understanding and preparation of data</p>
           </div>
-          <div class="titleCircle_5 text-light original_border_left ">
+          <div class="titleCircle_5 text-light original_border_left">
             <p>Model setup and training</p>
           </div>
-          <div class="titleCircle_6 text-light original_border_rigth ">
+          <div class="titleCircle_6 text-light original_border_rigth">
             <p>Performance evaluation</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container text-light mt-5" id="card-tool">
+        <div class="card" style="width: 28rem;">
+          <div class="card-header textLeft" id="featured-card">
+            Featured
+          </div>
+          <div class="card-body textLeft">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+          </div>
+          <ul class="list-group list-group-flush textLeft">
+            <li class="list-group-item">An item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+          </ul>
+          <div class="card-body textLeft">
+            <a href="#" class="card-link">Card link</a>
+            <a href="#" class="card-link">Another link</a>
           </div>
         </div>
       </div>
@@ -231,6 +261,14 @@
           </div>
         </div>
       </div>
+
+      <div class="text-light container">
+        <div class="table-responsive mb-5">
+          <table class="table table-hover text-light" id="display_excel_data">
+              <tbody class="table-group-divider"></tbody>
+          </table>
+        </div>
+      </div>
     </section>
   </main>    
   <footer class="text-dark d-flex flex-wrap justify-content-between align-items-center">
@@ -252,6 +290,8 @@
       </div>
     </div>
   </footer>
+  <script src="JS/main.js"></script>
+  <script src="https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/JS/main.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>

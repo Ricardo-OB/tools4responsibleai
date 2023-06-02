@@ -40,6 +40,10 @@ body{
     text-align: right;
 }
 
+.textLeft {
+    text-align: left;
+}
+
 .container{
     font-family: 'Chakra Petch', sans-serif;
 }
@@ -581,4 +585,9 @@ footer{
     background: rgba(82, 182, 154) !important;
 }
 
+/* Cards Tools */
+#card-tool {
+    display: none;
+    justify-content: center;
+}
 
