@@ -16,6 +16,10 @@ body{
     justify-content: center;
 }
 
+.margin-right {
+    margin-right: 25px;
+}
+
 #firstSection{
     text-align: left;
 }
@@ -26,6 +30,14 @@ body{
 
 #titleBold{
     font-weight: bolder;
+}
+
+.boldText {
+    font-weight: bold;
+}
+
+.textRight {
+    text-align: right;
 }
 
 .container{
@@ -307,7 +319,7 @@ body{
     padding-left: 5px;
     width: 9%; /* Ancho de la línea */
     height: 6%; /* Altura de la línea */
-    left: 45%;
+    left: 46.5%;
     right: 0%;
     top: 98% ;
     bottom: 5%;
@@ -353,14 +365,6 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_1:hover {
-    transform: scale(3);
-  }
-
-.miniCircle_1:hover .number{
-    opacity: 1;
-}
-
 .miniCircle_2{
     width: 10px;
     height: 10px;
@@ -371,14 +375,6 @@ body{
     left: 15px;
     transition: transform 0.3s;
     cursor: pointer;
-}
-
-.miniCircle_2:hover {
-    transform: scale(3);
-  }
-
-.miniCircle_2:hover .number{
-    opacity: 1;
 }
 
 .miniCircle_3{
@@ -393,14 +389,6 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_3:hover {
-    transform: scale(3);
-}
-
-.miniCircle_3:hover .number{
-    opacity: 1;
-}
-
 .miniCircle_4{
     width: 10px;
     height: 10px;
@@ -411,14 +399,6 @@ body{
     left: 40px;
     transition: transform 0.3s;
     cursor: pointer;
-}
-
-.miniCircle_4:hover {
-    transform: scale(3);
-}
-
-.miniCircle_4:hover .number{
-    opacity: 1;
 }
 
 .miniCircle_5{
@@ -433,14 +413,6 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_5:hover {
-    transform: scale(3);
-}
-
-.miniCircle_5:hover .number{
-    opacity: 1;
-}
-
 .miniCircle_6{
     width: 10px;
     height: 10px;
@@ -451,14 +423,6 @@ body{
     left: 40px;
     transition: transform 0.3s;
     cursor: pointer;
-}
-
-.miniCircle_6:hover {
-    transform: scale(3);
-}
-
-.miniCircle_6:hover .number{
-    opacity: 1;
 }
 
 .miniCircle_7{
@@ -473,14 +437,6 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_7:hover {
-    transform: scale(3);
-}
-
-.miniCircle_7:hover .number{
-    opacity: 1;
-}
-
 .miniCircle_8{
     width: 10px;
     height: 10px;
@@ -493,15 +449,25 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_8:hover {
-    transform: scale(3);
+.miniCircle_245{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 30px;
+    left: 500px;
+    transition: transform 0.3s;
+    cursor: pointer;
 }
 
-.miniCircle_8:hover .number{
+.littleCircleH:hover {
+    transform: scale(3);
+  }
+
+.littleCircleH:hover .number{
     opacity: 1;
 }
-
-
 
 .number {
     position: absolute;
@@ -518,12 +484,40 @@ body{
     position: absolute;
     top: 10px;
     left: 50%;
-    font-size: 10px;
+    font-size: 12px;
     transform: translateX(-50%);
     background-color: #363636;
     padding: 0px 0px;
     border-radius: 4px;
     font-weight: bold;
+}
+  
+.badgeAll:hover span {
+    display: none;
+}
+
+#badge_E:hover:before {
+    content: "Explicability";
+}
+
+#badge_J:hover:before {
+    content: "Justice";
+}
+
+#badge_A:hover:before {
+    content: "Autonomy";
+}
+
+#badge_NoM:hover:before {
+    content: "No Maleficency";
+}
+
+#badge_B:hover:before {
+    content: "Beneficency";
+}
+
+#badge_G:hover:before {
+    content: "Governance";
 }
 
 
@@ -535,7 +529,6 @@ footer{
     font-family: 'Chakra Petch', sans-serif;
     text-align: center;
     justify-content: center;
-    padding-right: 100px;
 }
 
 .logos a {
@@ -549,5 +542,43 @@ footer{
     transform: translateY(-10px);
 }
 
+/* Legends Table */
+
+.border-success {
+    --bs-border-opacity: 0.1;
+    border-color: rgb(150, 161, 157) !important;
+}
+
+.colorR {
+    background: rgba(249, 198, 79, 0.829) !important;
+}
+.colorBC {
+    background: rgba(144, 190, 109) !important;
+}
+.colorMC {
+    background: rgba(67, 170, 139) !important;
+}
+.colorNLP {
+    background: rgba(77, 144, 142) !important;
+}
+.colorCV {
+    background: rgba(87, 117, 144) !important;
+}
+
+.colorIns {
+    background: rgba(217, 237, 146, 0.7) !important;
+}
+.colorBas {
+    background: rgba(181, 228, 140, 0.85) !important;
+}
+.colorInt {
+    background: rgba(153, 217, 140) !important;
+}
+.colorHi {
+    background: rgba(118, 200, 147) !important;
+}
+.colorAd {
+    background: rgba(82, 182, 154) !important;
+}
 
 

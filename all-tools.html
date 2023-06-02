@@ -12,106 +12,206 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Styles/style_2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>All Tools</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark">
-        <div class="container-fluid ">
-          <a class="navbar-brand" href="index.html">Ethical tools 4 AI</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link"  href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="all-tools.html">Table</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    <div class="text-light center container">
-        <div class="table-responsive ">
-            <table class="table table-hover text-light" id="display_excel_data">
-                <tbody class="table-group-divider"></tbody>
-            </table>
-        </div>
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid ">
+      <a class="navbar-brand" href="index.html">Ethical tools 4 AI</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="all-tools.html">Table</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <footer class="text-dark d-flex flex-wrap justify-content-between align-items-center">
-      <div class="container-fluid">
-        <div class="row px-5 mx-3 py-2 my-2">
-          <p class="col mt-4 text-muted">Copyright ©2023 Carlos Bolaños & Ricardo Ortega.</p>
-  
-          <div class="col logos d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto mt-4 link-dark text-decoration-none">
-              <a href="https://github.com/Ricardo-OB/tools-ethical-dev-ai" target="_blank"><img src="multimedia/icons8-github-30.png" alt="icon"></a>
-              <a href="#"><img src="multimedia\icons8-linkedin-30.png" alt="icon"></a>
-              <a href="https://carlosbsdev.000webhostapp.com/" target="_blank"><img src="multimedia\icons8-portafolio-30.png" alt="icon"></a>
-          </div>
-  
-          <ul class="nav col mt-4 mb-3 justify-content-end">
-            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
-            <li class="nav-item"><a href="all-tools.html" class="nav-link px-2 text-muted">Table</a></li>
-            <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
-          </ul>
+  <div class="text-light container">
+    <div class="container-fluid text-light mt-5 mb-5">
+      <div class="row">
+        <div class="col table-responsive">
+          <p class="boldText text-center">Task</p>
+          <table class="table table-bordered text-light border-success" id="firstSection">
+            <thead>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-2 text-center colorR boldText">R</td>
+                <td class="col-5">Regression</td>
+              </tr>
+              <tr>
+                <td class="text-center colorBC boldText">BC</td>
+                <td>Binary Classification</td>
+              </tr>
+              <tr>
+                <td class="text-center colorMC boldText">MC</td>
+                <td>Multiclass Classification</td>
+              </tr>
+              <tr>
+                <td class="text-center colorNLP boldText">NLP</td>
+                <td>Natural Language Processing</td>
+              </tr>
+              <tr>
+                <td class="text-center colorCV boldText">CV</td>
+                <td>Computer Vision</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col table-responsive">
+          <p class="boldText text-center">Sector</p>
+          <table class="table table-bordered text-light border-success" id="firstSection">
+            <thead>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-2 text-center">
+                  <i class="fa fa-solid fa-circle mx-3"></i>
+                </td>
+                <td class="col-5">Private</td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <i class="fa fa-solid fa-square mx-3"></i>
+                </td>
+                <td>Public</td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill mx-3" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/>
+                  </svg>
+                </td>
+                <td>NGO</td>
+              </tr>
+              <tr>
+                <td class="text-center">
+                  <i class="fa fa-solid fa-plus mx-3"></i>
+                </td>
+                <td>Academic</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col table-responsive">
+          <p class="boldText text-center">Level of Development</p>
+          <table class="table table-bordered text-light border-success" id="firstSection">
+            <thead>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="col-2 colorIns boldText text-center">1</td>
+                <td class="col-5">Insufficient</td>
+              </tr>
+              <tr>
+                <td class="colorBas boldText text-center">2</td>
+                <td>Basic</td>
+              </tr>
+              <tr>
+                <td class="colorInt boldText text-center">3</td>
+                <td>Intermediate</td>
+              </tr>
+              <tr>
+                <td class="colorHi boldText text-center">4</td>
+                <td>High</td>
+              </tr>
+              <tr>
+                <td class="colorAd boldText text-center">5</td>
+                <td>Advanced</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
       </div>
-    </footer>
+    </div>
 
-    <script>
-        async function processCSV(url) {
-            const options = {
-                url,
-                responseType: "arraybuffer"
-            }
-            let axiosResponse = await axios(options);
-            const workbook = XLSX.read(axiosResponse.data);
+    <div class="table-responsive mb-5">
+        <table class="table table-hover text-light" id="display_excel_data">
+            <tbody class="table-group-divider"></tbody>
+        </table>
+    </div>
+  </div>
 
-            let firstSheetName = workbook.SheetNames[0];
-            let jsonDataRaw = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName]);
+  <footer class="text-dark d-flex flex-wrap justify-content-between align-items-center">
+    <div class="container-fluid">
+      <div class="row px-5 mx-3 py-2 my-2">
+        <p class="col mt-4 text-muted">Copyright ©2023 Carlos Bolaños & Ricardo Ortega.</p>
 
-            console.log(jsonDataRaw);
+        <div class="col logos d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto mt-4 link-dark text-decoration-none">
+            <a href="https://github.com/Ricardo-OB/tools-ethical-dev-ai" target="_blank"><img src="multimedia/icons8-github-30.png" alt="icon"></a>
+            <a href="#"><img src="multimedia\icons8-linkedin-30.png" alt="icon"></a>
+            <a href="https://carlosbsdev.000webhostapp.com/" target="_blank"><img src="multimedia\icons8-portafolio-30.png" alt="icon"></a>
+        </div>
 
-            for (let i=0; i<jsonDataRaw.length; i++){
-                let row = jsonDataRaw[i];
-                console.log(row["NAME"]);
-            }
+        <ul class="nav col mt-4 mb-3 justify-content-end">
+          <li class="nav-item"><a href="index.html" class="nav-link px-2 text-muted">Home</a></li>
+          <li class="nav-item"><a href="all-tools.html" class="nav-link px-2 text-muted">Table</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link px-2 text-muted">About</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 
-            console.log(jsonDataRaw.length);
+  <script>
+      async function processCSV(url) {
+          const options = {
+              url,
+              responseType: "arraybuffer"
+          }
+          let axiosResponse = await axios(options);
+          const workbook = XLSX.read(axiosResponse.data);
 
-            let table = document.getElementById("display_excel_data");
+          let firstSheetName = workbook.SheetNames[0];
+          let jsonDataRaw = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName]);
 
-            if (jsonDataRaw.length > 0){
-                let htmlData = `<tr>
-                                    <th>ID</th>
-                                    <th>NAME</th>
-                                    <th>TASK</th>
-                                    <th>SECTOR</th>
-                                    <th>LEVEL_DEV</th>
-                                    <th>DOI/URL</th>
-                                    <th>YEAR</th>
-                                    <th>AUTHOR(S)</th>
-                                    <th>OTHER_LINKS</th>
-                                </tr>`;
-                for (let i=0; i<jsonDataRaw.length; i++){
-                    let row = jsonDataRaw[i];
-                    htmlData += '<tr><td>'+ row["ID"] + '</td><td>' + row["NAME"] +'</td><td>' + row["TASK"] + '</td><td>' + row["SECTOR"] + '</td><td>'+ row["LEVEL_DEV"] + '</td><td>' + row["DOI/URL"] +'</td><td>' + row["YEAR"] + '</td><td>' + row["AUTHOR(S)"] + '</td><td>'+ row["OTHER_LINKS"] + '</td></tr>';
-                }
-                table.innerHTML = htmlData;
-            } else {
-                table.innerHTML = 'There is no data in Excel';
-            }
-        }
+          console.log(jsonDataRaw);
 
-        const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/herramientas_prueba.csv';
-        processCSV(url_main);
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+          for (let i=0; i<jsonDataRaw.length; i++){
+              let row = jsonDataRaw[i];
+              console.log(row["NAME"]);
+          }
+
+          console.log(jsonDataRaw.length);
+
+          let table = document.getElementById("display_excel_data");
+
+          if (jsonDataRaw.length > 0){
+              let htmlData = `<tr>
+                                  <th>ID</th>
+                                  <th>NAME</th>
+                                  <th>TASK</th>
+                                  <th>SECTOR</th>
+                                  <th>LEVEL_DEV</th>
+                                  <th>DOI/URL</th>
+                                  <th>YEAR</th>
+                                  <th>AUTHOR(S)</th>
+                                  <th>OTHER_LINKS</th>
+                              </tr>`;
+              for (let i=0; i<jsonDataRaw.length; i++){
+                  let row = jsonDataRaw[i];
+                  htmlData += '<tr><td>'+ row["ID"] + '</td><td>' + row["NAME"] +'</td><td>' + row["TASK"] + '</td><td>' + row["SECTOR"] + '</td><td>'+ row["LEVEL_DEV"] + '</td><td>' + row["DOI/URL"] +'</td><td>' + row["YEAR"] + '</td><td>' + row["AUTHOR(S)"] + '</td><td>'+ row["OTHER_LINKS"] + '</td></tr>';
+              }
+              table.innerHTML = htmlData;
+          } else {
+              table.innerHTML = 'There is no data in Excel';
+          }
+      }
+
+      const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/herramientas_prueba.csv';
+      processCSV(url_main);
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
