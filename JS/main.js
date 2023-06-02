@@ -3,11 +3,15 @@ console.log("Working...");
 // import XLSX from 'xlsx';
 // import axios from 'axios';
 
-import axios from '../node_modules/xlsx/dist/axios.min.js';
-import XLSX from '../node_modules/xlsx/dist/xlsx.full.min.js';
+// import {axios} from 'node_modules/axios/dist/axios.min.js'
+// import {XLSX} from 'node_modules/xlsx/dist/xlsx.full.min.js';
 
 // const axios = require('axios');
 // const XLSX = require('xlsx');
+
+// import axios from '/node_modules/axios/dist/axios.min.js';
+// import XLSX from '/node_modules/xlsx/dist/xlsx.full.min.js';
+
 
 async function displayJsonToHtmlTable(jsonData){
     let table = document.getElementById("display_excel_data");
