@@ -14,18 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
-    <script>
-      function showCardTool(id) {
-          let card = document.getElementById("card-tool");
-          let featureCard = document.getElementById("featured-card");
-          if (card.style.display == 'block') {
-            card.style.display = 'none';
-          } else {
-            card.style.display = 'block';
-            featureCard.innerText = "Tool " + id;
-          }
-      }
-    </script>
+    <script src="JS/card.js"></script>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark">
@@ -143,23 +132,23 @@
         </div>
       </div>
 
-      <div class="container text-light mt-5" id="card-tool">
+      <div class="container text-light mt-5 justify-content-center" id="card-tool">
         <div class="card" style="width: 28rem;">
           <div class="card-header textLeft" id="featured-card">
             Featured
           </div>
           <div class="card-body textLeft">
-            <h5 class="card-title">Card title</h5>
+            <h5 class="card-title" id="tool-title">Card - </h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
           <ul class="list-group list-group-flush textLeft">
-            <li class="list-group-item">An item</li>
-            <li class="list-group-item">A second item</li>
-            <li class="list-group-item">A third item</li>
+            <li class="list-group-item" id="card-sector">Sector: </li>
+            <li class="list-group-item" id="card-task">Task(s) </li>
+            <li class="list-group-item" id="card-level-dev">Level Dev: </li>
           </ul>
           <div class="card-body textLeft">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
+            <a href="" class="card-link" target="_blank" id="card-url">Card link</a>
+            <a href="#" class="card-link" target="_blank">Another link</a>
           </div>
         </div>
       </div>
