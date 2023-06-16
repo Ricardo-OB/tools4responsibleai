@@ -131,28 +131,126 @@
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="container text-light mt-5 justify-content-center" id="card-tool">
-        <div class="card" style="width: 28rem;">
-          <div class="card-header textLeft" id="featured-card">
-            Featured
+    <section class="py-1 text-center text-light container-fluid">
+      <div class="row mx-3">
+        <div class="col-md group-cards">
+          <div class="card hidden-card" id="card-tool-A">
+            <div class="card-header textLeft" id="featured-card-A">
+              Featured
+            </div>
+            <div class="container textRight">
+              <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardA()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body textLeft">
+              <h5 class="card-title" id="tool-title-A">Card - </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush textLeft">
+              <li class="list-group-item" id="card-sector-A">Sector: </li>
+              <li class="list-group-item" id="card-task-A">Task(s) </li>
+              <li class="list-group-item" id="card-level-dev-A">Level Dev: </li>
+            </ul>
+            <div class="card-body textLeft">
+              <a href="" class="card-link" target="_blank" id="card-url-A">Card link</a>
+              <a href="#" class="card-link" target="_blank">Another link</a>
+            </div>
           </div>
-          <div class="card-body textLeft">
-            <h5 class="card-title" id="tool-title">Card - </h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+        <div class="col-md group-cards">
+          <div class="card hidden-card" id="card-tool-B">
+            <div class="card-header textLeft" id="featured-card-B">
+              Featured
+            </div>
+            <div class="container textRight">
+              <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardB()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body textLeft">
+              <h5 class="card-title" id="tool-title-B">Card - </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush textLeft">
+              <li class="list-group-item" id="card-sector-B">Sector: </li>
+              <li class="list-group-item" id="card-task-B">Task(s) </li>
+              <li class="list-group-item" id="card-level-dev-B">Level Dev: </li>
+            </ul>
+            <div class="card-body textLeft">
+              <a href="" class="card-link" target="_blank" id="card-url-B">Card link</a>
+              <a href="#" class="card-link" target="_blank">Another link</a>
+            </div>
           </div>
-          <ul class="list-group list-group-flush textLeft">
-            <li class="list-group-item" id="card-sector">Sector: </li>
-            <li class="list-group-item" id="card-task">Task(s) </li>
-            <li class="list-group-item" id="card-level-dev">Level Dev: </li>
-          </ul>
-          <div class="card-body textLeft">
-            <a href="" class="card-link" target="_blank" id="card-url">Card link</a>
-            <a href="#" class="card-link" target="_blank">Another link</a>
+        </div>
+        <div class="col-md group-cards">
+          <div class="card hidden-card" id="card-tool-C">
+            <div class="card-header textLeft" id="featured-card-C">
+              Featured
+            </div>
+            <div class="container textRight">
+              <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardC()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body textLeft">
+              <h5 class="card-title" id="tool-title-C">Card - </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush textLeft">
+              <li class="list-group-item" id="card-sector-C">Sector: </li>
+              <li class="list-group-item" id="card-task-C">Task(s) </li>
+              <li class="list-group-item" id="card-level-dev-C">Level Dev: </li>
+            </ul>
+            <div class="card-body textLeft">
+              <a href="" class="card-link" target="_blank" id="card-url-C">Card link</a>
+              <a href="#" class="card-link" target="_blank">Another link</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md group-cards">
+          <div class="card hidden-card" id="card-tool-D">
+            <div class="card-header textLeft" id="featured-card-D">
+              Featured
+            </div>
+            <div class="container textRight">
+              <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardD()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
+                  <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
+                  <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
+                </svg>
+              </button>
+            </div>
+            <div class="card-body textLeft">
+              <h5 class="card-title" id="tool-title-D">Card - </h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <ul class="list-group list-group-flush textLeft">
+              <li class="list-group-item" id="card-sector-D">Sector: </li>
+              <li class="list-group-item" id="card-task-D">Task(s) </li>
+              <li class="list-group-item" id="card-level-dev-D">Level Dev: </li>
+            </ul>
+            <div class="card-body textLeft">
+              <a href="" class="card-link" target="_blank" id="card-url-D">Card link</a>
+              <a href="#" class="card-link" target="_blank">Another link</a>
+            </div>
           </div>
         </div>
       </div>
+    </section>
 
+    <section class="py-1 text-center container text-light">
       <div class="container-fluid text-light mt-5 mb-5">
         <div class="row">
           <div class="col table-responsive">

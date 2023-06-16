@@ -586,7 +586,18 @@ footer{
 }
 
 /* Cards Tools */
-#card-tool {
+.hidden-card {
     display: none;
 }
 
+.group-cards {
+    width: 24rem;
+    float: none;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.buttonClose {
+    position: absolute;
+    right: 1%;
+}
