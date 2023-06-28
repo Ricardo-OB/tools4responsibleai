@@ -1,16 +1,16 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     background: hsla(209, 52%, 31%, 1);
     background: linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -moz-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -webkit-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#265077", endColorstr="#1E4258", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#265077", endColorstr="#1E4258", GradientType=1);
 }
 
-.cardsAuthors{
+.cardsAuthors {
     display: flex;
     text-align: center;
     justify-content: center;
@@ -20,15 +20,15 @@ body{
     margin-right: 25px;
 }
 
-#firstSection{
+#firstSection {
     text-align: left;
 }
 
-#secondSection{
+#secondSection {
     text-align: left;
 }
 
-#titleBold{
+#titleBold {
     font-weight: bolder;
 }
 
@@ -44,11 +44,11 @@ body{
     text-align: left;
 }
 
-.container{
+.container {
     font-family: 'Chakra Petch', sans-serif;
 }
 
-.btn{
+.btn {
     background: rgba(79, 142, 201, 0.973);
     border-color: #ffffff00;
     border-width: 1px;
@@ -56,16 +56,17 @@ body{
     border-radius: 25x;
     font-family: 'Chakra Petch', sans-serif;
 }
-.navbar{
+
+.navbar {
     background: rgba(255, 255, 255, 0.26);
     backdrop-filter: saturate(120%);
 }
 
-.container-fluid{
+.container-fluid {
     background: transparent;
 }
 
-.navbar-brand{
+.navbar-brand {
     margin-top: 18px;
     margin-bottom: 18px;
     margin-left: 293px;
@@ -73,24 +74,27 @@ body{
 }
 
 .navbar-nav {
-    margin-left: 100px; /* Ajusta el margen a la izquierda */
+    margin-left: 100px;
+    /* Ajusta el margen a la izquierda */
 }
 
 .nav-link {
-    margin-right: 10px; /* Ajusta el espaciado entre los navlinks */
+    margin-right: 10px;
+    /* Ajusta el espaciado entre los navlinks */
 }
 
 
 
-.center{
+.center {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ajusta la altura según tu diseño */
+    height: 100vh;
+    /* Ajusta la altura según tu diseño */
 }
 
-.firstCircle{
+.firstCircle {
     position: absolute;
     width: 850px;
     height: 850px;
@@ -99,13 +103,13 @@ body{
     border: 3px solid white;
 }
 
-.firstCircle:hover{
+.firstCircle:hover {
     width: 878px;
     height: 878px;
     transition: width 0.5s, height 0.5s;
 }
 
-.secondCircle{
+.secondCircle {
     position: absolute;
     width: 700px;
     height: 700px;
@@ -114,13 +118,13 @@ body{
     border: 3px solid rgb(255, 255, 255);
 }
 
-.secondCircle:hover{
+.secondCircle:hover {
     width: 728px;
     height: 728px;
     transition: width 0.5s, height 0.5s;
 }
 
-.thirdCircle{
+.thirdCircle {
     position: absolute;
     width: 550px;
     height: 550px;
@@ -129,13 +133,13 @@ body{
     border: 3px solid white;
 }
 
-.thirdCircle:hover{
+.thirdCircle:hover {
     width: 578px;
     height: 578px;
     transition: width 0.5s, height 0.5s;
 }
 
-.fourCircle{
+.fourCircle {
     position: absolute;
     width: 400px;
     height: 400px;
@@ -145,13 +149,13 @@ body{
 
 }
 
-.fourCircle:hover{
+.fourCircle:hover {
     width: 428px;
     height: 428px;
     transition: width 0.5s, height 0.5s;
 }
 
-.fiveCircle{
+.fiveCircle {
     position: absolute;
     width: 250px;
     height: 250px;
@@ -160,13 +164,13 @@ body{
     border: 3px solid white;
 }
 
-.fiveCircle:hover{
+.fiveCircle:hover {
     width: 278px;
     height: 278px;
     transition: width 0.5s, height 0.5s;
 }
 
-.sixCircle{
+.sixCircle {
     position: absolute;
     width: 100px;
     height: 100px;
@@ -175,81 +179,103 @@ body{
     border: 3px solid white;
 }
 
-.sixCircle:hover{
+.sixCircle:hover {
     width: 128px;
     height: 128px;
     transition: width 0.5s, height 0.5s;
 }
 
-.firstDivider{
+.firstDivider {
     position: absolute;
     left: 53.6%;
     right: 18%;
-    top: 50%; /* Ajusta la posición vertical de la línea */
+    top: 50%;
+    /* Ajusta la posición vertical de la línea */
     bottom: 0%;
-    height: 2px; /* Altura de la línea */
-    background-color: white; /* Color de la línea */
+    height: 2px;
+    /* Altura de la línea */
+    background-color: white;
+    /* Color de la línea */
 }
 
-.secondDivider{
+.secondDivider {
     position: absolute;
     left: 18%;
     right: 53.6%;
-    top: 50%; /* Ajusta la posición vertical de la línea */
+    top: 50%;
+    /* Ajusta la posición vertical de la línea */
     bottom: 0%;
-    height: 2px; /* Altura de la línea */
-    background-color: white; /* Color de la línea */
+    height: 2px;
+    /* Altura de la línea */
+    background-color: white;
+    /* Color de la línea */
 }
 
-.thirdDivider{
+.thirdDivider {
     position: absolute;
-    width: 376px; /* Ancho de la línea */
-    height: 2px; /* Altura de la línea */
-    background-color: white; /* Color de la línea */
-    transform: rotate(-55deg); /* Ajuste de la posición y rotación */
+    width: 376px;
+    /* Ancho de la línea */
+    height: 2px;
+    /* Altura de la línea */
+    background-color: white;
+    /* Color de la línea */
+    transform: rotate(-55deg);
+    /* Ajuste de la posición y rotación */
     left: 46%;
     right: 0%;
     bottom: 0%;
     top: 29.2%;
 }
 
-.fourDivider{
+.fourDivider {
     position: absolute;
-    width: 376px; /* Ancho de la línea */
-    height: 2px; /* Altura de la línea */
-    background-color: white; /* Color de la línea */
-    transform: rotate(-55deg); /* Ajuste de la posición y rotación */
+    width: 376px;
+    /* Ancho de la línea */
+    height: 2px;
+    /* Altura de la línea */
+    background-color: white;
+    /* Color de la línea */
+    transform: rotate(-55deg);
+    /* Ajuste de la posición y rotación */
     left: 25.6%;
     right: 0%;
     bottom: 0%;
     top: 70.7%;
 }
 
-.fiveDivider{
+.fiveDivider {
     position: absolute;
-    width: 376px; /* Ancho de la línea */
-    height: 2px; /* Altura de la línea */
-    background-color: white; /* Color de la línea */
-    transform: rotate(55deg); /* Ajuste de la posición y rotación */
+    width: 376px;
+    /* Ancho de la línea */
+    height: 2px;
+    /* Altura de la línea */
+    background-color: white;
+    /* Color de la línea */
+    transform: rotate(55deg);
+    /* Ajuste de la posición y rotación */
     left: 25.6%;
     right: 0%;
     bottom: 0%;
     top: 29.2%;
 }
 
-.sixDivider{
+.sixDivider {
     position: absolute;
-    width: 376px; /* Ancho de la línea */
-    height: 2px; /* Altura de la línea */
-    background-color: white; /* Color de la línea */
-    transform: rotate(55deg); /* Ajuste de la posición y rotación */
+    width: 376px;
+    /* Ancho de la línea */
+    height: 2px;
+    /* Altura de la línea */
+    background-color: white;
+    /* Color de la línea */
+    transform: rotate(55deg);
+    /* Ajuste de la posición y rotación */
     left: 46%;
     right: 0%;
     bottom: 0%;
     top: 70.7%;
 }
 
-.original_border_left{
+.original_border_left {
     width: 280px;
     height: 100px;
     border-top-width: 120px;
@@ -258,7 +284,7 @@ body{
 
 }
 
-.original_border_rigth{
+.original_border_rigth {
     width: 280px;
     height: 100px;
     border-top-width: 120px;
@@ -268,73 +294,87 @@ body{
 }
 
 
-.titleCircle_1{
+.titleCircle_1 {
     position: absolute;
     padding-top: 2.5px;
     padding-left: 5px;
-    width: 14%; /* Ancho de la línea */
-    height: 6%; /* Altura de la línea */
+    width: 14%;
+    /* Ancho de la línea */
+    height: 6%;
+    /* Altura de la línea */
     left: 45%;
     right: 0%;
-    top: -3.5% ;
+    top: -3.5%;
     bottom: 5%;
 
 }
 
-.titleCircle_2{
+.titleCircle_2 {
     position: absolute;
     padding-top: 10px;
     padding-left: 5px;
-    width: 12%; /* Ancho de la línea */
-    height: 6%; /* Altura de la línea */
+    width: 12%;
+    /* Ancho de la línea */
+    height: 6%;
+    /* Altura de la línea */
     left: 82%;
     right: 0%;
     top: 23%;
     bottom: 5%;
 }
 
-.titleCircle_3{
+.titleCircle_3 {
     position: absolute;
     text-align: right;
     padding-top: 5px;
     padding-right: 15px;
-    width: 12%; /* Ancho de la línea */
-    height: 6%; /* Altura de la línea */
+    width: 12%;
+    /* Ancho de la línea */
+    height: 6%;
+    /* Altura de la línea */
     left: 5%;
     right: 0%;
     top: 23%;
     bottom: 5%;
 }
 
-.titleCircle_4{
+.titleCircle_4 {
     position: absolute;
     padding-top: 5px;
     padding-left: 5px;
-    width: 17%; /* Ancho de la línea */
-    height: 6%; /* Altura de la línea */
+    width: 17%;
+    /* Ancho de la línea */
+    height: 6%;
+    /* Altura de la línea */
     left: 82%;
     right: 0%;
     top: 70%;
     bottom: 5%;
 }
-.titleCircle_5{
+
+.titleCircle_5 {
     position: absolute;
     padding-top: 2.5px;
     padding-left: 5px;
-    width: 9%; /* Ancho de la línea */
-    height: 6%; /* Altura de la línea */
+    width: 9%;
+    /* Ancho de la línea */
+    height: 6%;
+    /* Altura de la línea */
     left: 46.5%;
     right: 0%;
-    top: 98% ;
+    top: 98%;
     bottom: 5%;
 }
-.titleCircle_6{
+
+.titleCircle_6 {
     position: absolute;
     text-align: right;
     padding-top: 5px;
     padding-right: 15px;
-    width: 9%; /* Ancho de la línea */
-    height: 6%; /* Altura de la línea */
+    width: 9%;
+    /* Ancho de la línea */
+    height: 6%;
+    /* Altura de la línea */
     left: 9%;
     right: 0%;
     top: 70%;
@@ -357,7 +397,7 @@ body{
     box-sizing: content-box;
 }
 
-.miniCircle_1{
+.miniCircle_1 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -369,7 +409,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_2{
+.miniCircle_2 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -381,7 +421,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_3{
+.miniCircle_3 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -393,7 +433,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_4{
+.miniCircle_4 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -405,7 +445,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_5{
+.miniCircle_5 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -417,7 +457,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_6{
+.miniCircle_6 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -429,7 +469,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_7{
+.miniCircle_7 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -441,7 +481,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_8{
+.miniCircle_8 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -453,7 +493,7 @@ body{
     cursor: pointer;
 }
 
-.miniCircle_245{
+.miniCircle_245 {
     width: 10px;
     height: 10px;
     background-color: rgb(0, 29, 190);
@@ -467,9 +507,9 @@ body{
 
 .littleCircleH:hover {
     transform: scale(3);
-  }
+}
 
-.littleCircleH:hover .number{
+.littleCircleH:hover .number {
     opacity: 1;
 }
 
@@ -482,7 +522,7 @@ body{
     color: white;
     opacity: 0;
     transition: opacity 0.3s;
-  }
+}
 
 .badge {
     position: absolute;
@@ -495,7 +535,7 @@ body{
     border-radius: 4px;
     font-weight: bold;
 }
-  
+
 .badgeAll:hover span {
     display: none;
 }
@@ -526,7 +566,7 @@ body{
 
 
 /* FOOTER */
-footer{
+footer {
     display: flex;
     background: rgba(255, 255, 255, 0.26);
     backdrop-filter: saturate(110%);
@@ -556,15 +596,19 @@ footer{
 .colorR {
     background: rgba(249, 198, 79, 0.829) !important;
 }
+
 .colorBC {
     background: rgba(144, 190, 109) !important;
 }
+
 .colorMC {
     background: rgba(67, 170, 139) !important;
 }
+
 .colorNLP {
     background: rgba(77, 144, 142) !important;
 }
+
 .colorCV {
     background: rgba(87, 117, 144) !important;
 }
@@ -572,15 +616,19 @@ footer{
 .colorIns {
     background: rgba(217, 237, 146, 0.7) !important;
 }
+
 .colorBas {
     background: rgba(181, 228, 140, 0.85) !important;
 }
+
 .colorInt {
     background: rgba(153, 217, 140) !important;
 }
+
 .colorHi {
     background: rgba(118, 200, 147) !important;
 }
+
 .colorAd {
     background: rgba(82, 182, 154) !important;
 }
@@ -600,4 +648,33 @@ footer{
 .buttonClose {
     position: absolute;
     right: 1%;
+}
+
+.seccionNoDisponible {
+    display: none;
+    /* Oculta la sección por defecto */
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar-brand {
+        margin-top: 18px;
+        margin-bottom: 18px;
+        margin-left: 10px;
+        font-family: 'Chakra Petch', sans-serif;
+    }
+
+    .seccion-ocultar {
+        display: none;
+    }
+
+    .seccionNoDisponible {
+        display: block;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.26);
+        backdrop-filter: saturate(120%);
+        margin-bottom: 50px;
+        font-family: 'Chakra Petch', sans-serif;
+        color: #ffffff;
+        margin-top: -100px;
+    }
 }
