@@ -12,7 +12,10 @@ async function showCardTool(id) {
 
     let original = 'Card -';
 
-    let values = getInfoTool(id);
+    component_tool = document.getElementById(id);
+    num_tool = component_tool.innerText;
+
+    let values = getInfoTool(num_tool);
     let enlacesJoint = (await values).links;
     let enlaces = enlacesJoint.split("\n\n"); // array con enlaces
     
