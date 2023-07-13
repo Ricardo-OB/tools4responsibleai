@@ -56,51 +56,55 @@
         </div>
       </div>
     </section>
+    <div class="seccion-ocultar">
     <section class="py-5 text-center container text-light" id="section2">
       <div class="row py-lg-5 mt-5" id="secondSection">
         <h2 class="fw-light text-light" id="titleBold">Tipology</h2>
         <div class="center">
           <div class="firstCircle">
-            <div class="badge p-1 badgeAll" id="badge_E"><span>E</span></div>
-            <div class="miniCircle_245 littleCircleH">
-              <span class="number text-light" id="245" onclick="showCardTool(id)">245</span>
+            <div class="badge p-1 badgeAll" id="badge_E"><span>E</span></div><!-- Explicability -->
+            <div class="color-stage-6 miniCircle_5 littleCircleH">
+              <span class="number text-light" id="5" onclick="showCardTool(id)">5</span>
+            </div>
+            <div class="color-stage-5 miniCircle_7 littleCircleH">
+              <span class="number text-light" id="7" onclick="showCardTool(id)">7</span>
             </div>
           </div>
           <div class="secondCircle">
-            <div class="badge p-1 badgeAll" id="badge_J"><span>J</span></div>
+            <div class="badge p-1 badgeAll" id="badge_J"><span>J</span></div><!-- Justice -->
+            <div class="color-stage-3 miniCircle_9 littleCircleH">
+              <span class="number text-light" id="9" onclick="showCardTool(id)">9</span>
+            </div>
+            <div class="color-stage-1 miniCircle_10 littleCircleH">
+              <span class="number text-light" id="10" onclick="showCardTool(id)">10</span>
+            </div>
           </div>
           <div class="thirdCircle">
-            <div class="badge p-1 badgeAll" id="badge_A"><span>A</span></div>
-          </div>
-          <div class="fourCircle">
-            <div class="badge p-1 badgeAll" id="badge_NoM"><span>No M</span></div>
-          </div>
-          <div class="fiveCircle">
-            <div class="badge p-1 badgeAll" id="badge_B"><span>B</span></div>
-            <div class="miniCircle_1 littleCircleH">
-              <span class="number text-light" id="1" onclick="showCardTool(id)">1</span>
-            </div>
-            <div class="miniCircle_2 littleCircleH">
+            <div class="badge p-1 badgeAll" id="badge_NoM"><span>Non M</span></div><!-- Non-maleficence -->
+            <div class="color-stage-6 miniCircle_2 littleCircleH">
               <span class="number text-light" id="2" onclick="showCardTool(id)">2</span>
             </div>
-            <div class="miniCircle_3 littleCircleH">
+            <div class="color-stage-1 miniCircle_3 littleCircleH">
               <span class="number text-light" id="3" onclick="showCardTool(id)">3</span>
             </div>
-            <div class="miniCircle_4 littleCircleH">
+            <div class="color-stage-3 miniCircle_4 littleCircleH">
               <span class="number text-light" id="4" onclick="showCardTool(id)">4</span>
             </div>
-            <div class="miniCircle_5 littleCircleH">
-              <span class="number text-light" id="5" onclick="showCardTool(id)">5</span>
-            </div>
-            <div class="miniCircle_6 littleCircleH">
-              <span class="number text-light" id="6" onclick="showCardTool(id)">6</span>
-            </div>
-            <div class="miniCircle_7 littleCircleH">
-              <span class="number text-light" id="7" onclick="showCardTool(id)">7</span>
-            </div>
-            <div class="miniCircle_8 littleCircleH">
+            <div class="color-stage-4 miniCircle_8 littleCircleH">
               <span class="number text-light" id="8" onclick="showCardTool(id)">8</span>
             </div>
+          </div>
+          <div class="fourCircle">
+            <div class="badge p-1 badgeAll" id="badge_B"><span>B</span></div><!-- Beneficence -->
+            <div class="color-stage-3 miniCircle_1 littleCircleH">
+              <span class="number text-light" id="1" onclick="showCardTool(id)">1</span>
+            </div>
+            <div class="color-stage-6 miniCircle_6 littleCircleH">
+              <span class="number text-light" id="6" onclick="showCardTool(id)">6</span>
+            </div>
+          </div>
+          <div class="fiveCircle">
+            <div class="badge p-1 badgeAll" id="badge_A"><span>A</span></div><!-- Autonomy -->
           </div>
           <div class="sixCircle">
             <div class="badge p-1 badgeAll" id="badge_G"><span>G</span></div>
@@ -132,7 +136,6 @@
         </div>
       </div>
     </section>
-
     <section class="py-1 text-center text-light container-fluid">
       <div class="row mx-3">
         <div class="col-md group-cards">
@@ -349,7 +352,11 @@
         </div>
       </div>
     </section>
-  </main>    
+  </div>
+  <div class="seccionNoDisponible">
+    <p>Esta sección no está disponible en dispositivos móviles, ingrese en versión de escritorio para ver el grafico.</p>
+  </div>
+  </main>
   <footer class="text-dark d-flex flex-wrap justify-content-between align-items-center">
     <div class="container-fluid">
       <div class="row px-3 mx-3 py-2 my-2">
