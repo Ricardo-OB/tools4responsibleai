@@ -431,928 +431,389 @@ body {
     box-sizing: content-box;
 }
 
-.miniCircle_1 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 250px;
-    left: 350px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_2 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 90px;
-    left: 100px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_3 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 25px;
-    left: 220px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_4 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 400px;
-    left: 450px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_5 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 250px;
-    left: 55px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_6 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 100px;
-    left: 40px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_7 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 500px;
-    left: 50px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_8 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 450px;
-    left: 200px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_9{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 510px;
-    left: 600px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_10{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 40px;
-    left: 400px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_11a{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 80px;
-    left: 200px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_11b{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 50px;
-    left: 50px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_12{
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 430px;
-    left: 40px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_13 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 300px;
-    left: 35px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_14 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 90px;
-    left: 120px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_15a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 30px;
-    left: 180px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_15b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 100px;
-    left: 40px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_16 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 270px;
-    left: 40px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_17 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 30px;
-    left: 130px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_18a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 190px;
-    left: 50px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_18b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 300px;
-    left: 650px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_19 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 140px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_20 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 370px;
-    left: 620px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_21a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 200px;
-    left: 360px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_21b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 300px;
-    left: 30px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_22 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 400px;
-    left: 80px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_23 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 510px;
-    left: 180px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_24 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 20px;
-    left: 320px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_25 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 20px;
-    left: 150px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_26 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 530px;
-    left: 50px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_27a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 720px;
-    left: 250px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_27b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 690px;
-    left: 170px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_28 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 400px;
-    left: 425px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_29 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 18px;
-    left: 240px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_30 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 470px;
-    left: 560px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_31 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 420px;
-    left: 580px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_32a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 15px;
-    left: 190px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_32b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 420px;
-    left: 550px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_32c {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 20px;
-    left: 20px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_33 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 30px;
-    left: 300px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_34 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: -50px;
-    left: 150px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_35 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: -50px;
-    left: 200px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_36a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 300px;
-    left: 50px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_36b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 600px;
-    left: 150px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_37 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 300px;
-    left: 490px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_38 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 200px;
-    left: 40px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_39 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 400px;
-    left: 300px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_40 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 300px;
-    left: 40px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_41a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 450px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_41b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 480px;
-    left: 220px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_41c {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 170px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_42 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 690px;
-    left: 370px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_43 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 400px;
-    left: 100px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_44 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 110px;
-    left: 10px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_45a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 480px;
-    left: 460px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_45b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 700px;
-    left: 460px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_46 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 440px;
-    left: 480px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_47 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 90px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_48 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: -150px;
-    left: 250px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_49 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: -50px;
-    left: 270px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_50a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 250px;
-    left: 60px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_50b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 50px;
-    left: 50px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_51 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 25px;
-    left: 340px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_52 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 160px;
-    left: 500px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_53 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 350px;
-    left: 250px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_54 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 60px;
-    left: 10px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_55 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 370px;
-    left: 150px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_56 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 510px;
-    left: 90px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_57 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 110px;
-    left: 520px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_58 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 70px;
-    left: 180px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_59 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 170px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_60 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 70px;
-    left: 40px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_61a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 16px;
-    left: 60px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_61b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 10px;
-    left: 140px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_62 {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 59px;
-    left: 4px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_63a {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: -100px;
-    left: 250px;
-    transition: transform 0.3s;
-    cursor: pointer;
-}
-
-.miniCircle_63b {
-    width: 10px;
-    height: 10px;
-    background-color: rgb(0, 29, 190);
-    border-radius: 50%;
-    position: relative;
-    top: 55px;
-    left: 10px;
-    transition: transform 0.3s;
-    cursor: pointer;
+.circle-1 {
+    top: 250px !important;
+    left: 350px !important;
+}
+
+.circle-2 {
+    top: 90px !important;
+    left: 100px !important;
+}
+
+.circle-3 {
+    top: 25px !important;
+    left: 220px !important;
+}
+
+.circle-4 {
+    top: 400px !important;
+    left: 450px !important;
+}
+
+.circle-5 {
+    top: 250px !important;
+    left: 55px !important;
+}
+
+.circle-6 {
+    top: 100px !important;
+    left: 40px !important;
+}
+
+.circle-7 {
+    top: 500px !important;
+    left: 50px !important;
+}
+
+.circle-8 {
+    top: 450px !important;
+    left: 200px !important;
+}
+
+.circle-9{
+    top: 510px !important;
+    left: 600px !important;
+}
+
+.circle-10{
+    top: 40px !important;
+    left: 400px !important;
+}
+
+.circle-11a{
+    top: 80px !important;
+    left: 200px !important;
+}
+
+.circle-11b{
+    top: 50px !important;
+    left: 50px !important;
+}
+
+.circle-12{
+    top: 430px !important;
+    left: 40px !important;
+}
+
+.circle-13 {
+    top: 300px !important;
+    left: 35px !important;
+}
+
+.circle-14 {
+    top: 90px !important;
+    left: 120px !important;
+}
+
+.circle-15a {
+    top: 30px !important;
+    left: 180px !important;
+}
+
+.circle-15b {
+    top: 100px !important;
+    left: 40px !important;
+}
+
+.circle-16 {
+    top: 270px !important;
+    left: 40px !important;
+}
+
+.circle-17 {
+    top: 30px !important;
+    left: 130px !important;
+}
+
+.circle-18a {
+    top: 190px !important;
+    left: 50px !important;
+}
+
+.circle-18b {
+    top: 300px !important;
+    left: 650px !important;
+}
+
+.circle-19 {
+    top: 10px !important;
+    left: 140px !important;
+}
+
+.circle-20 {
+    top: 370px !important;
+    left: 620px !important;
+}
+
+.circle-21a {
+    top: 200px !important;
+    left: 360px !important;
+}
+
+.circle-21b {
+    top: 300px !important;
+    left: 30px !important;
+}
+
+.circle-22 {
+    top: 400px !important;
+    left: 80px !important;
+}
+
+.circle-23 {
+    top: 510px !important;
+    left: 180px !important;
+}
+
+.circle-24 {
+    top: 20px !important;
+    left: 320px !important;
+}
+
+.circle-25 {
+    top: 20px !important;
+    left: 150px !important;
+}
+
+.circle-26 {
+    top: 530px !important;
+    left: 50px !important;
+}
+
+.circle-27a {
+    top: 720px !important;
+    left: 250px !important;
+}
+
+.circle-27b {
+    top: 690px !important;
+    left: 170px !important;
+}
+
+.circle-28 {
+    top: 400px !important;
+    left: 425px !important;
+}
+
+.circle-29 {
+    top: 18px !important;
+    left: 240px !important;
+}
+
+.circle-30 {
+    top: 470px !important;
+    left: 560px !important;
+}
+
+.circle-31 {
+    top: 420px !important;
+    left: 580px !important;
+}
+
+.circle-32a {
+    top: 15px !important;
+    left: 190px !important;
+}
+
+.circle-32b {
+    top: 420px !important;
+    left: 550px !important;
+}
+
+.circle-32c {
+    top: 20px !important;
+    left: 20px !important;
+}
+
+.circle-33 {
+    top: 30px !important;
+    left: 300px !important;
+}
+
+.circle-34 {
+    top: -50px !important;
+    left: 150px !important;
+}
+
+.circle-35 {
+    top: -50px !important;
+    left: 200px !important;
+}
+
+.circle-36a {
+    top: 300px !important;
+    left: 50px !important;
+}
+
+.circle-36b {
+    top: 600px !important;
+    left: 150px !important;
+}
+
+.circle-37 {
+    top: 300px !important;
+    left: 490px !important;
+}
+
+.circle-38 {
+    top: 200px !important;
+    left: 40px !important;
+}
+
+.circle-39 {
+    top: 400px !important;
+    left: 300px !important;
+}
+
+.circle-40 {
+    top: 300px !important;
+    left: 40px !important;
+}
+
+.circle-41a {
+    top: 10px !important;
+    left: 450px !important;
+}
+
+.circle-41b {
+    top: 480px !important;
+    left: 220px !important;
+}
+
+.circle-41c {
+    top: 10px !important;
+    left: 170px !important;
+}
+
+.circle-42 {
+    top: 690px !important;
+    left: 370px !important;
+}
+
+.circle-43 {
+    top: 400px !important;
+    left: 100px !important;
+}
+
+.circle-44 {
+    top: 110px !important;
+    left: 10px !important;
+}
+
+.circle-45a {
+    top: 480px !important;
+    left: 460px !important;
+}
+
+.circle-45b {
+    top: 700px !important;
+    left: 460px !important;
+}
+
+.circle-46 {
+    top: 440px !important;
+    left: 480px !important;
+}
+
+.circle-47 {
+    top: 10px !important;
+    left: 90px !important;
+}
+
+.circle-48 {
+    top: -150px !important;
+    left: 250px !important;
+}
+
+.circle-49 {
+    top: -50px !important;
+    left: 270px !important;
+}
+
+.circle-50a {
+    top: 250px !important;
+    left: 60px !important;
+}
+
+.circle-50b {
+    top: 50px !important;
+    left: 50px !important;
+}
+
+.circle-51 {
+    top: 25px !important;
+    left: 340px !important;
+}
+
+.circle-52 {
+    top: 160px !important;
+    left: 500px !important;
+}
+
+.circle-53 {
+    top: 350px !important;
+    left: 250px !important;
+}
+
+.circle-54 {
+    top: 60px !important;
+    left: 10px !important;
+}
+
+.circle-55 {
+    top: 370px !important;
+    left: 150px !important;
+}
+
+.circle-56 {
+    top: 510px !important;
+    left: 90px !important;
+}
+
+.circle-57 {
+    top: 110px !important;
+    left: 520px !important;
+}
+
+.circle-58 {
+    top: 70px !important;
+    left: 180px !important;
+}
+
+.circle-59 {
+    top: 10px !important;
+    left: 170px !important;
+}
+
+.circle-60 {
+    top: 70px !important;
+    left: 40px !important;
+}
+
+.circle-61a {
+    top: 16px !important;
+    left: 60px !important;
+}
+
+.circle-61b {
+    top: 10px !important;
+    left: 140px !important;
+}
+
+.circle-62 {
+    top: 59px !important;
+    left: 4px !important;
+}
+
+.circle-63a {
+    top: -100px !important;
+    left: 250px !important;
+}
+
+.circle-63b {
+    top: 55px !important;
+    left: 10px !important;
 }
 
 .circle-64 {
@@ -1623,6 +1084,161 @@ body {
 .circle-90c {
     top: -125px !important;
     left: 30px !important;
+}
+
+.circle-91a {
+    top: -205px !important;
+    left: 460px !important;
+}
+
+.circle-91b {
+    top: -200px !important;
+    left: 600px !important;
+}
+
+.circle-91c {
+    top: -70px !important;
+    left: 60px !important;
+}
+
+.circle-92a {
+    top: -200px !important;
+    left: 350px !important;
+}
+
+.circle-92b {
+    top: 30px !important;
+    left: 650px !important;
+}
+
+.circle-93a {
+    top: -310px !important;
+    left: 270px !important;
+}
+
+.circle-93b {
+    top: -255px !important;
+    left: 120px !important;
+}
+
+.circle-94a {
+    top: -199px !important;
+    left: 110px !important;
+}
+
+.circle-94b {
+    top: -112px !important;
+    left: 490px !important;
+}
+
+.circle-94c {
+    top: 10px !important;
+    left: 25px !important;
+}
+
+.circle-94d {
+    top: -50px !important;
+    left: 28px !important;
+}
+
+.circle-95a {
+    top: -300px !important;
+    left: 360px !important;
+}
+
+.circle-95b {
+    top: -300px !important;
+    left: 545px !important;
+}
+
+.circle-96 {
+    top: -290px !important;
+    left: 125px !important;
+}
+
+.circle-97a {
+    top: -380px !important;
+    left: 310px !important;
+}
+
+.circle-97b {
+    top: -210px !important;
+    left: 520px !important;
+}
+
+.circle-97c {
+    top: 60px !important;
+    left: 640px !important;
+}
+
+.circle-97d {
+    top: 210px !important;
+    left: 400px !important;
+}
+
+.circle-97e {
+    top: 95px !important;
+    left: 70px !important;
+}
+
+.circle-97f {
+    top: -257px !important;
+    left: 75px !important;
+}
+
+.circle-97g {
+    top: -21px !important;
+    left: 60px !important;
+}
+
+.circle-98a {
+    top: -375px !important;
+    left: 180px !important;
+}
+
+.circle-98b {
+    top: -180px !important;
+    left: 645px !important;
+}
+
+.circle-98c {
+    top: 165px !important;
+    left: 270px !important;
+}
+
+.circle-98d {
+    top: 80px !important;
+    left: 130px !important;
+}
+
+.circle-98e {
+    top: -380px !important;
+    left: 110px !important;
+}
+
+.circle-99a {
+    top: -410px !important;
+    left: 360px !important;
+}
+
+.circle-99b {
+    top: -280px !important;
+    left: 457px !important;
+}
+
+.circle-99c {
+    top: -285px !important;
+    left: 29px !important;
+}
+
+.circle-100a {
+    top: -420px !important;
+    left: 240px !important;
+}
+
+.circle-100b {
+    top: -250px !important;
+    left: 655px !important;
 }
 
 
