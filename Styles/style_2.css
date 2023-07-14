@@ -405,6 +405,18 @@ body {
     background-color: #720e17 !important;
 }
 
+.tiny-circle-shape {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
 .numberCircle {
     font: 32px Arial, sans-serif;
     width: 2em;
@@ -993,6 +1005,494 @@ body {
     left: 40px;
     transition: transform 0.3s;
     cursor: pointer;
+}
+
+.miniCircle_41a {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 450px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_41b {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 480px;
+    left: 220px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_41c {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 170px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_42 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 690px;
+    left: 370px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_43 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 400px;
+    left: 100px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_44 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 110px;
+    left: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_45a {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 480px;
+    left: 460px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_45b {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 700px;
+    left: 460px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_46 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 440px;
+    left: 480px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_47 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 90px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_48 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: -150px;
+    left: 250px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_49 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: -50px;
+    left: 270px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_50a {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 250px;
+    left: 60px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_50b {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 50px;
+    left: 50px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_51 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 25px;
+    left: 340px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_52 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 160px;
+    left: 500px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_53 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 350px;
+    left: 250px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_54 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 60px;
+    left: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_55 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 370px;
+    left: 150px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_56 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 510px;
+    left: 90px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_57 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 110px;
+    left: 520px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_58 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 70px;
+    left: 180px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_59 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 170px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_60 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 70px;
+    left: 40px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_61a {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 16px;
+    left: 60px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_61b {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 10px;
+    left: 140px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_62 {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 59px;
+    left: 4px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_63a {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: -100px;
+    left: 250px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.miniCircle_63b {
+    width: 10px;
+    height: 10px;
+    background-color: rgb(0, 29, 190);
+    border-radius: 50%;
+    position: relative;
+    top: 55px;
+    left: 10px;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.circle-64 {
+    top: 270px !important;
+    left: 45px !important;
+}
+
+.circle-65 {
+    top: 240px !important;
+    left: 160px !important;
+}
+
+.circle-66 {
+    top: 130px !important;
+    left: 50px !important;
+}
+
+.circle-67 {
+    top: -90px !important;
+    left: 100px !important;
+}
+
+.circle-68a {
+    top: -60px !important;
+    left: 80px !important;
+}
+
+.circle-68b {
+    top: 580px !important;
+    left: 130px !important;
+}
+
+.circle-69a {
+    top: -80px !important;
+    left: 170px !important;
+}
+
+.circle-69b {
+    top: 10px !important;
+    left: 70px !important;
+}
+
+.circle-70 {
+    top: 10px !important;
+    left: 520px !important;
+}
+
+.circle-71 {
+    top: 150px !important;
+    left: 450px !important;
+}
+
+.circle-72a {
+    top: -80px !important;
+    left: 490px !important;
+}
+
+.circle-72b {
+    top: 520px !important;
+    left: 90px !important;
+}
+
+.circle-73a {
+    top: -200px !important;
+    left: 500px !important;
+}
+
+.circle-73b {
+    top: -200px !important;
+    left: 400px !important;
+}
+
+.circle-73c {
+    top: -110px !important;
+    left: 250px !important;
+}
+
+.circle-73d {
+    top: -5px !important;
+    left: 100px !important;
+}
+
+.circle-73e {
+    top: 20px !important;
+    left: 50px !important;
+}
+
+.circle-74a {
+    top: 10px !important;
+    left: 40px !important;
+}
+
+.circle-74b {
+    top: 25px !important;
+    left: 100px !important;
+}
+
+.circle-74c {
+    top: 0px !important;
+    left: 2px !important;
+}
+
+.circle-75a {
+    top: 260px !important;
+    left: 110px !important;
+}
+
+.circle-75b {
+    top: 440px !important;
+    left: 100px !important;
+}
+
+.circle-76 {
+    top: -85px !important;
+    left: 125px !important;
+}
+
+.circle-77a {
+    top: 150px !important;
+    left: 60px !important;
+}
+
+.circle-77b {
+    top: 520px !important;
+    left: 170px !important;
+}
+
+.circle-78 {
+    top: -150px !important;
+    left: 60px !important;
+}
+
+.circle-79 {
+    top: 350px !important;
+    left: 340px !important;
+}
+
+.circle-80 {
+    top: 260px !important;
+    left: 10px !important;
 }
 
 
