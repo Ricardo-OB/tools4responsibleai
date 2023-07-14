@@ -2,13 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body{
     background: hsla(209, 52%, 31%, 1);
     background: linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -moz-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -webkit-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#265077", endColorstr="#1E4258", GradientType=1);
 }
+
 
 .cardsAuthors {
     display: flex;
@@ -26,6 +27,21 @@ body {
 
 #secondSection {
     text-align: left;
+}
+
+/* #section2 {
+
+} */
+
+canvas {
+    width: 100%;
+    background-color: #0A1529;
+    z-index: -999999;
+    position: fixed;
+}
+
+.backgroundCSS {
+    position: relative;
 }
 
 #titleBold {
@@ -1244,6 +1260,7 @@ body {
 
 
 .littleCircleH:hover {
+    z-index: 1 !important;
     transform: scale(3);
 }
 
