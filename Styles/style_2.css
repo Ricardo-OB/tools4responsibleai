@@ -2,13 +2,14 @@ html {
     scroll-behavior: smooth;
 }
 
-body {
+body{
     background: hsla(209, 52%, 31%, 1);
     background: linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -moz-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     background: -webkit-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#265077", endColorstr="#1E4258", GradientType=1);
 }
+
 
 .cardsAuthors {
     display: flex;
@@ -26,6 +27,22 @@ body {
 
 #secondSection {
     text-align: left;
+}
+
+#canvas-container {
+    position: relative;
+}
+
+#canvas {
+    width: 100%;
+    /* height: 100%; */
+    position: absolute;
+    z-index: -10;
+    /* background: hsla(199, 55%, 30%, 1);
+    background: linear-gradient(90deg, hsla(199, 55%, 30%, 1) 0%, hsla(210, 91%, 39%, 1) 31%, hsla(210, 91%, 39%, 1) 64%, hsla(199, 55%, 30%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(199, 55%, 30%, 1) 0%, hsla(210, 91%, 39%, 1) 31%, hsla(210, 91%, 39%, 1) 64%, hsla(199, 55%, 30%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(199, 55%, 30%, 1) 0%, hsla(210, 91%, 39%, 1) 31%, hsla(210, 91%, 39%, 1) 64%, hsla(199, 55%, 30%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#235C77", endColorstr="#0965C0", GradientType=1 ); */
 }
 
 #titleBold {
@@ -1244,6 +1261,7 @@ body {
 
 
 .littleCircleH:hover {
+    z-index: 1 !important;
     transform: scale(3);
 }
 
@@ -1272,34 +1290,42 @@ body {
     padding: 0px 0px;
     border-radius: 4px;
     font-weight: bold;
+    z-index: 1 !important;
 }
 
 .badgeAll:hover span {
     display: none;
+    z-index: 1 !important;
 }
 
 #badge_E:hover:before {
     content: "Explicability";
+    z-index: 1 !important;
 }
 
 #badge_J:hover:before {
     content: "Justice";
+    z-index: 1 !important;
 }
 
 #badge_A:hover:before {
     content: "Autonomy";
+    z-index: 1 !important;
 }
 
 #badge_NoM:hover:before {
     content: "Non-Maleficency";
+    z-index: 1 !important;
 }
 
 #badge_B:hover:before {
     content: "Beneficency";
+    z-index: 1 !important;
 }
 
 #badge_G:hover:before {
     content: "Governance";
+    z-index: 1 !important;
 }
 
 
