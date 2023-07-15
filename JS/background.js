@@ -1,102 +1,107 @@
 document.addEventListener('DOMContentLoaded',domloaded,false);
 function domloaded(){
-  // Set variables
-  const show = 75;
-  const canvas = document.getElementById("canvas1");
-  const scene = canvas.getContext("2d");
-  let width = (canvas.width = window.innerWidth);
-  let height = (canvas.height = window.innerHeight);
+    var canvas = document.getElementById("canvas"),
+    ctx = canvas.getContext('2d');
 
-  // Create dot
-  class Dot {
-    constructor() {
-      const angle = Math.floor(Math.random() * 360);
+    canvas.width = window.innerWidth;
+    // canvas.height = window.innerHeight;
+    canvas.height = 1605.39;
 
-      this.size = 6;
-      this.dx = Math.cos(angle) * 1;
-      this.dy = Math.sin(angle) * 1;
-      this.px = Math.random() * width;
-      this.py = Math.random() * height;
+    var stars = [], // Array that contains the stars
+        FPS = 60, // Frames per second
+        x = 100, // Number of stars
+        mouse = {
+        x: 0,
+        y: 0
+        };  // mouse location
+
+    // Push stars to array
+
+    for (var i = 0; i < x; i++) {
+    stars.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        radius: Math.random() * 1 + 1,
+        vx: Math.floor(Math.random() * 50) - 25,
+        vy: Math.floor(Math.random() * 50) - 25
+    });
     }
 
-    // Update dot position and draw
-    update() {
-      this.bounds();
+    // Draw the scene
 
-      this.px += this.dx;
-      this.py += this.dy;
-
-      this.draw();
+    function draw() {
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    
+    ctx.globalCompositeOperation = "lighter";
+    
+    for (var i = 0, x = stars.length; i < x; i++) {
+        var s = stars[i];
+    
+        ctx.fillStyle = "#fff";
+        ctx.beginPath();
+        ctx.arc(s.x, s.y, s.radius, 0, 2 * Math.PI);
+        ctx.fill();
+        ctx.fillStyle = 'black';
+        ctx.stroke();
+    }
+    
+    ctx.beginPath();
+    for (var i = 0, x = stars.length; i < x; i++) {
+        var starI = stars[i];
+        ctx.moveTo(starI.x,starI.y); 
+        if(distance(mouse, starI) < 150) ctx.lineTo(mouse.x, mouse.y);
+        for (var j = 0, x = stars.length; j < x; j++) {
+        var starII = stars[j];
+        if(distance(starI, starII) < 150) {
+            //ctx.globalAlpha = (1 / 150 * distance(starI, starII).toFixed(1));
+            ctx.lineTo(starII.x,starII.y); 
+        }
+        }
+    }
+    ctx.lineWidth = 0.05;
+    ctx.strokeStyle = 'white';
+    ctx.stroke();
     }
 
-    // Draw the dots then connect them
-    draw() {
-      scene.beginPath();
-      scene.arc(this.px, this.py, this.size, 0, Math.PI * 2);
-      scene.closePath();
-      scene.fillStyle = "#a8ffd6";
-      scene.fill();
-
-      this.connect();
+    function distance( point1, point2 ){
+    var xs = 0;
+    var ys = 0;
+    
+    xs = point2.x - point1.x;
+    xs = xs * xs;
+    
+    ys = point2.y - point1.y;
+    ys = ys * ys;
+    
+    return Math.sqrt( xs + ys );
     }
 
-    // Connect the nearby dots
-    connect() {
-      const nearby = (width + height) * 0.1;
+    // Update star locations
 
-      dots.forEach(dot => {
-        const distance = this.distance(dot);
-
-        if (distance > nearby) return;
-
-        const opacity = 1 - distance / nearby - 0.2;
-
-        scene.beginPath();
-        scene.lineWidth = 1;
-        scene.strokeStyle = `rgba(168, 255, 214, ${opacity})`;
-        scene.moveTo(this.px, this.py);
-        scene.lineTo(dot.px, dot.py);
-        scene.stroke();
-      });
+    function update() {
+    for (var i = 0, x = stars.length; i < x; i++) {
+        var s = stars[i];
+    
+        s.x += s.vx / FPS;
+        s.y += s.vy / FPS;
+        
+        if (s.x < 0 || s.x > canvas.width) s.vx = -s.vx;
+        if (s.y < 0 || s.y > canvas.height) s.vy = -s.vy;
+    }
     }
 
-    // Check if we've hit a wall and invert the direction
-    bounds() {
-      if (this.px < 0 || this.px > width) this.dx *= -1;
-
-      if (this.py < 0 || this.py > height) this.dy *= -1;
-    }
-
-    // Calculate the distance between this dot and that dot
-    // This calculates two 'sides' then the hypotenuse i.e. distance
-    distance(dot) {
-      const distX = this.px - dot.px;
-      const distY = this.py - dot.py;
-
-      return Math.sqrt(distX * distX + distY * distY);
-    }
-  }
-
-  // Create dots
-  const dots = [...Array(show).fill().map(() => new Dot())];
-
-  // Draw scene
-  function draw() {
-    scene.clearRect(0, 0, width, height);
-
-    // Update all dots and redraw
-    dots.forEach(particle => {
-      particle.update();
+    canvas.addEventListener('mousemove', function(e){
+    mouse.x = e.clientX;
+    mouse.y = e.clientY;
     });
 
-    requestAnimationFrame(draw);
-  }
+    // Update and draw
 
-  draw();
+    function tick() {
+    draw();
+    update();
+    requestAnimationFrame(tick);
+    }
 
-  // Resize canvas
-  window.addEventListener("resize", () => {
-    width = canvas.width = window.innerWidth;
-    height = canvas.height = window.innerHeight;
-  });
+    tick();
 }
