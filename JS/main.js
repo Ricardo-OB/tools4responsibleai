@@ -11,14 +11,14 @@ async function processCSV(url) {
     let firstSheetName = workbook.SheetNames[0];
     let jsonDataRaw = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName]);
 
-    console.log(jsonDataRaw);
+    //console.log(jsonDataRaw);
 
     for (let i=0; i<jsonDataRaw.length; i++){
         let row = jsonDataRaw[i];
-        console.log(row["NAME"]);
+        //console.log(row["NAME"]);
     }
 
-    console.log(jsonDataRaw.length);
+    //console.log(jsonDataRaw.length);
 
     let table = document.getElementById("display_excel_data");
 
