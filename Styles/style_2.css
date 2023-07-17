@@ -1115,8 +1115,8 @@ body{
 }
 
 .circle-92a {
-    top: -200px !important;
-    left: 350px !important;
+    top: -90px !important;
+    left: 311px !important;
 }
 
 .circle-92b {
@@ -1380,8 +1380,8 @@ body{
 }
 
 .circle-109c {
-    top:  -150px !important;
-    left: 495px !important;
+    top: -173px !important;
+    left: 483px !important;
 }
 
 .circle-109d {
@@ -1437,6 +1437,221 @@ body{
 .circle-111c {
     top:  80px !important;
     left: 25px !important;
+}
+
+.circle-112a {
+    top: -245px !important;
+    left: 190px !important;
+}
+
+.circle-112b {
+    top: -40px !important;
+    left: 170px !important;
+}
+
+.circle-113a {
+    top: -578px !important;
+    left: 200px !important;
+}
+
+.circle-113b {
+    top: -433px !important;
+    left: 561px !important;
+}
+
+.circle-113c {
+    top: -15px !important;
+    left: 102px !important;
+}
+
+.circle-114a {
+    top: -109px !important;
+    left: 592px !important;
+}
+
+.circle-114b {
+    top: 75px !important;
+    left: 373px !important;
+}
+
+.circle-114c {
+    top: 391px !important;
+    left: 119px !important;
+}
+
+.circle-114d {
+    top: 47px !important;
+    left: 72px !important;
+}
+
+.circle-115 {
+    top: 410px !important;
+    left: 128px !important;
+}
+
+.circle-116a {
+    top: 60px !important;
+    left: 258px !important;
+}
+
+.circle-116b {
+    top: -200px !important;
+    left: 14px !important;
+}
+
+.circle-117 {
+    top: 250px !important;
+    left: 24px !important;
+}
+
+.circle-118a {
+    top: -231px !important;
+    left: 422px !important;
+}
+
+.circle-118b {
+    top: -236px !important;
+    left: 675px !important;
+}
+
+.circle-118c {
+    top: 182px !important;
+    left: 61px !important;
+}
+
+.circle-118d {
+    top: -134px !important;
+    left: 44px !important;
+}
+
+.circle-119a {
+    top: -170px !important;
+    left: 89px !important;
+}
+
+.circle-119b {
+    top: 410px !important;
+    left: 192px !important;
+}
+
+.circle-120 {
+    top: -39px !important;
+    left: 139px !important;
+}
+
+.circle-121 {
+    top: -68px !important;
+    left: 115px !important;
+}
+
+.circle-122a {
+    top: -214px !important;
+    left: 23px !important;
+}
+
+.circle-122b {
+    top: 88px !important;
+    left: 15px !important;
+}
+
+.circle-123a {
+    top: -135px !important;
+    left: 103px !important;
+}
+
+.circle-123b {
+    top: 207px !important;
+    left: 69px !important;
+}
+
+.circle-124a {
+    top: -169px !important;
+    left: 563px !important;
+}
+
+.circle-124b {
+    top: 253px !important;
+    left: 73px !important;
+}
+
+.circle-125a {
+    top: -305px !important;
+    left: 172px !important;
+}
+
+.circle-125b {
+    top: -560px !important;
+    left: 420px !important;
+}
+
+.circle-125c {
+    top: -368px !important;
+    left: 477px !important;
+}
+
+.circle-125d {
+    top: -76px !important;
+    left: 247px !important;
+}
+
+.circle-125e {
+    top: 295px !important;
+    left: 66px !important;
+}
+
+.circle-125f {
+    top: -63px !important;
+    left: 71px !important;
+}
+
+.circle-126a {
+    top: -255px !important;
+    left: 114px !important;
+}
+
+.circle-126b {
+    top: -401px !important;
+    left: 631px !important;
+}
+
+.circle-127a {
+    top: -253px !important;
+    left: 261px !important;
+}
+
+.circle-127b {
+    top: -610px !important;
+    left: 301px !important;
+}
+
+.circle-127c {
+    top: -248px !important;
+    left: 67px !important;
+}
+
+.circle-128a {
+    top: -312px !important;
+    left: 220px !important;
+}
+
+.circle-128b {
+    top: -344px !important;
+    left: 61px !important;
+}
+
+.circle-129 {
+    top: -204px !important;
+    left: 374px !important;
+}
+
+.circle-130a {
+    top: -333px !important;
+    left: 267px !important;
+}
+
+.circle-130b {
+    top: -276px !important;
+    left: 326px !important;
 }
 
 
@@ -1632,7 +1847,6 @@ footer {
 
 .text {
     position: relative;
-    margin-bottom: 20px;
 }
   
 .panim1 {
@@ -1649,12 +1863,12 @@ footer {
 .word {
     position: absolute;
     opacity: 0;
+    white-space: pre;
 }
   
 .letter {
     display: inline-block;
     position: relative;
-    float: left;
     transform: translateZ(25px);
     transform-origin: 50% 50% 25px;
 }
