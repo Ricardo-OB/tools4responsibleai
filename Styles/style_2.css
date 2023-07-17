@@ -45,10 +45,6 @@ body{
     filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#235C77", endColorstr="#0965C0", GradientType=1 ); */
 }
 
-#titleBold {
-    font-weight: bolder;
-}
-
 .boldText {
     font-weight: bold;
 }
@@ -1626,4 +1622,53 @@ footer {
         color: #ffffff;
         margin-top: -100px;
     }
+}
+
+/* Animacion palabras */
+
+.slide-animation {
+    transition: margin-left 1s ease-in-out;
+}
+
+.text {
+    position: relative;
+    margin-bottom: 20px;
+}
+  
+.panim1 {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.panim2 {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 6px;
+}
+
+.word {
+    position: absolute;
+    opacity: 0;
+}
+  
+.letter {
+    display: inline-block;
+    position: relative;
+    float: left;
+    transform: translateZ(25px);
+    transform-origin: 50% 50% 25px;
+}
+  
+.letter.out {
+    transform: rotateX(90deg);
+    transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+  
+.letter.behind {
+    transform: rotateX(-90deg);
+}
+  
+.letter.in {
+    transform: rotateX(0deg);
+    transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
