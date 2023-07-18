@@ -72,16 +72,18 @@
         <section class="py-5 text-center container text-light" id="section2">
           <div class="row py-lg-5 mt-5" id="secondSection">
             <h2 class="fw-light text-light" id="titleBold">Tipology</h2>
-            <div class="dropdown mb-2 mt-4">
-              <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" id="dropdownNTools">
-                Number of Tools
-              </button>
-              <ul class="dropdown-menu shadow">
-                <li><a class="dropdown-item rounded-2" type="button" onclick="showToolsA(this)">1 - 150</a></li>
-                <li><a class="dropdown-item rounded-2" type="button" onclick="showToolsB(this)">151 - 300</a></li>
-                <li><a class="dropdown-item rounded-2" type="button" onclick="showToolsC(this)">301 - 352</a></li>
-              </ul>
+            
+            <div class="container menu-1">
+              <div class="form-floating form-floating-1-custom">
+                <select class="form-select form-select-1-custom text-light" id="floatingSelect" onchange="showTools(this.value)">
+                  <option selected value="1-150" class="options-menu-1">1 - 150</option>
+                  <option value="151-300" class="options-menu-1">151 - 300</option>
+                  <option value="301-352" class="options-menu-1">301 - 352</option>
+                </select>
+                <label class="text-light custom-label" for="floatingSelect">Number of Tools</label>
+              </div>
             </div>
+
             <div class="center">
               <div class="firstCircle">
                 <div class="badge p-1 badgeAll" id="badge_E"><span>E</span></div><!-- Explicability -->
@@ -189,6 +191,141 @@
                 </div>
                 <div class="color-stage-5 tiny-circle-shape circle-125e littleCircleH 1-150">
                   <span class="number text-light" id="125e" onclick="showCardTool(id)">125</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-132e littleCircleH 1-150">
+                  <span class="number text-light" id="132e" onclick="showCardTool(id)">132</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-134 littleCircleH 1-150">
+                  <span class="number text-light" id="134" onclick="showCardTool(id)">134</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-135a littleCircleH 1-150">
+                  <span class="number text-light" id="135a" onclick="showCardTool(id)">135</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-135b littleCircleH 1-150">
+                  <span class="number text-light" id="135b" onclick="showCardTool(id)">135</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-136a littleCircleH 1-150">
+                  <span class="number text-light" id="136a" onclick="showCardTool(id)">136</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-136b littleCircleH 1-150">
+                  <span class="number text-light" id="136b" onclick="showCardTool(id)">136</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-139b littleCircleH 1-150">
+                  <span class="number text-light" id="139b" onclick="showCardTool(id)">139</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-140e littleCircleH 1-150">
+                  <span class="number text-light" id="140e" onclick="showCardTool(id)">140</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-141c littleCircleH 1-150">
+                  <span class="number text-light" id="141c" onclick="showCardTool(id)">141</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-141d littleCircleH 1-150">
+                  <span class="number text-light" id="141d" onclick="showCardTool(id)">141</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-148a littleCircleH 1-150">
+                  <span class="number text-light" id="148a" onclick="showCardTool(id)">148</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-148b littleCircleH 1-150">
+                  <span class="number text-light" id="148b" onclick="showCardTool(id)">148</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-151c littleCircleH 151-300">
+                  <span class="number text-light" id="151c" onclick="showCardTool(id)">151</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-154c littleCircleH 151-300">
+                  <span class="number text-light" id="154c" onclick="showCardTool(id)">154</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-156 littleCircleH 151-300">
+                  <span class="number text-light" id="156" onclick="showCardTool(id)">156</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-162 littleCircleH 151-300">
+                  <span class="number text-light" id="162" onclick="showCardTool(id)">162</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-164c littleCircleH 151-300">
+                  <span class="number text-light" id="164c" onclick="showCardTool(id)">164</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-169b littleCircleH 151-300">
+                  <span class="number text-light" id="169b" onclick="showCardTool(id)">169</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-172b littleCircleH 151-300">
+                  <span class="number text-light" id="172b" onclick="showCardTool(id)">172</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-173a littleCircleH 151-300">
+                  <span class="number text-light" id="173a" onclick="showCardTool(id)">173</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-173b littleCircleH 151-300">
+                  <span class="number text-light" id="173b" onclick="showCardTool(id)">173</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-173c littleCircleH 151-300">
+                  <span class="number text-light" id="173c" onclick="showCardTool(id)">173</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-173d littleCircleH 151-300">
+                  <span class="number text-light" id="173d" onclick="showCardTool(id)">173</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-174a littleCircleH 151-300">
+                  <span class="number text-light" id="174a" onclick="showCardTool(id)">174</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-174b littleCircleH 151-300">
+                  <span class="number text-light" id="174b" onclick="showCardTool(id)">174</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-174c littleCircleH 151-300">
+                  <span class="number text-light" id="174c" onclick="showCardTool(id)">174</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-175 littleCircleH 151-300">
+                  <span class="number text-light" id="175" onclick="showCardTool(id)">175</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-176a littleCircleH 151-300">
+                  <span class="number text-light" id="176a" onclick="showCardTool(id)">176</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-176b littleCircleH 151-300">
+                  <span class="number text-light" id="176b" onclick="showCardTool(id)">176</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-176c littleCircleH 151-300">
+                  <span class="number text-light" id="176c" onclick="showCardTool(id)">176</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-177 littleCircleH 151-300">
+                  <span class="number text-light" id="177" onclick="showCardTool(id)">177</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-178 littleCircleH 151-300">
+                  <span class="number text-light" id="178" onclick="showCardTool(id)">178</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-179 littleCircleH 151-300">
+                  <span class="number text-light" id="179" onclick="showCardTool(id)">179</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-180 littleCircleH 151-300">
+                  <span class="number text-light" id="180" onclick="showCardTool(id)">180</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-181b littleCircleH 151-300">
+                  <span class="number text-light" id="181b" onclick="showCardTool(id)">181</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-182a littleCircleH 151-300">
+                  <span class="number text-light" id="182a" onclick="showCardTool(id)">182</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-182b littleCircleH 151-300">
+                  <span class="number text-light" id="182b" onclick="showCardTool(id)">182</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-183b littleCircleH 151-300">
+                  <span class="number text-light" id="183b" onclick="showCardTool(id)">183</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-184 littleCircleH 151-300">
+                  <span class="number text-light" id="184" onclick="showCardTool(id)">184</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-185 littleCircleH 151-300">
+                  <span class="number text-light" id="185" onclick="showCardTool(id)">185</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-186 littleCircleH 151-300">
+                  <span class="number text-light" id="186" onclick="showCardTool(id)">186</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-189a littleCircleH 151-300">
+                  <span class="number text-light" id="189a" onclick="showCardTool(id)">189</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-189b littleCircleH 151-300">
+                  <span class="number text-light" id="189b" onclick="showCardTool(id)">189</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-190a littleCircleH 151-300">
+                  <span class="number text-light" id="190a" onclick="showCardTool(id)">190</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-190b littleCircleH 151-300">
+                  <span class="number text-light" id="190b" onclick="showCardTool(id)">190</span>
                 </div>
               </div>
               <div class="secondCircle">
@@ -415,6 +552,150 @@
                 <div class="color-stage-5 tiny-circle-shape circle-128b littleCircleH 1-150">
                   <span class="number text-light" id="128b" onclick="showCardTool(id)">128</span>
                 </div>
+                <div class="color-stage-5 tiny-circle-shape circle-132d littleCircleH 1-150">
+                  <span class="number text-light" id="132d" onclick="showCardTool(id)">132</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-133b littleCircleH 1-150">
+                  <span class="number text-light" id="133b" onclick="showCardTool(id)">133</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-137b littleCircleH 1-150">
+                  <span class="number text-light" id="137b" onclick="showCardTool(id)">137</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-140c littleCircleH 1-150">
+                  <span class="number text-light" id="140c" onclick="showCardTool(id)">140</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-140d littleCircleH 1-150">
+                  <span class="number text-light" id="140d" onclick="showCardTool(id)">140</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-141b littleCircleH 1-150">
+                  <span class="number text-light" id="141b" onclick="showCardTool(id)">141</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-142b littleCircleH 1-150">
+                  <span class="number text-light" id="142b" onclick="showCardTool(id)">142</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-143 littleCircleH 1-150">
+                  <span class="number text-light" id="143" onclick="showCardTool(id)">143</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-144 littleCircleH 1-150">
+                  <span class="number text-light" id="144" onclick="showCardTool(id)">144</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-146a littleCircleH 1-150">
+                  <span class="number text-light" id="146a" onclick="showCardTool(id)">146</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-146b littleCircleH 1-150">
+                  <span class="number text-light" id="146b" onclick="showCardTool(id)">146</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-146c littleCircleH 1-150">
+                  <span class="number text-light" id="146c" onclick="showCardTool(id)">146</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-147c littleCircleH 1-150">
+                  <span class="number text-light" id="147c" onclick="showCardTool(id)">147</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-149d littleCircleH 1-150">
+                  <span class="number text-light" id="149d" onclick="showCardTool(id)">149</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-149e littleCircleH 1-150">
+                  <span class="number text-light" id="149e" onclick="showCardTool(id)">149</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-150b littleCircleH 1-150">
+                  <span class="number text-light" id="150b" onclick="showCardTool(id)">150</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-151b littleCircleH 151-300">
+                  <span class="number text-light" id="151b" onclick="showCardTool(id)">151</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-153a littleCircleH 151-300">
+                  <span class="number text-light" id="153a" onclick="showCardTool(id)">153</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-154b littleCircleH 151-300">
+                  <span class="number text-light" id="154b" onclick="showCardTool(id)">154</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-155c littleCircleH 151-300">
+                  <span class="number text-light" id="155c" onclick="showCardTool(id)">155</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-155d littleCircleH 151-300">
+                  <span class="number text-light" id="155d" onclick="showCardTool(id)">155</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-157a littleCircleH 151-300">
+                  <span class="number text-light" id="157a" onclick="showCardTool(id)">157</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-157b littleCircleH 151-300">
+                  <span class="number text-light" id="157b" onclick="showCardTool(id)">157</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-158 littleCircleH 151-300">
+                  <span class="number text-light" id="158" onclick="showCardTool(id)">158</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-159a littleCircleH 151-300">
+                  <span class="number text-light" id="159a" onclick="showCardTool(id)">159</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-159b littleCircleH 151-300">
+                  <span class="number text-light" id="159b" onclick="showCardTool(id)">159</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-159c littleCircleH 151-300">
+                  <span class="number text-light" id="159c" onclick="showCardTool(id)">159</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-160a littleCircleH 151-300">
+                  <span class="number text-light" id="160a" onclick="showCardTool(id)">160</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-160b littleCircleH 151-300">
+                  <span class="number text-light" id="160b" onclick="showCardTool(id)">160</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-161c littleCircleH 151-300">
+                  <span class="number text-light" id="161c" onclick="showCardTool(id)">161</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-163a littleCircleH 151-300">
+                  <span class="number text-light" id="163a" onclick="showCardTool(id)">163</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-163b littleCircleH 151-300">
+                  <span class="number text-light" id="163b" onclick="showCardTool(id)">163</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-164a littleCircleH 151-300">
+                  <span class="number text-light" id="164a" onclick="showCardTool(id)">164</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-164b littleCircleH 151-300">
+                  <span class="number text-light" id="164b" onclick="showCardTool(id)">164</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-165 littleCircleH 151-300">
+                  <span class="number text-light" id="165" onclick="showCardTool(id)">165</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-166 littleCircleH 151-300">
+                  <span class="number text-light" id="166" onclick="showCardTool(id)">166</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-167a littleCircleH 151-300">
+                  <span class="number text-light" id="167a" onclick="showCardTool(id)">167</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-168a littleCircleH 151-300">
+                  <span class="number text-light" id="168a" onclick="showCardTool(id)">168</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-168b littleCircleH 151-300">
+                  <span class="number text-light" id="168b" onclick="showCardTool(id)">168</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-169a littleCircleH 151-300">
+                  <span class="number text-light" id="169a" onclick="showCardTool(id)">169</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-170a littleCircleH 151-300">
+                  <span class="number text-light" id="170a" onclick="showCardTool(id)">170</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-170b littleCircleH 151-300">
+                  <span class="number text-light" id="170b" onclick="showCardTool(id)">170</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-171a littleCircleH 151-300">
+                  <span class="number text-light" id="171a" onclick="showCardTool(id)">171</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-171b littleCircleH 151-300">
+                  <span class="number text-light" id="171b" onclick="showCardTool(id)">171</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-172a littleCircleH 151-300">
+                  <span class="number text-light" id="172a" onclick="showCardTool(id)">172</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-183a littleCircleH 151-300">
+                  <span class="number text-light" id="183a" onclick="showCardTool(id)">183</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-188a littleCircleH 151-300">
+                  <span class="number text-light" id="188a" onclick="showCardTool(id)">188</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-188b littleCircleH 151-300">
+                  <span class="number text-light" id="188b" onclick="showCardTool(id)">188</span>
+                </div>
               </div>
               <div class="thirdCircle">
                 <div class="badge p-1 badgeAll" id="badge_NoM"><span>Non M</span></div><!-- Non-maleficence -->
@@ -622,6 +903,60 @@
                 <div class="color-stage-1 tiny-circle-shape circle-127b littleCircleH 1-150">
                   <span class="number text-light" id="127b" onclick="showCardTool(id)">127</span>
                 </div>
+                <div class="color-stage-2 tiny-circle-shape circle-132b littleCircleH 1-150">
+                  <span class="number text-light" id="132b" onclick="showCardTool(id)">132</span>
+                </div>
+                <div class="color-stage-4 tiny-circle-shape circle-133a littleCircleH 1-150">
+                  <span class="number text-light" id="133a" onclick="showCardTool(id)">133</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-139a littleCircleH 1-150">
+                  <span class="number text-light" id="139a" onclick="showCardTool(id)">139</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-140b littleCircleH 1-150">
+                  <span class="number text-light" id="140b" onclick="showCardTool(id)">140</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-141a littleCircleH 1-150">
+                  <span class="number text-light" id="141a" onclick="showCardTool(id)">141</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-145b littleCircleH 1-150">
+                  <span class="number text-light" id="145b" onclick="showCardTool(id)">145</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-147b littleCircleH 1-150">
+                  <span class="number text-light" id="147b" onclick="showCardTool(id)">147</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-149b littleCircleH 1-150">
+                  <span class="number text-light" id="149b" onclick="showCardTool(id)">149</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-149c littleCircleH 1-150">
+                  <span class="number text-light" id="149c" onclick="showCardTool(id)">149</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-149f littleCircleH 1-150">
+                  <span class="number text-light" id="149f" onclick="showCardTool(id)">149</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-150a littleCircleH 1-150">
+                  <span class="number text-light" id="150a" onclick="showCardTool(id)">150</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-151a littleCircleH 151-300">
+                  <span class="number text-light" id="151a" onclick="showCardTool(id)">151</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-153b littleCircleH 151-300">
+                  <span class="number text-light" id="153b" onclick="showCardTool(id)">153</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-154a littleCircleH 151-300">
+                  <span class="number text-light" id="154a" onclick="showCardTool(id)">154</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-155b littleCircleH 151-300">
+                  <span class="number text-light" id="155b" onclick="showCardTool(id)">155</span>
+                </div>
+                <div class="color-stage-6 tiny-circle-shape circle-167b littleCircleH 151-300">
+                  <span class="number text-light" id="167b" onclick="showCardTool(id)">167</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-172c littleCircleH 151-300">
+                  <span class="number text-light" id="172c" onclick="showCardTool(id)">172</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-181a littleCircleH 151-300">
+                  <span class="number text-light" id="181a" onclick="showCardTool(id)">181</span>
+                </div>
               </div>
               <div class="fourCircle">
                 <div class="badge p-1 badgeAll" id="badge_B"><span>B</span></div><!-- Beneficence -->
@@ -739,6 +1074,48 @@
                 <div class="color-stage-2 tiny-circle-shape circle-130b littleCircleH 1-150">
                   <span class="number text-light" id="130b" onclick="showCardTool(id)">130</span>
                 </div>
+                <div class="color-stage-1 tiny-circle-shape circle-131a littleCircleH 1-150">
+                  <span class="number text-light" id="131a" onclick="showCardTool(id)">131</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-132a littleCircleH 1-150">
+                  <span class="number text-light" id="132a" onclick="showCardTool(id)">132</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-137a littleCircleH 1-150">
+                  <span class="number text-light" id="137a" onclick="showCardTool(id)">137</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-138 littleCircleH 1-150">
+                  <span class="number text-light" id="138" onclick="showCardTool(id)">138</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-140a littleCircleH 1-150">
+                  <span class="number text-light" id="140a" onclick="showCardTool(id)">140</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-142a littleCircleH 1-150">
+                  <span class="number text-light" id="142a" onclick="showCardTool(id)">142</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-145a littleCircleH 1-150">
+                  <span class="number text-light" id="145a" onclick="showCardTool(id)">145</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-147a littleCircleH 1-150">
+                  <span class="number text-light" id="147a" onclick="showCardTool(id)">147</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-149a littleCircleH 1-150">
+                  <span class="number text-light" id="149a" onclick="showCardTool(id)">149</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-152 littleCircleH 151-300">
+                  <span class="number text-light" id="152" onclick="showCardTool(id)">152</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-155a littleCircleH 151-300">
+                  <span class="number text-light" id="155a" onclick="showCardTool(id)">155</span>
+                </div>
+                <div class="color-stage-5 tiny-circle-shape circle-161a littleCircleH 151-300">
+                  <span class="number text-light" id="161a" onclick="showCardTool(id)">161</span>
+                </div>
+                <div class="color-stage-1 tiny-circle-shape circle-187a littleCircleH 151-300">
+                  <span class="number text-light" id="187a" onclick="showCardTool(id)">187</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-187b littleCircleH 151-300">
+                  <span class="number text-light" id="187b" onclick="showCardTool(id)">187</span>
+                </div>
               </div>
               <div class="fiveCircle">
                 <div class="badge p-1 badgeAll" id="badge_A"><span>A</span></div><!-- Autonomy -->
@@ -787,6 +1164,15 @@
                 <div class="color-stage-6 tiny-circle-shape circle-125f littleCircleH 1-150">
                   <span class="number text-light" id="125f" onclick="showCardTool(id)">125</span>
                 </div>
+                <div class="color-stage-2 tiny-circle-shape circle-131b littleCircleH 1-150">
+                  <span class="number text-light" id="131b" onclick="showCardTool(id)">131</span>
+                </div>
+                <div class="color-stage-3 tiny-circle-shape circle-132c littleCircleH 1-150">
+                  <span class="number text-light" id="132c" onclick="showCardTool(id)">132</span>
+                </div>
+                <div class="color-stage-2 tiny-circle-shape circle-161b littleCircleH 151-300">
+                  <span class="number text-light" id="161b" onclick="showCardTool(id)">161</span>
+                </div>
               </div>
               <div class="sixCircle"><!-- Governance -->
                 <div class="badge p-1 badgeAll" id="badge_G"><span>G</span></div>
@@ -825,6 +1211,12 @@
                 </div>
                 <div class="tiny-circle-shape circle-102d littleCircleH 1-150">
                   <span class="number text-light" id="102d" onclick="showCardTool(id)">102</span>
+                </div>
+                <div class="tiny-circle-shape circle-140f littleCircleH 1-150">
+                  <span class="number text-light" id="140f" onclick="showCardTool(id)">140</span>
+                </div>
+                <div class="tiny-circle-shape circle-149g littleCircleH 1-150">
+                  <span class="number text-light" id="149g" onclick="showCardTool(id)">149</span>
                 </div>
               </div>
               <div class="firstDivider"></div>
