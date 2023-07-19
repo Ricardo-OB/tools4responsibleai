@@ -112,7 +112,8 @@ body{
     width: 850px;
     height: 850px;
     border-radius: 50%;
-    background-color: #03045e;
+    /* background-color: #03045e; */
+    background-color: #003e57;
     border: 3px solid white;
 }
 
@@ -127,7 +128,8 @@ body{
     width: 700px;
     height: 700px;
     border-radius: 50%;
-    background-color: #0077b6;
+    /* background-color: #128cce; */
+    background-color: #003e71;
     border: 3px solid rgb(255, 255, 255);
 }
 
@@ -142,7 +144,8 @@ body{
     width: 550px;
     height: 550px;
     border-radius: 50%;
-    background-color: #00b4d8;
+    /* background-color: #00b4d8; */
+    background-color: #2d90a8;
     border: 3px solid white;
 }
 
@@ -403,11 +406,11 @@ body{
 }
 
 .color-stage-3 {
-    background-color: #3A0CA3 !important;
+    background-color: #53b93f !important;
 }
 
 .color-stage-4 {
-    background-color: #90BE6D !important;
+    background-color: #db7807 !important;
 }
 
 .color-stage-5 {
@@ -2634,8 +2637,545 @@ body{
     left: 42px !important;
 }
 
+.circle-223a {
+    top: -550px !important;
+    left: 162px !important;
+}
 
+.circle-223b {
+    top: -1020px !important;
+    left: 252px !important;
+}
 
+.circle-223c {
+    top: -127px !important;
+    left: 195px !important;
+}
+
+.circle-223d {
+    top: -1191px !important;
+    left: 544px !important;
+}
+
+.circle-223e {
+    top: -766px !important;
+    left: 775px !important;
+}
+
+.circle-224a {
+    top: -728px !important;
+    left: 491px !important;
+}
+
+.circle-224b {
+    top: -637px !important;
+    left: 410px !important;
+}
+
+.circle-224c {
+    top: -435px !important;
+    left: 99px !important;
+}
+
+.circle-225 {
+    top: -514px !important;
+    left: 91px !important;
+}
+
+.circle-226a {
+    top: -322px !important;
+    left: 585px !important;
+}
+
+.circle-226b {
+    top: -628px !important;
+    left: 10px !important;
+}
+
+.circle-227 {
+    top: -472px !important;
+    left: 140px !important;
+}
+
+.circle-228a {
+    top: -782px !important;
+    left: 622px !important;
+}
+
+.circle-228b {
+    top: -602px !important;
+    left: 73px !important;
+}
+
+.circle-229a {
+    top: -855px !important;
+    left: 629px !important;
+}
+
+.circle-229b {
+    top: -625px !important;
+    left: 425px !important;
+}
+
+.circle-230a {
+    top: -570px !important;
+    left: 225px !important;
+}
+
+.circle-230b {
+    top: -895px !important;
+    left: 518px !important;
+}
+
+.circle-230c {
+    top: -1212px !important;
+    left: 588px !important;
+}
+
+.circle-230d {
+    top: -155px !important;
+    left: 32px !important;
+}
+
+.circle-231a {
+    top: -527px !important;
+    left: 255px !important;
+}
+
+.circle-231b {
+    top: -1085px !important;
+    left: 308px !important;
+}
+
+.circle-231c {
+    top: -1188px !important;
+    left: 593px !important;
+}
+
+.circle-231d {
+    top: -127px !important;
+    left: 30px !important;
+}
+
+.circle-232a {
+    top: -567px !important;
+    left: 208px !important;
+}
+
+.circle-232b {
+    top: -507px !important;
+    left: 353px !important;
+}
+
+.circle-232c {
+    top: -697px !important;
+    left: 447px !important;
+}
+
+.circle-232d {
+    top: -723px !important;
+    left: 304px !important;
+}
+
+.circle-232e {
+    top: -856px !important;
+    left: 49px !important;
+}
+
+.circle-232f {
+    top: -883px !important;
+    left: 32px !important;
+}
+
+.circle-233a {
+    top: -449px !important;
+    left: 125px !important;
+}
+
+.circle-233b {
+    top: -1033px !important;
+    left: 86px !important;
+}
+
+.circle-234a {
+    top: -867px !important;
+    left: 497px !important;
+}
+
+.circle-234b {
+    top: -933px !important;
+    left: 100px !important;
+}
+
+.circle-235 {
+    top: -757px !important;
+    left: 476px !important;
+}
+
+.circle-236a {
+    top: -827px !important;
+    left: 518px !important;
+}
+
+.circle-236b {
+    top: -667px !important;
+    left: 200px !important;
+}
+
+.circle-237a {
+    top: -819px !important;
+    left: 451px !important;
+}
+
+.circle-237b {
+    top: -707px !important;
+    left: 295px !important;
+}
+
+.circle-237c {
+    top: -827px !important;
+    left: 36px !important;
+}
+
+.circle-238a {
+    top: -797px !important;
+    left: 419px !important;
+}
+
+.circle-238b {
+    top: -776px !important;
+    left: 366px !important;
+}
+
+.circle-238c {
+    top: -899px !important;
+    left: 38px !important;
+}
+
+.circle-239 {
+    top: -1042px !important;
+    left: 688px !important;
+}
+
+.circle-240a {
+    top: -816px !important;
+    left: 564px !important;
+}
+
+.circle-240b {
+    top: -989px !important;
+    left: 35px !important;
+}
+
+.circle-241 {
+    top: -590px !important;
+    left: 36px !important;
+}
+
+.circle-242a {
+    top: -558px !important;
+    left: 127px !important;
+}
+
+.circle-242b {
+    top: -82px !important;
+    left: 215px !important;
+}
+
+.circle-242c {
+    top: -925px !important;
+    left: 469px !important;
+}
+
+.circle-242d {
+    top: -780px !important;
+    left: 453px !important;
+}
+
+.circle-242e {
+    top: -432px !important;
+    left: 174px !important;
+}
+
+.circle-242f {
+    top: -1110px !important;
+    left: 35px !important;
+}
+
+.circle-243a {
+    top: -516px !important;
+    left: 676px !important;
+}
+
+.circle-243b {
+    top: -526px !important;
+    left: 115px !important;
+}
+
+.circle-244 {
+    top: -803px !important;
+    left: 193px !important;
+}
+
+.circle-245a {
+    top: -975px !important;
+    left: 492px !important;
+}
+
+.circle-245b {
+    top: -806px !important;
+    left: 123px !important;
+}
+
+.circle-246a {
+    top: -917px !important;
+    left: 584px !important;
+}
+
+.circle-246b {
+    top: -841px !important;
+    left: 86px !important;
+}
+
+.circle-247 {
+    top: -815px !important;
+    left: 219px !important;
+}
+
+.circle-248a {
+    top: -1013px !important;
+    left: 644px !important;
+}
+
+.circle-248b {
+    top: -846px !important;
+    left: 156px !important;
+}
+
+.circle-248c {
+    top: -911px !important;
+    left: 102px !important;
+}
+
+.circle-249a {
+    top: -1013px !important;
+    left: 667px !important;
+}
+
+.circle-249b {
+    top: -812px !important;
+    left: 235px !important;
+}
+
+.circle-249c {
+    top: -1051px !important;
+    left: 20px !important;
+}
+
+.circle-250 {
+    top: -479px !important;
+    left: 186px !important;
+}
+
+.circle-251 {
+    top: -500px !important;
+    left: 173px !important;
+}
+
+.circle-252 {
+    top: -506px !important;
+    left: 140px !important;
+}
+
+.circle-253 {
+    top: -578px !important;
+    left: 85px !important;
+}
+
+.circle-254 {
+    top: -745px !important;
+    left: 51px !important;
+}
+
+.circle-255a {
+    top: -438px !important;
+    left: 378px !important;
+}
+
+.circle-255b {
+    top: -645px !important;
+    left: 78px !important;
+}
+
+.circle-256a {
+    top: -1403px !important;
+    left: 428px !important;
+}
+
+.circle-256b {
+    top: -625px !important;
+    left: 138px !important;
+}
+
+.circle-256c {
+    top: -125px !important;
+    left: 218px !important;
+}
+
+.circle-257a {
+    top: -893px !important;
+    left: 457px !important;
+}
+
+.circle-257b {
+    top: -737px !important;
+    left: 65px !important;
+}
+
+.circle-258a {
+    top: -979px !important;
+    left: 508px !important;
+}
+
+.circle-258b {
+    top: -887px !important;
+    left: 328px !important;
+}
+
+.circle-259a {
+    top: -604px !important;
+    left: 263px !important;
+}
+
+.circle-259b {
+    top: -1140px !important;
+    left: 490px !important;
+}
+
+.circle-260a {
+    top: -488px !important;
+    left: 445px !important;
+}
+
+.circle-260b {
+    top: -1011px !important;
+    left: 44px !important;
+}
+
+.circle-261 {
+    top: -618px !important;
+    left: 171px !important;
+}
+
+.circle-262a {
+    top: -598px !important;
+    left: 156px !important;
+}
+
+.circle-262b {
+    top: -1309px !important;
+    left: 153px !important;
+}
+
+.circle-262c {
+    top: -158px !important;
+    left: 102px !important;
+}
+
+.circle-262d {
+    top: -1218px !important;
+    left: 664px !important;
+}
+
+.circle-263a {
+    top: -895px !important;
+    left: 387px !important;
+}
+
+.circle-263b {
+    top: -618px !important;
+    left: 141px !important;
+}
+
+.circle-263c {
+    top: -1190px !important;
+    left: 144px !important;
+}
+
+.circle-264a {
+    top: -611px !important;
+    left: 218px !important;
+}
+
+.circle-264b {
+    top: -1290px !important;
+    left: 470px !important;
+}
+
+.circle-264c {
+    top: -1264px !important;
+    left: 601px !important;
+}
+
+.circle-265a {
+    top: -628px !important;
+    left: 111px !important;
+}
+
+.circle-265b {
+    top: -1361px !important;
+    left: 389px !important;
+}
+
+.circle-265c {
+    top: -183px !important;
+    left: 144px !important;
+}
+
+.circle-265d {
+    top: -1162px !important;
+    left: 629px !important;
+}
+
+.circle-265e {
+    top: -1103px !important;
+    left: 745px !important;
+}
+
+.circle-266 {
+    top: -1003px !important;
+    left: 818px !important;
+}
+
+.circle-267a {
+    top: -1409px !important;
+    left: 225px !important;
+}
+
+.circle-267b {
+    top: -1193px !important;
+    left: 665px !important;
+}
+
+.circle-268 {
+    top: -1020px !important;
+    left: 615px !important;
+}
+
+.circle-269 {
+    top: -899px !important;
+    left: 406px !important;
+}
+
+.circle-270a {
+    top: -939px !important;
+    left: 266px !important;
+}
+
+.circle-270b {
+    top: -1009px !important;
+    left: 83px !important;
+}
 
 
 
