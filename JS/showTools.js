@@ -40,6 +40,6 @@ async function showTools(value) {
         for (const circles of groupB) { circles.style.visibility = 'hidden'; }
     
         let groupC = document.getElementsByClassName("301-352");
-        for (const circles of groupC) { circles.style.visibility = 'visisble'; }
+        for (const circles of groupC) { circles.style.visibility = 'visible'; }
     }
 }
