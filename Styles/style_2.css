@@ -4437,5 +4437,92 @@ footer {
     transition: background-color 0.5s ease;
 }
 
+/* Table All Tools */
+.table-responsive-all-tools {
+    height: 830px;
+    border-radius: 0.5rem;
+}
 
+.table-tools {
+    background-color: rgba(255, 255, 255, 0.15);
+}
+
+.table-tools th {
+    vertical-align: middle;
+    color: #000;
+    background-color: rgb(93, 108, 118);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.table-tools a {
+    color: #fff;
+}
+
+.table-tools td {
+    color: #fff;
+    overflow-wrap: anywhere;
+}
+
+.table-tools .th-1-width {
+    text-wrap: nowrap;
+    padding-right: 1.5rem !important;
+}
+.table-tools .th-2-width {
+    text-wrap: nowrap;
+    padding-right: 17rem !important;
+}
+.table-tools .th-3-width {
+    text-wrap: nowrap;
+    padding-right: 10rem !important;
+}
+.table-tools .th-4-width {
+    text-wrap: nowrap;
+    padding-right: 5rem !important;
+}
+.table-tools .th-5-width {
+    text-wrap: nowrap;
+    padding-right: 1rem !important;
+}
+.table-tools .th-6-width {
+    text-wrap: nowrap;
+    padding-right: 2rem !important;
+}
+.table-tools .th-7-width {
+    text-wrap: nowrap;
+    padding-right: 8rem !important;
+}
+.table-tools .th-8-width {
+    text-wrap: balance;
+    padding-right: 1rem !important;
+}
+.table-tools .th-9-width {
+    text-wrap: nowrap;
+    padding-right: 4rem !important;
+}
+.table-tools .th-10-width {
+    text-wrap: nowrap;
+    padding-right: 5rem !important;
+}
+.table-tools .th-11-width {
+    text-wrap: nowrap;
+    padding-right: 1rem !important;
+}
+.table-tools .th-12-width {
+    text-wrap: nowrap;
+    padding-right: 19rem !important;
+}
+.table-tools .th-13-width {
+    text-wrap: nowrap;
+    padding-right: 1rem !important;
+}
+.table-tools .th-14-width {
+    text-wrap: nowrap;
+    padding-right: 15rem !important;
+}
+.table-tools .th-15-width {
+    text-wrap: nowrap;
+    padding-right: 25rem !important;
+}
 

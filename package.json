@@ -15,6 +15,7 @@
     "exceljs": "^4.3.0",
     "gh-pages": "^5.0.0",
     "jsontoxml": "^1.0.1",
+    "perfect-scrollbar": "^1.5.5",
     "xlsx": "^0.18.5"
   },
   "devDependencies": {
