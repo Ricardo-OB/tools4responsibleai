@@ -3,6 +3,11 @@ async function showCardTool(id) {
     let [cardA, cardB, cardC, cardD] = [document.getElementById("card-tool-A"), document.getElementById("card-tool-B"), document.getElementById("card-tool-C"), document.getElementById("card-tool-D")];
     let jsonCards = {"cardA": cardA, "cardB": cardB, "cardC": cardC, "cardD": cardD};
 
+    let [idToolCA, taskCA, levelDevCA, sectorCA] = [document.getElementById("tool-id-cA"), document.getElementById("task-cA"), document.getElementById("level-dev-cA"), document.getElementById("sector-cA")];
+    let [titleCA, otherTitleCA] = [document.getElementById("title-cA"), document.getElementById("other-title-cA")];
+    let urlCA = document.getElementById("url-tool-cA");
+    let linksCA = document.getElementById("links-cA");
+
     let [featureCardA, featureCardB, featureCardC, featureCardD] = [document.getElementById("featured-card-A"), document.getElementById("featured-card-B"), document.getElementById("featured-card-C"), document.getElementById("featured-card-D")];
     let [titleCardA, titleCardB, titleCardC, titleCardD] = [document.getElementById("tool-title-A"), document.getElementById("tool-title-B"), document.getElementById("tool-title-C"), document.getElementById("tool-title-D")];
     let [sectorCardA, sectorCardB, sectorCardC, sectorCardD] = [document.getElementById("card-sector-A"), document.getElementById("card-sector-B"), document.getElementById("card-sector-C"), document.getElementById("card-sector-D")];
@@ -19,9 +24,6 @@ async function showCardTool(id) {
     let highPrinciple = (await infoTool).highPrinciple, lowPrinciple = (await infoTool).lowPrinciple, task = (await infoTool).task, levelDev = (await infoTool).levelDev;
     let sector = (await infoTool).sector, toolType = (await infoTool).toolType, language = (await infoTool).language, urldoi = (await infoTool).urlDoi;
     let year = (await infoTool).year, authors = (await infoTool).authors, links = (await infoTool).links;
-
-    let enlacesJoint = (await infoTool).links;
-    let enlaces = enlacesJoint.split("\n\n"); // array con enlaces
     
     for (var key in jsonCards) {
         if (jsonCards.hasOwnProperty(key)) {
@@ -32,18 +34,25 @@ async function showCardTool(id) {
                 console.log("none");
                 element.style.display = 'flex';
                 if (key == 'cardA') {
-                    featureCardA.innerText = "Tool " + idTool;
-                    titleCardA.innerText = (await infoTool).nameT;
-                    sectorCardA.innerText = (await infoTool).sector;
-                    taskCardA.innerText = (await infoTool).task;
-                    levelDevCardA.innerText = (await infoTool).levelDev;
-                    urlCardA.innerText = links;
-                    urlCardA.href = (await infoTool).url;
+                    idToolCA.innerHTML = "ID " + idTool;
+                    taskCA.innerHTML = task;
+                    levelDevCA.innerHTML = levelDev;
+                    sectorCA.innerHTML = sector;
+                    titleCA.innerHTML = name;
+                    otherTitleCA.innerHTML = otherName;
+
+                    sectorCardA.innerHTML = sector;
+                    taskCardA.innerHTML = task;
+                    levelDevCardA.innerHTML = levelDev;
+                    
+                    urlCA.innerHTML = urldoi;
+                    linksCA.innerHTML = links;
+
                 } else if (key == 'cardB') {
                     featureCardB.innerText = "Tool " + id;
                     titleCardB.innerText = (await infoTool).nameT;
                     sectorCardB.innerText = (await infoTool).sector;
-                    taskCardB.innerText = (await infoTool).task;
+                    taskCardB.innerHTML = task;
                     levelDevCardB.innerText = (await infoTool).levelDev;
                     urlCardB.innerText = (await infoTool).url;
                     urlCardB.href = (await infoTool).url;
@@ -51,7 +60,7 @@ async function showCardTool(id) {
                     featureCardC.innerText = "Tool " + id;
                     titleCardC.innerText = (await infoTool).nameT;
                     sectorCardC.innerText = (await infoTool).sector;
-                    taskCardC.innerText = (await infoTool).task;
+                    taskCardC.innerHTML = task;
                     levelDevCardC.innerText = (await infoTool).levelDev;
                     urlCardC.innerText = (await infoTool).url;
                     urlCardC.href = (await infoTool).url;
@@ -59,7 +68,7 @@ async function showCardTool(id) {
                     featureCardD.innerText = "Tool " + id;
                     titleCardD.innerText = (await infoTool).nameT;
                     sectorCardD.innerText = (await infoTool).sector;
-                    taskCardD.innerText = (await infoTool).task;
+                    taskCardD.innerHTML = task;
                     levelDevCardD.innerText = (await infoTool).levelDev;
                     urlCardD.innerText = (await infoTool).url;
                     urlCardD.href = (await infoTool).url;
@@ -69,23 +78,11 @@ async function showCardTool(id) {
         }
     }
 
-    // if (cardA.style.display == 'flex') {
-    //     cardA.style.display = 'none';
-    // } else {
-    //     cardA.style.display = 'flex';
-    //     featureCardA.innerText = "Tool " + id;
-    //     titleCardA.innerText = (await infoTool).nameT;
-    //     sectorCardA.innerText = (await infoTool).sector;
-    //     taskCardA.innerText = (await infoTool).task;
-    //     levelDevCardA.innerText = (await infoTool).levelDev;
-    //     urlCardA.innerText = (await infoTool).url;
-    //     urlCardA.href = (await infoTool).url;
-    // }
 }
 
 async function getInfoTool(id) {
 
-    const url = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/final_resources_v2.csv';
+    const url = 'https://raw.githubusercontent.com/Ricardo-OB/tools4responsibleai/master/csv/final_resources_v2.csv';
     const options = {
         url,
         responseType: "arraybuffer"
@@ -98,8 +95,8 @@ async function getInfoTool(id) {
 
     // console.log(jsonDataRaw);
     // console.log(jsonDataRaw.length);
-
-    let Id = "", Name = "", OtherName = "", Description = "", Stage = "", HighPrinciple = "", LowPrinciple = "", Task = "", LevelDev = "", Sector = "", ToolType = "", Language = "", URLDOI = "", Year = "", Authors = "", Links = "";
+    let Id = "", Name = "", OtherName = "", Description = "", preStage = "", preHighPrinciple = "", preLowPrinciple = "", preTask = "", preLevelDev = 0;
+    let preSector = "", preToolType = "", preLanguage = "", preURLDOI = "", Year = "", Authors = "", preLinks = "";
     
     for (let i=0; i<jsonDataRaw.length; i++){
         let row = jsonDataRaw[i];
@@ -112,21 +109,124 @@ async function getInfoTool(id) {
             Name = row["Name"];
             OtherName = row["Article / Other Name"];
             Description = row["Description"];
-            Stage = row["AI Life Cycle Stage"];
-            HighPrinciple = row["High Level Principle"];
-            LowPrinciple = row["Associated Principles"];
-            Task = row["Task"];
-            LevelDev = row["Level of Development"];
-            Sector = row["sector"];
-            ToolType = row["Tool Type"];
-            Language = row["Programming Language"];
-            URLDOI = row["DOI / URL"];
+            preStage = row["AI Life Cycle Stage"];
+            preHighPrinciple = row["High Level Principle"];
+            preLowPrinciple = row["Associated Principles"];
+            preTask = row["Task"];
+            preLevelDev = row["Level of Development"];
+            preSector = row["Sector"];
+            preToolType = row["Tool Type"];
+            preLanguage = row["Programming Language"];
+            preURLDOI = row["DOI / URL"];
             Year = row["Year"];
             Authors = row["Authors / Owners"];
-            Links = row["Other Links"];
+            preLinks = row["Other Links"];
             break;
         }
     }
+
+    //#region Other Name
+    if (OtherName == undefined ) {
+        OtherName = "";
+    }
+    //#endregion
+
+    //#region Stage
+    let arrayStage = preStage.split("; ");
+    let Stage = "";
+    if (arrayStage.length > 1) {
+        arrayStage.forEach(element => Stage += element + "<br/>");
+    } else {
+        Stage = preStage;
+    }
+    //#endregion
+
+    //#region High Principle
+    let arrayHighPrinciple = preHighPrinciple.split("; ");
+    let HighPrinciple = "";
+    if (arrayHighPrinciple.length > 1) {
+        arrayHighPrinciple.forEach(element => HighPrinciple += element + "<br/>");
+    } else {
+        HighPrinciple = preHighPrinciple;
+    }
+    //#endregion
+
+    //#region Low Principle
+    let arrayLowPrinciple = preLowPrinciple.split("; ");
+    let LowPrinciple = "";
+    if (arrayLowPrinciple.length > 1) {
+        arrayLowPrinciple.forEach(element => LowPrinciple += element + "<br/>");
+    } else {
+        LowPrinciple = preLowPrinciple;
+    }
+    //#endregion
+
+    //#region Task
+    let arrayTask = preTask.split("; ");
+    let Task = "";
+    if (arrayTask.length > 1) {
+        arrayTask.forEach(element => Task += "<p>" + element + "</p>");
+    } else {
+        Task = preTask;
+    }
+    //#endregion
+
+    //#region Sector
+    let Sector = "";
+    let arraySector = preSector.split("; ");
+    if (arraySector.length > 1) {
+        arraySector.forEach(element => Sector += element + "<br/>");
+    } else {
+        Sector = preSector;
+    }
+    //#endregion
+
+    //#region Level Dev
+    let LevelDev = 0;
+    if (preLevelDev !== "Does not apply") {
+        LevelDev = parseInt(preLevelDev);
+        if (LevelDev > 10) {
+            LevelDev = LevelDev / 10.0;
+        }
+    } else {
+        LevelDev = preLevelDev;
+    }
+    //#endregion
+
+    //#region Tool Type
+    let ToolType = "";
+    let arrayToolType = preToolType.split("; ");
+    if (arrayToolType.length > 1) {
+        arrayToolType.forEach(element => ToolType += "<p>" + element + "</p>");
+    } else {
+        ToolType = preToolType;
+    }
+    //#endregion
+
+    //#region Language
+    let Language = "";
+    let arrayLanguage = preLanguage.split("; ");
+    if (arrayLanguage.length > 1) {
+        arrayLanguage.forEach(element => Language += element + "<br/>");
+    } else {
+        Language = preLanguage;
+    }
+    //#endregion
+
+    //#region URL / DOI
+    let URLDOI = "<a target='_blank' href=" + preURLDOI + ">" + preURLDOI + "</a> <br/>";
+    //#endregion
+    
+    //#region Links
+    let Links = "";
+    let arrayLinks = preLinks.split("; ");
+    if (arrayLinks.length > 1) {
+        arrayLinks.forEach(element => Links += "<a target='_blank' href=" + element + ">" + element + "</a> <br/>");
+    } else {
+        Links = "<a target='_blank' href=" + preLinks + ">" + preLinks + "</a> <br/>";
+    }
+    //#endregion
+
 
     return {id: Id, name: Name, otherName: OtherName, description: Description, stage: Stage, highPrinciple: HighPrinciple, lowPrinciple: LowPrinciple,
             task: Task, levelDev: LevelDev, sector: Sector, toolType: ToolType, language: Language, urlDoi: URLDOI, year: Year, authors: Authors, links: Links};

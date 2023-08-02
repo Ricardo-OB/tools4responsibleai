@@ -4293,7 +4293,20 @@ footer {
 
 /* Cards Tools */
 .hidden-card {
-    display: none;
+    display: none;/* none; */
+}
+
+.first-card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 30px;
+}
+
+.span-1 {
+    align-self: auto;
 }
 
 .group-cards {
@@ -4307,6 +4320,9 @@ footer {
     position: absolute;
     right: 1%;
 }
+
+
+
 
 .seccionNoDisponible {
     display: none;
