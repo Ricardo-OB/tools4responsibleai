@@ -145,7 +145,7 @@ async function processCSV(url) {
 }
 
 // const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/herramientas_prueba.csv';
-const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/final_resources.csv';
+const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/final_resources_v2.csv';
 
 async function initializePerfectScrollbar() {
     
