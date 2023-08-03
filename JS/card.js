@@ -4,16 +4,36 @@ async function showCardTool(id) {
     let jsonCards = {"cardA": cardA, "cardB": cardB, "cardC": cardC, "cardD": cardD};
 
     let [idToolCA, taskCA, levelDevCA, sectorCA] = [document.getElementById("tool-id-cA"), document.getElementById("task-cA"), document.getElementById("level-dev-cA"), document.getElementById("sector-cA")];
-    let [titleCA, otherTitleCA] = [document.getElementById("title-cA"), document.getElementById("other-title-cA")];
-    let urlCA = document.getElementById("url-tool-cA");
-    let linksCA = document.getElementById("links-cA");
+    let [titleCA, otherTitleCA, linksCA] = [document.getElementById("title-cA"), document.getElementById("other-title-cA"), document.getElementById("links-cA")];
+    let [stageCA, principlesCA, secPrinciplesCA, taskCA2, levelDevCA2, toolTypeCA, languageCA, urlCA, yearCA, sectorCA2, authorsCA] = 
+                                            [document.getElementById("stage-cA"), document.getElementById("principles-cA"), document.getElementById("sec-principles-cA"),
+                                             document.getElementById("task-cA-2"), document.getElementById("level-dev-cA-2"), document.getElementById("tool-type-cA"),
+                                             document.getElementById("language-cA"), document.getElementById("url-tool-cA"), document.getElementById("year-cA"),
+                                             document.getElementById("sector-cA-2"), document.getElementById("authors-cA")];
 
-    let [featureCardA, featureCardB, featureCardC, featureCardD] = [document.getElementById("featured-card-A"), document.getElementById("featured-card-B"), document.getElementById("featured-card-C"), document.getElementById("featured-card-D")];
-    let [titleCardA, titleCardB, titleCardC, titleCardD] = [document.getElementById("tool-title-A"), document.getElementById("tool-title-B"), document.getElementById("tool-title-C"), document.getElementById("tool-title-D")];
-    let [sectorCardA, sectorCardB, sectorCardC, sectorCardD] = [document.getElementById("card-sector-A"), document.getElementById("card-sector-B"), document.getElementById("card-sector-C"), document.getElementById("card-sector-D")];
-    let [taskCardA, taskCardB, taskCardC, taskCardD] = [document.getElementById("card-task-A"), document.getElementById("card-task-B"), document.getElementById("card-task-C"), document.getElementById("card-task-D")];
-    let [levelDevCardA, levelDevCardB, levelDevCardC, levelDevCardD] = [document.getElementById("card-level-dev-A"), document.getElementById("card-level-dev-B"), document.getElementById("card-level-dev-C"), document.getElementById("card-level-dev-D")];
-    let [urlCardA, urlCardB, urlCardC, urlCardD] = [document.getElementById("card-url-A"), document.getElementById("card-url-B"), document.getElementById("card-url-C"), document.getElementById("card-url-D")];
+    let [idToolCB, taskCB, levelDevCB, sectorCB] = [document.getElementById("tool-id-cB"), document.getElementById("task-cB"), document.getElementById("level-dev-cB"), document.getElementById("sector-cB")];
+    let [titleCB, otherTitleCB, linksCB] = [document.getElementById("title-cB"), document.getElementById("other-title-cB"), document.getElementById("links-cB")];
+    let [stageCB, principlesCB, secPrinciplesCB, taskCB2, levelDevCB2, toolTypeCB, languageCB, urlCB, yearCB, sectorCB2, authorsCB] = 
+                                            [document.getElementById("stage-cB"), document.getElementById("principles-cB"), document.getElementById("sec-principles-cB"),
+                                            document.getElementById("task-cB-2"), document.getElementById("level-dev-cB-2"), document.getElementById("tool-type-cB"),
+                                            document.getElementById("language-cB"), document.getElementById("url-tool-cB"), document.getElementById("year-cB"),
+                                            document.getElementById("sector-cB-2"), document.getElementById("authors-cB")];
+
+    let [idToolCC, taskCC, levelDevCC, sectorCC] = [document.getElementById("tool-id-cC"), document.getElementById("task-cC"), document.getElementById("level-dev-cC"), document.getElementById("sector-cC")];
+    let [titleCC, otherTitleCC, linksCC] = [document.getElementById("title-cC"), document.getElementById("other-title-cC"), document.getElementById("links-cC")];
+    let [stageCC, principlesCC, secPrinciplesCC, taskCC2, levelDevCC2, toolTypeCC, languageCC, urlCC, yearCC, sectorCC2, authorsCC] = 
+                                            [document.getElementById("stage-cC"), document.getElementById("principles-cC"), document.getElementById("sec-principles-cC"),
+                                            document.getElementById("task-cC-2"), document.getElementById("level-dev-cC-2"), document.getElementById("tool-type-cC"),
+                                            document.getElementById("language-cC"), document.getElementById("url-tool-cC"), document.getElementById("year-cC"),
+                                            document.getElementById("sector-cC-2"), document.getElementById("authors-cC")];
+
+    let [idToolCD, taskCD, levelDevCD, sectorCD] = [document.getElementById("tool-id-cD"), document.getElementById("task-cD"), document.getElementById("level-dev-cD"), document.getElementById("sector-cD")];
+    let [titleCD, otherTitleCD, linksCD] = [document.getElementById("title-cD"), document.getElementById("other-title-cD"), document.getElementById("links-cD")];
+    let [stageCD, principlesCD, secPrinciplesCD, taskCD2, levelDevCD2, toolTypeCD, languageCD, urlCD, yearCD, sectorCD2, authorsCD] = 
+                                            [document.getElementById("stage-cD"), document.getElementById("principles-cD"), document.getElementById("sec-principles-cD"),
+                                            document.getElementById("task-cD-2"), document.getElementById("level-dev-cD-2"), document.getElementById("tool-type-cD"),
+                                            document.getElementById("language-cD"), document.getElementById("url-tool-cD"), document.getElementById("year-cD"),
+                                            document.getElementById("sector-cD-2"), document.getElementById("authors-cD")];
 
     let component_tool = document.getElementById(id);
     let num_tool = component_tool.innerText;
@@ -25,13 +45,12 @@ async function showCardTool(id) {
     let sector = (await infoTool).sector, toolType = (await infoTool).toolType, language = (await infoTool).language, urldoi = (await infoTool).urlDoi;
     let year = (await infoTool).year, authors = (await infoTool).authors, links = (await infoTool).links;
     
-    for (var key in jsonCards) {
+    for (let key in jsonCards) {
         if (jsonCards.hasOwnProperty(key)) {
-          var element = eval(jsonCards[key]); // Evaluar la cadena como una expresión JavaScript
-          var display = element.style.display;
-        //   console.log("Elemento: " + key + ", display: " + display);
+          let element = eval(jsonCards[key]); // Evaluar la cadena como una expresión JavaScript
+          let display = element.style.display;
+          // console.log("Elemento: " + key + ", display: " + display);
           if (display == '' || display == 'none') {
-                console.log("none");
                 element.style.display = 'flex';
                 if (key == 'cardA') {
                     idToolCA.innerHTML = "ID " + idTool;
@@ -40,38 +59,78 @@ async function showCardTool(id) {
                     sectorCA.innerHTML = sector;
                     titleCA.innerHTML = name;
                     otherTitleCA.innerHTML = otherName;
-
-                    sectorCardA.innerHTML = sector;
-                    taskCardA.innerHTML = task;
-                    levelDevCardA.innerHTML = levelDev;
-                    
+                    stageCA.innerHTML = stage;
+                    principlesCA.innerHTML = highPrinciple;
+                    secPrinciplesCA.innerHTML = lowPrinciple;
+                    taskCA2.innerHTML = task; // duplicated
+                    levelDevCA2.innerHTML = levelDev; // duplicated
+                    toolTypeCA.innerHTML = toolType;
+                    languageCA.innerHTML = language;
+                    yearCA.innerHTML = year;
+                    sectorCA2.innerHTML = sector; // duplicated
+                    authorsCA.innerHTML = authors;              
                     urlCA.innerHTML = urldoi;
                     linksCA.innerHTML = links;
 
                 } else if (key == 'cardB') {
-                    featureCardB.innerText = "Tool " + id;
-                    titleCardB.innerText = (await infoTool).nameT;
-                    sectorCardB.innerText = (await infoTool).sector;
-                    taskCardB.innerHTML = task;
-                    levelDevCardB.innerText = (await infoTool).levelDev;
-                    urlCardB.innerText = (await infoTool).url;
-                    urlCardB.href = (await infoTool).url;
+                    idToolCB.innerHTML = "ID " + idTool;
+                    taskCB.innerHTML = task;
+                    levelDevCB.innerHTML = levelDev;
+                    sectorCB.innerHTML = sector;
+                    titleCB.innerHTML = name;
+                    otherTitleCB.innerHTML = otherName;
+                    stageCB.innerHTML = stage;
+                    principlesCB.innerHTML = highPrinciple;
+                    secPrinciplesCB.innerHTML = lowPrinciple;
+                    taskCB2.innerHTML = task; // duplicated
+                    levelDevCB2.innerHTML = levelDev; // duplicated
+                    toolTypeCB.innerHTML = toolType;
+                    languageCB.innerHTML = language;
+                    yearCB.innerHTML = year;
+                    sectorCB2.innerHTML = sector; // duplicated
+                    authorsCB.innerHTML = authors;              
+                    urlCB.innerHTML = urldoi;
+                    linksCB.innerHTML = links;
+
                 } else if (key == 'cardC') {
-                    featureCardC.innerText = "Tool " + id;
-                    titleCardC.innerText = (await infoTool).nameT;
-                    sectorCardC.innerText = (await infoTool).sector;
-                    taskCardC.innerHTML = task;
-                    levelDevCardC.innerText = (await infoTool).levelDev;
-                    urlCardC.innerText = (await infoTool).url;
-                    urlCardC.href = (await infoTool).url;
+                    idToolCC.innerHTML = "ID " + idTool;
+                    taskCC.innerHTML = task;
+                    levelDevCC.innerHTML = levelDev;
+                    sectorCC.innerHTML = sector;
+                    titleCC.innerHTML = name;
+                    otherTitleCC.innerHTML = otherName;
+                    stageCC.innerHTML = stage;
+                    principlesCC.innerHTML = highPrinciple;
+                    secPrinciplesCC.innerHTML = lowPrinciple;
+                    taskCC2.innerHTML = task; // duplicated
+                    levelDevCC2.innerHTML = levelDev; // duplicated
+                    toolTypeCC.innerHTML = toolType;
+                    languageCC.innerHTML = language;
+                    yearCC.innerHTML = year;
+                    sectorCC2.innerHTML = sector; // duplicated
+                    authorsCC.innerHTML = authors;              
+                    urlCC.innerHTML = urldoi;
+                    linksCC.innerHTML = links;
+
                 } else if (key == 'cardD') {
-                    featureCardD.innerText = "Tool " + id;
-                    titleCardD.innerText = (await infoTool).nameT;
-                    sectorCardD.innerText = (await infoTool).sector;
-                    taskCardD.innerHTML = task;
-                    levelDevCardD.innerText = (await infoTool).levelDev;
-                    urlCardD.innerText = (await infoTool).url;
-                    urlCardD.href = (await infoTool).url;
+                    idToolCD.innerHTML = "ID " + idTool;
+                    taskCD.innerHTML = task;
+                    levelDevCD.innerHTML = levelDev;
+                    sectorCD.innerHTML = sector;
+                    titleCD.innerHTML = name;
+                    otherTitleCD.innerHTML = otherName;
+                    stageCD.innerHTML = stage;
+                    principlesCD.innerHTML = highPrinciple;
+                    secPrinciplesCD.innerHTML = lowPrinciple;
+                    taskCD2.innerHTML = task; // duplicated
+                    levelDevCD2.innerHTML = levelDev; // duplicated
+                    toolTypeCD.innerHTML = toolType;
+                    languageCD.innerHTML = language;
+                    yearCD.innerHTML = year;
+                    sectorCD2.innerHTML = sector; // duplicated
+                    authorsCD.innerHTML = authors;              
+                    urlCD.innerHTML = urldoi;
+                    linksCD.innerHTML = links;
                 }
                 break;
             }
@@ -101,7 +160,7 @@ async function getInfoTool(id) {
     for (let i=0; i<jsonDataRaw.length; i++){
         let row = jsonDataRaw[i];
             if (row["ID"] == id) {
-            console.log("ID encontrado: " + row["ID"]);
+            //console.log("ID encontrado: " + row["ID"]);
             /*
             ID, Name, Article / Other Name, Description, AI Life Cycle Stage, High Level Principle, Associated Principles, Task, Level of Development, Sector, Tool Type, Programming Language, DOI / URL, Year, Authors / Owners, Other Links 
             */
@@ -125,6 +184,14 @@ async function getInfoTool(id) {
         }
     }
 
+    iconsTask = {"Regression": "R", "Binary Classification": "BC", "Multi-class Classification": "MC", "Natural Language Processing": "NLP", 
+                 "Computer Vision": "CV", "Clustering": "C", "Dimensionality Reduction": "DR", "Times Series": "TS"};
+
+    iconsSector = {"Private": '<i class="fa fa-solid fa-circle"></i>', 
+                   "Public": '<i class="fa fa-solid fa-square"></i>', 
+                   "NGO": '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill diamond-ngo" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/></svg>', 
+                   "Academic": '<i class="fa fa-solid fa-plus"></i>'};
+
     //#region Other Name
     if (OtherName == undefined ) {
         OtherName = "";
@@ -132,22 +199,24 @@ async function getInfoTool(id) {
     //#endregion
 
     //#region Stage
-    let arrayStage = preStage.split("; ");
     let Stage = "";
+    let arrayStage = preStage.split("; ");
+    arrayStage = [...new Set(arrayStage)];
     if (arrayStage.length > 1) {
         arrayStage.forEach(element => Stage += element + "<br/>");
     } else {
-        Stage = preStage;
+        Stage = arrayStage;
     }
     //#endregion
 
     //#region High Principle
     let arrayHighPrinciple = preHighPrinciple.split("; ");
+    arrayHighPrinciple = [...new Set(arrayHighPrinciple)];
     let HighPrinciple = "";
     if (arrayHighPrinciple.length > 1) {
         arrayHighPrinciple.forEach(element => HighPrinciple += element + "<br/>");
     } else {
-        HighPrinciple = preHighPrinciple;
+        HighPrinciple = arrayHighPrinciple;
     }
     //#endregion
 
@@ -164,10 +233,13 @@ async function getInfoTool(id) {
     //#region Task
     let arrayTask = preTask.split("; ");
     let Task = "";
-    if (arrayTask.length > 1) {
-        arrayTask.forEach(element => Task += "<p>" + element + "</p>");
+    console.log(preTask);
+    if (preTask == "undefined" || preTask == "Does not apply") {
+        Task = "<i>No Task</i>";
+    } else if (arrayTask.length > 1) {
+        arrayTask.forEach(element => Task += iconsTask[element] + "&nbsp;&nbsp;");
     } else {
-        Task = preTask;
+        Task = iconsTask[preTask];
     }
     //#endregion
 
@@ -175,9 +247,9 @@ async function getInfoTool(id) {
     let Sector = "";
     let arraySector = preSector.split("; ");
     if (arraySector.length > 1) {
-        arraySector.forEach(element => Sector += element + "<br/>");
+        arraySector.forEach(element => Sector += iconsSector[element] + "&nbsp;");
     } else {
-        Sector = preSector;
+        Sector = iconsSector[preSector];
     }
     //#endregion
 
@@ -189,7 +261,7 @@ async function getInfoTool(id) {
             LevelDev = LevelDev / 10.0;
         }
     } else {
-        LevelDev = preLevelDev;
+        LevelDev = "<i>No Level Dev.</i>";
     }
     //#endregion
 
@@ -219,14 +291,15 @@ async function getInfoTool(id) {
     
     //#region Links
     let Links = "";
-    let arrayLinks = preLinks.split("; ");
-    if (arrayLinks.length > 1) {
-        arrayLinks.forEach(element => Links += "<a target='_blank' href=" + element + ">" + element + "</a> <br/>");
-    } else {
-        Links = "<a target='_blank' href=" + preLinks + ">" + preLinks + "</a> <br/>";
+    if (preLinks !== undefined) {
+        let arrayLinks = preLinks.split("; ");
+        if (arrayLinks.length > 1) {
+            arrayLinks.forEach(element => Links += "<a target='_blank' href=" + element + ">" + element + "</a> <br/>");
+        } else {
+            Links = "<a target='_blank' href=" + preLinks + ">" + preLinks + "</a> <br/>";
+        }
     }
     //#endregion
-
 
     return {id: Id, name: Name, otherName: OtherName, description: Description, stage: Stage, highPrinciple: HighPrinciple, lowPrinciple: LowPrinciple,
             task: Task, levelDev: LevelDev, sector: Sector, toolType: ToolType, language: Language, urlDoi: URLDOI, year: Year, authors: Authors, links: Links};

@@ -4305,7 +4305,7 @@ footer {
     gap: 30px;
 }
 
-.span-1 {
+.card-items-1 {
     align-self: auto;
 }
 
@@ -4319,6 +4319,10 @@ footer {
 .buttonClose {
     position: absolute;
     right: 1%;
+}
+
+.diamond-ngo {
+    margin-bottom: 0.2rem
 }
 
 
