@@ -4293,20 +4293,7 @@ footer {
 
 /* Cards Tools */
 .hidden-card {
-    display: none;/* none; */
-}
-
-.first-card-section {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 30px;
-}
-
-.card-items-1 {
-    align-self: auto;
+    display: none;
 }
 
 .group-cards {
@@ -4316,14 +4303,148 @@ footer {
     margin-right: 12px;
 }
 
+/* Primera seccion */
+
+.first-card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.1rem;
+}
+
+.task-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.id-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.level-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.icon-id {
+    margin-top: 0.3rem;
+    margin-right: 0.2rem;
+    margin-bottom: 0rem;
+}
+
+.text-id {
+    margin-bottom: 0rem;
+    margin-top: 0rem;
+}
+
+.icon-level {
+    margin-top: 0.28rem;
+    margin-bottom: 0rem;
+    margin-right: 0.2rem;
+}
+
+.text-level {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.icon-task {
+    margin-top: 0.29rem;
+    margin-right: 0.35rem;
+    margin-bottom: 0rem;
+}
+
+.badge-task {
+    font-weight: bold;
+    width: 2.25rem;
+    margin-bottom: 0rem;
+}
+
 .buttonClose {
     position: absolute;
     right: 1%;
 }
 
-.diamond-ngo {
-    margin-bottom: 0.2rem
+.icon-ngo {
+    margin-bottom: 0rem;
 }
+
+.color-R {
+    background-color: #F67C7C;
+}
+
+.color-BC {
+    background-color: #FFA63D;
+}
+
+.color-MC {
+    background-color: #619442;
+}
+
+.color-NLP {
+    background-color: #32A4E4;
+}
+
+.color-CV {
+    background-color: #194C69;
+    color: white;
+}
+
+.color-DR {
+    background-color: #F68E5F;
+}
+
+.color-TS {
+    background-color: #70161E;
+}
+
+/* Segunda Seccion */
+
+/* Tercera Seccion */
+
+.third-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.ul-third-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.text-third-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Tercera Seccion */
+
+.fourth-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.ul-fourth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.text-fourth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
 
 
 
