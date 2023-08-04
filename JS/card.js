@@ -1,5 +1,10 @@
 async function showCardTool(id) {
     console.log(id);
+
+    // Freeze circle
+    let circle = document.getElementById(id);
+    let numCircle = document.getElementById("circle-"+id);
+
     let [cardA, cardB, cardC, cardD] = [document.getElementById("card-tool-A"), document.getElementById("card-tool-B"), document.getElementById("card-tool-C"), document.getElementById("card-tool-D")];
     let jsonCards = {"cardA": cardA, "cardB": cardB, "cardC": cardC, "cardD": cardD};
 
@@ -37,6 +42,7 @@ async function showCardTool(id) {
 
     let component_tool = document.getElementById(id);
     let num_tool = component_tool.innerText;
+    console.log(num_tool);
 
     let infoTool = getInfoTool(num_tool);
 
@@ -53,17 +59,17 @@ async function showCardTool(id) {
           if (display == '' || display == 'none') {
                 element.style.display = 'flex';
                 if (key == 'cardA') {
-                    idToolCA.innerHTML = "ID " + idTool;
+                    idToolCA.innerHTML = idTool;
                     taskCA.innerHTML = task;
                     levelDevCA.innerHTML = levelDev;
-                    sectorCA.innerHTML = sector;
+                    // sectorCA.innerHTML = sector;
                     titleCA.innerHTML = name;
                     otherTitleCA.innerHTML = otherName;
                     stageCA.innerHTML = stage;
                     principlesCA.innerHTML = highPrinciple;
                     secPrinciplesCA.innerHTML = lowPrinciple;
-                    taskCA2.innerHTML = task; // duplicated
-                    levelDevCA2.innerHTML = levelDev; // duplicated
+                    // taskCA2.innerHTML = task; // duplicated
+                    // levelDevCA2.innerHTML = levelDev; // duplicated
                     toolTypeCA.innerHTML = toolType;
                     languageCA.innerHTML = language;
                     yearCA.innerHTML = year;
@@ -73,17 +79,17 @@ async function showCardTool(id) {
                     linksCA.innerHTML = links;
 
                 } else if (key == 'cardB') {
-                    idToolCB.innerHTML = "ID " + idTool;
+                    idToolCB.innerHTML = idTool;
                     taskCB.innerHTML = task;
                     levelDevCB.innerHTML = levelDev;
-                    sectorCB.innerHTML = sector;
+                    // sectorCB.innerHTML = sector;
                     titleCB.innerHTML = name;
                     otherTitleCB.innerHTML = otherName;
                     stageCB.innerHTML = stage;
                     principlesCB.innerHTML = highPrinciple;
                     secPrinciplesCB.innerHTML = lowPrinciple;
-                    taskCB2.innerHTML = task; // duplicated
-                    levelDevCB2.innerHTML = levelDev; // duplicated
+                    // taskCB2.innerHTML = task; // duplicated
+                    // levelDevCB2.innerHTML = levelDev; // duplicated
                     toolTypeCB.innerHTML = toolType;
                     languageCB.innerHTML = language;
                     yearCB.innerHTML = year;
@@ -93,17 +99,17 @@ async function showCardTool(id) {
                     linksCB.innerHTML = links;
 
                 } else if (key == 'cardC') {
-                    idToolCC.innerHTML = "ID " + idTool;
+                    idToolCC.innerHTML = idTool;
                     taskCC.innerHTML = task;
                     levelDevCC.innerHTML = levelDev;
-                    sectorCC.innerHTML = sector;
+                    // sectorCC.innerHTML = sector;
                     titleCC.innerHTML = name;
                     otherTitleCC.innerHTML = otherName;
                     stageCC.innerHTML = stage;
                     principlesCC.innerHTML = highPrinciple;
                     secPrinciplesCC.innerHTML = lowPrinciple;
-                    taskCC2.innerHTML = task; // duplicated
-                    levelDevCC2.innerHTML = levelDev; // duplicated
+                    // taskCC2.innerHTML = task; // duplicated
+                    // levelDevCC2.innerHTML = levelDev; // duplicated
                     toolTypeCC.innerHTML = toolType;
                     languageCC.innerHTML = language;
                     yearCC.innerHTML = year;
@@ -113,17 +119,17 @@ async function showCardTool(id) {
                     linksCC.innerHTML = links;
 
                 } else if (key == 'cardD') {
-                    idToolCD.innerHTML = "ID " + idTool;
+                    idToolCD.innerHTML = idTool;
                     taskCD.innerHTML = task;
                     levelDevCD.innerHTML = levelDev;
-                    sectorCD.innerHTML = sector;
+                    // sectorCD.innerHTML = sector;
                     titleCD.innerHTML = name;
                     otherTitleCD.innerHTML = otherName;
                     stageCD.innerHTML = stage;
                     principlesCD.innerHTML = highPrinciple;
                     secPrinciplesCD.innerHTML = lowPrinciple;
-                    taskCD2.innerHTML = task; // duplicated
-                    levelDevCD2.innerHTML = levelDev; // duplicated
+                    // taskCD2.innerHTML = task; // duplicated
+                    // levelDevCD2.innerHTML = levelDev; // duplicated
                     toolTypeCD.innerHTML = toolType;
                     languageCD.innerHTML = language;
                     yearCD.innerHTML = year;
@@ -154,7 +160,7 @@ async function getInfoTool(id) {
 
     // console.log(jsonDataRaw);
     // console.log(jsonDataRaw.length);
-    let Id = "", Name = "", OtherName = "", Description = "", preStage = "", preHighPrinciple = "", preLowPrinciple = "", preTask = "", preLevelDev = 0;
+    let preId = "", Name = "", OtherName = "", Description = "", preStage = "", preHighPrinciple = "", preLowPrinciple = "", preTask = "", preLevelDev = 0;
     let preSector = "", preToolType = "", preLanguage = "", preURLDOI = "", Year = "", Authors = "", preLinks = "";
     
     for (let i=0; i<jsonDataRaw.length; i++){
@@ -164,7 +170,7 @@ async function getInfoTool(id) {
             /*
             ID, Name, Article / Other Name, Description, AI Life Cycle Stage, High Level Principle, Associated Principles, Task, Level of Development, Sector, Tool Type, Programming Language, DOI / URL, Year, Authors / Owners, Other Links 
             */
-            Id = row["ID"];
+            preId = row["ID"];
             Name = row["Name"];
             OtherName = row["Article / Other Name"];
             Description = row["Description"];
@@ -184,13 +190,23 @@ async function getInfoTool(id) {
         }
     }
 
-    iconsTask = {"Regression": "R", "Binary Classification": "BC", "Multi-class Classification": "MC", "Natural Language Processing": "NLP", 
-                 "Computer Vision": "CV", "Clustering": "C", "Dimensionality Reduction": "DR", "Times Series": "TS"};
+    iconsTask = {"Regression": "<div class='badge-task color-R'>R</div>",
+            	 "Binary Classification": "<div class='badge-task color-BC'>BC</div>", 
+                 "Multi-class Classification": "<div class='badge-task color-MC'>MC</div>", 
+                 "Natural Language Processing": "<div class='badge-task color-NLP'>NLP</div>", 
+                 "Computer Vision": "<div class='badge-task color-CV'>CV</div>", 
+                 "Clustering": "<div class='badge-task color-C'>C</div>", 
+                 "Dimensionality Reduction": "<div class='badge-task color-DR'>DR</div>", 
+                 "Times Series": "<div class='badge-task color-TS'>TS</div>"};
 
     iconsSector = {"Private": '<i class="fa fa-solid fa-circle"></i>', 
                    "Public": '<i class="fa fa-solid fa-square"></i>', 
-                   "NGO": '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill diamond-ngo" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/></svg>', 
+                   "NGO": '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill icon-ngo" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/></svg>', 
                    "Academic": '<i class="fa fa-solid fa-plus"></i>'};
+
+    //#region Id
+    let Id = '<i class="fa fa-solid fa-gear icon-id"></i>' + '<p class="text-id">' + preId.toString() + '</p>';
+    //#endregion
 
     //#region Other Name
     if (OtherName == undefined ) {
@@ -203,9 +219,9 @@ async function getInfoTool(id) {
     let arrayStage = preStage.split("; ");
     arrayStage = [...new Set(arrayStage)];
     if (arrayStage.length > 1) {
-        arrayStage.forEach(element => Stage += element + "<br/>");
+        arrayStage.forEach(element => Stage += '<li>' + element + '</li>');
     } else {
-        Stage = arrayStage;
+        Stage = '<li>' + arrayStage + '</li>';
     }
     //#endregion
 
@@ -214,9 +230,9 @@ async function getInfoTool(id) {
     arrayHighPrinciple = [...new Set(arrayHighPrinciple)];
     let HighPrinciple = "";
     if (arrayHighPrinciple.length > 1) {
-        arrayHighPrinciple.forEach(element => HighPrinciple += element + "<br/>");
+        arrayHighPrinciple.forEach(element => HighPrinciple += '<li>' + element + '</li>');
     } else {
-        HighPrinciple = arrayHighPrinciple;
+        HighPrinciple = '<li>' + arrayHighPrinciple + '</li>';
     }
     //#endregion
 
@@ -224,7 +240,7 @@ async function getInfoTool(id) {
     let arrayLowPrinciple = preLowPrinciple.split("; ");
     let LowPrinciple = "";
     if (arrayLowPrinciple.length > 1) {
-        arrayLowPrinciple.forEach(element => LowPrinciple += element + "<br/>");
+        LowPrinciple = preLowPrinciple.replace(/; /g, ", ");
     } else {
         LowPrinciple = preLowPrinciple;
     }
@@ -232,14 +248,13 @@ async function getInfoTool(id) {
 
     //#region Task
     let arrayTask = preTask.split("; ");
-    let Task = "";
-    console.log(preTask);
+    let Task = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512" class="icon-task"><path d="M152.1 38.2c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 113C-2.3 103.6-2.3 88.4 7 79s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zm0 160c9.9 8.9 10.7 24 1.8 33.9l-72 80c-4.4 4.9-10.6 7.8-17.2 7.9s-12.9-2.4-17.6-7L7 273c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0l22.1 22.1 55.1-61.2c8.9-9.9 24-10.7 33.9-1.8zM224 96c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zm0 160c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H256c-17.7 0-32-14.3-32-32zM160 416c0-17.7 14.3-32 32-32H480c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32zM48 368a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>'; 
     if (preTask == "undefined" || preTask == "Does not apply") {
-        Task = "<i>No Task</i>";
+        Task += "<i>No Task</i>";
     } else if (arrayTask.length > 1) {
-        arrayTask.forEach(element => Task += iconsTask[element] + "&nbsp;&nbsp;");
+        arrayTask.forEach(element => Task += iconsTask[element]);
     } else {
-        Task = iconsTask[preTask];
+        Task += iconsTask[preTask];
     }
     //#endregion
 
@@ -254,14 +269,16 @@ async function getInfoTool(id) {
     //#endregion
 
     //#region Level Dev
-    let LevelDev = 0;
+    let LevelDev = '<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512" class="icon-level"><path d="M160 80c0-26.5 21.5-48 48-48h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H208c-26.5 0-48-21.5-48-48V80zM0 272c0-26.5 21.5-48 48-48H80c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V272zM368 96h32c26.5 0 48 21.5 48 48V432c0 26.5-21.5 48-48 48H368c-26.5 0-48-21.5-48-48V144c0-26.5 21.5-48 48-48z"/></svg>';
     if (preLevelDev !== "Does not apply") {
-        LevelDev = parseInt(preLevelDev);
-        if (LevelDev > 10) {
-            LevelDev = LevelDev / 10.0;
+        let numLevelDev = parseInt(preLevelDev);
+        if (numLevelDev > 10) {
+            LevelDev += '<p class="text-level">' + (numLevelDev / 10.0) + '</p>';
+        } else {
+            LevelDev += '<p class="text-level">' + numLevelDev + '</p>';
         }
     } else {
-        LevelDev = "<i>No Level Dev.</i>";
+        LevelDev += '<i class="text-level"> No Level Dev. </i>';
     }
     //#endregion
 
