@@ -4457,17 +4457,52 @@ footer {
 /* Sexta Seccion */
 
 .icon-bootstrap-tool-type {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin-top: 0rem;
     margin-bottom: 0rem;
-    margin-right: 0.3rem;
+    margin-right: 0.55rem;
 }
 
 .icon-fa-tool-type {
     height: 1.125em;
     margin-top: 0rem;
     margin-bottom: 0.2rem;
-    margin-right: 0.3rem;
+    margin-right: 0.6rem;
+}
+
+.icon-ib-tool-type {
+    height: 1.125em;
+    margin-top: -0.35rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-ib2-tool-type {
+    height: 1.4em;
+    margin-top: -0.35rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-if-tool-type {
+    height: 1.25em;
+    margin-top: -0.255rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-if2-tool-type {
+    height: 1.5em;
+    margin-top: -0.275rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-if3-tool-type {
+    height: 1.75em;
+    margin-top: -0.275rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
 }
 
 .text-sixth-card-section {
