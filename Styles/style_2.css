@@ -4456,6 +4456,12 @@ footer {
 
 /* Sexta Seccion */
 
+.sixth-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
 .icon-bootstrap-tool-type {
     font-size: 1.3rem;
     margin-top: 0rem;
@@ -4510,6 +4516,66 @@ footer {
     margin-bottom: 0rem;
 }
 
+/* Septima seccion */
+
+.seventh-card-section-A {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.seventh-card-section-B {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.seventh-card-section-C {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.seventh-card-section-D {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.text-seventh-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.no-padding {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.icon-fa-language {
+    height: 1.45em;
+    margin-top: 0.15rem;
+    margin-bottom: 0rem;
+    margin-right: 0.6rem;
+}
+
+.icon-if-language {
+    height: 1.25em;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-ib-language {
+    height: 1.3em;
+    margin-top: 0.15rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+
+ 
+    
 
 
 .seccionNoDisponible {
