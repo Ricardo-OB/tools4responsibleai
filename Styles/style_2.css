@@ -4159,8 +4159,17 @@ body{
     transform: scale(3);
 }
 
-.littleCircleH:hover .number {
+.littleCircleH:hover .number{
     opacity: 1;
+}
+
+.active-circle-hover {
+    z-index: 1 !important;
+    transform: scale(3);
+}
+
+.active-circle-number-hover {
+    opacity: 1 !important;
 }
 
 .number {
@@ -4445,7 +4454,26 @@ footer {
     margin-bottom: 0rem;
 }
 
+/* Sexta Seccion */
 
+.icon-bootstrap-tool-type {
+    font-size: 1.2rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 0.3rem;
+}
+
+.icon-fa-tool-type {
+    height: 1.125em;
+    margin-top: 0rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.3rem;
+}
+
+.text-sixth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
 
 
 

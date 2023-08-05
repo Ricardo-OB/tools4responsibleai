@@ -1,10 +1,6 @@
 async function showCardTool(id) {
     console.log(id);
 
-    // Freeze circle
-    let circle = document.getElementById(id);
-    let numCircle = document.getElementById("circle-"+id);
-
     let [cardA, cardB, cardC, cardD] = [document.getElementById("card-tool-A"), document.getElementById("card-tool-B"), document.getElementById("card-tool-C"), document.getElementById("card-tool-D")];
     let jsonCards = {"cardA": cardA, "cardB": cardB, "cardC": cardC, "cardD": cardD};
 
@@ -15,6 +11,7 @@ async function showCardTool(id) {
                                              document.getElementById("task-cA-2"), document.getElementById("level-dev-cA-2"), document.getElementById("tool-type-cA"),
                                              document.getElementById("language-cA"), document.getElementById("url-tool-cA"), document.getElementById("year-cA"),
                                              document.getElementById("sector-cA-2"), document.getElementById("authors-cA")];
+    let idHiddenCA = document.getElementById('tool-id-cA-hidden');
 
     let [idToolCB, taskCB, levelDevCB, sectorCB] = [document.getElementById("tool-id-cB"), document.getElementById("task-cB"), document.getElementById("level-dev-cB"), document.getElementById("sector-cB")];
     let [titleCB, otherTitleCB, linksCB] = [document.getElementById("title-cB"), document.getElementById("other-title-cB"), document.getElementById("links-cB")];
@@ -23,6 +20,7 @@ async function showCardTool(id) {
                                             document.getElementById("task-cB-2"), document.getElementById("level-dev-cB-2"), document.getElementById("tool-type-cB"),
                                             document.getElementById("language-cB"), document.getElementById("url-tool-cB"), document.getElementById("year-cB"),
                                             document.getElementById("sector-cB-2"), document.getElementById("authors-cB")];
+    let idHiddenCB = document.getElementById('tool-id-cB-hidden');
 
     let [idToolCC, taskCC, levelDevCC, sectorCC] = [document.getElementById("tool-id-cC"), document.getElementById("task-cC"), document.getElementById("level-dev-cC"), document.getElementById("sector-cC")];
     let [titleCC, otherTitleCC, linksCC] = [document.getElementById("title-cC"), document.getElementById("other-title-cC"), document.getElementById("links-cC")];
@@ -31,6 +29,7 @@ async function showCardTool(id) {
                                             document.getElementById("task-cC-2"), document.getElementById("level-dev-cC-2"), document.getElementById("tool-type-cC"),
                                             document.getElementById("language-cC"), document.getElementById("url-tool-cC"), document.getElementById("year-cC"),
                                             document.getElementById("sector-cC-2"), document.getElementById("authors-cC")];
+    let idHiddenCC = document.getElementById('tool-id-cC-hidden');
 
     let [idToolCD, taskCD, levelDevCD, sectorCD] = [document.getElementById("tool-id-cD"), document.getElementById("task-cD"), document.getElementById("level-dev-cD"), document.getElementById("sector-cD")];
     let [titleCD, otherTitleCD, linksCD] = [document.getElementById("title-cD"), document.getElementById("other-title-cD"), document.getElementById("links-cD")];
@@ -39,6 +38,7 @@ async function showCardTool(id) {
                                             document.getElementById("task-cD-2"), document.getElementById("level-dev-cD-2"), document.getElementById("tool-type-cD"),
                                             document.getElementById("language-cD"), document.getElementById("url-tool-cD"), document.getElementById("year-cD"),
                                             document.getElementById("sector-cD-2"), document.getElementById("authors-cD")];
+    let idHiddenCD = document.getElementById('tool-id-cD-hidden');
 
     let component_tool = document.getElementById(id);
     let num_tool = component_tool.innerText;
@@ -58,8 +58,16 @@ async function showCardTool(id) {
           // console.log("Elemento: " + key + ", display: " + display);
           if (display == '' || display == 'none') {
                 element.style.display = 'flex';
+
+                // Freeze circle
+                let circle = document.getElementsByClassName("circle-"+id)[0];
+                let numCircle = document.getElementById(id);
+                circle.classList.add("active-circle-hover");
+                numCircle.classList.add("active-circle-number-hover");
+
                 if (key == 'cardA') {
                     idToolCA.innerHTML = idTool;
+                    idHiddenCA.innerHTML = id;
                     taskCA.innerHTML = task;
                     levelDevCA.innerHTML = levelDev;
                     // sectorCA.innerHTML = sector;
@@ -80,6 +88,7 @@ async function showCardTool(id) {
 
                 } else if (key == 'cardB') {
                     idToolCB.innerHTML = idTool;
+                    idHiddenCB.innerHTML = id;
                     taskCB.innerHTML = task;
                     levelDevCB.innerHTML = levelDev;
                     // sectorCB.innerHTML = sector;
@@ -100,6 +109,7 @@ async function showCardTool(id) {
 
                 } else if (key == 'cardC') {
                     idToolCC.innerHTML = idTool;
+                    idHiddenCC.innerHTML = id;
                     taskCC.innerHTML = task;
                     levelDevCC.innerHTML = levelDev;
                     // sectorCC.innerHTML = sector;
@@ -120,6 +130,7 @@ async function showCardTool(id) {
 
                 } else if (key == 'cardD') {
                     idToolCD.innerHTML = idTool;
+                    idHiddenCD.innerHTML = id;
                     taskCD.innerHTML = task;
                     levelDevCD.innerHTML = levelDev;
                     // sectorCD.innerHTML = sector;
@@ -204,6 +215,38 @@ async function getInfoTool(id) {
                    "NGO": '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill icon-ngo" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/></svg>', 
                    "Academic": '<i class="fa fa-solid fa-plus"></i>'};
 
+    iconsToolType = {"Website": '<i class="bi bi-globe2 icon-bootstrap-tool-type" title="Website"></i>',
+        	         "Code": '<i class="bi bi-github icon-bootstrap-tool-type" title="Open source code on GitHub"></i>',
+                     "Course": '<svg xmlns="http://www.w3.org/2000/svg" class="icon-fa-tool-type" viewBox="0 0 640 512"><title>Course</title><path d="M337.8 5.4C327-1.8 313-1.8 302.2 5.4L166.3 96H48C21.5 96 0 117.5 0 144V464c0 26.5 21.5 48 48 48H592c26.5 0 48-21.5 48-48V144c0-26.5-21.5-48-48-48H473.7L337.8 5.4zM256 416c0-35.3 28.7-64 64-64s64 28.7 64 64v96H256V416zM96 192h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V208c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V208zM96 320h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H96c-8.8 0-16-7.2-16-16V336c0-8.8 7.2-16 16-16zm400 16c0-8.8 7.2-16 16-16h32c8.8 0 16 7.2 16 16v64c0 8.8-7.2 16-16 16H512c-8.8 0-16-7.2-16-16V336zM232 176a88 88 0 1 1 176 0 88 88 0 1 1 -176 0zm88-48c-8.8 0-16 7.2-16 16v32c0 8.8 7.2 16 16 16h32c8.8 0 16-7.2 16-16s-7.2-16-16-16H336V144c0-8.8-7.2-16-16-16z"/></svg>',
+                     "Guide": '<svg xmlns="http://www.w3.org/2000/svg" class="icon-fa-tool-type" viewBox="0 0 512 512"><title>Guide</title><path d="M160 96a96 96 0 1 1 192 0A96 96 0 1 1 160 96zm80 152V512l-48.4-24.2c-20.9-10.4-43.5-17-66.8-19.3l-96-9.6C12.5 457.2 0 443.5 0 427V224c0-17.7 14.3-32 32-32H62.3c63.6 0 125.6 19.6 177.7 56zm32 264V248c52.1-36.4 114.1-56 177.7-56H480c17.7 0 32 14.3 32 32V427c0 16.4-12.5 30.2-28.8 31.8l-96 9.6c-23.2 2.3-45.9 8.9-66.8 19.3L272 512z"/></svg>',
+                     "Guidelines": '<i class="bi bi-journal-text icon-bootstrap-tool-type" title="Guidelines"></i>', 
+                     "Theoretical Framework": '',
+                     "Practical Framework": '',
+                     "Examples": '',
+                     "Resource Compendium": '',
+                     "Law": '',
+                     "Article": '',
+                     "Playbook": '',
+                     "Tool Compendium": '',
+                     "Principles": '',
+                     "Theory Document": '',
+                     "Dataset": '',
+                     "Book": '',
+                     "Code of Practice": '',
+                     "Code of Ethics": '',
+                     "White Paper": '',
+                     "App": '',
+                     "Checklist": '',
+                     "Report": '',
+                     "License": '',
+                     "Voice Assistant": '',
+                     "Standard": '',
+                     "Certification": '',
+                     "Contractual Terms": '',
+                     "Case Studies": '',
+                     "Tutorial": '',
+                     "Program": ''};
+
     //#region Id
     let Id = '<i class="fa fa-solid fa-gear icon-id"></i>' + '<p class="text-id">' + preId.toString() + '</p>';
     //#endregion
@@ -286,9 +329,9 @@ async function getInfoTool(id) {
     let ToolType = "";
     let arrayToolType = preToolType.split("; ");
     if (arrayToolType.length > 1) {
-        arrayToolType.forEach(element => ToolType += "<p>" + element + "</p>");
+        arrayToolType.forEach(element => ToolType += iconsToolType[element]);
     } else {
-        ToolType = preToolType;
+        ToolType = iconsToolType[preToolType];
     }
     //#endregion
 
@@ -322,22 +365,46 @@ async function getInfoTool(id) {
             task: Task, levelDev: LevelDev, sector: Sector, toolType: ToolType, language: Language, urlDoi: URLDOI, year: Year, authors: Authors, links: Links};
 }
 
-async function cleanCardA(){
+async function cleanCardA(toolID){
+    let idcircleCardA = document.getElementById(toolID).innerText;
+    let circle = document.getElementsByClassName("circle-" + idcircleCardA)[0];
+    let numCircle = document.getElementById(idcircleCardA);
+    circle.classList.remove("active-circle-hover");
+    numCircle.classList.remove("active-circle-number-hover");
+
     let cardA = document.getElementById("card-tool-A");
     cardA.style.display = 'none';
 }
 
-async function cleanCardB(){
+async function cleanCardB(toolID){
+    let idcircleCardB = document.getElementById(toolID).innerText;
+    let circle = document.getElementsByClassName("circle-" + idcircleCardB)[0];
+    let numCircle = document.getElementById(idcircleCardB);
+    circle.classList.remove("active-circle-hover");
+    numCircle.classList.remove("active-circle-number-hover");
+
     let cardB = document.getElementById("card-tool-B");
     cardB.style.display = 'none';
 }
 
-async function cleanCardC(){
+async function cleanCardC(toolID){
+    let idcircleCardC = document.getElementById(toolID).innerText;
+    let circle = document.getElementsByClassName("circle-" + idcircleCardC)[0];
+    let numCircle = document.getElementById(idcircleCardC);
+    circle.classList.remove("active-circle-hover");
+    numCircle.classList.remove("active-circle-number-hover");
+
     let cardC = document.getElementById("card-tool-C");
     cardC.style.display = 'none';
 }
 
-async function cleanCardD(){
+async function cleanCardD(toolID){
+    let idcircleCardD = document.getElementById(toolID).innerText;
+    let circle = document.getElementsByClassName("circle-" + idcircleCardD)[0];
+    let numCircle = document.getElementById(idcircleCardD);
+    circle.classList.remove("active-circle-hover");
+    numCircle.classList.remove("active-circle-number-hover");
+
     let cardD = document.getElementById("card-tool-D");
     cardD.style.display = 'none';
 }

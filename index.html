@@ -12,6 +12,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="#">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <script src="https://unpkg.com/feather-icons@4.29.0/dist/feather.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.17.5/xlsx.min.js"></script>
     <script src="JS/card.js"></script>
@@ -2360,12 +2362,13 @@
               <div class="card hidden-card" id="card-tool-A">
                 <div class="card-header first-card-section" id="featured-card-A">
                   <div class="id-section" id="tool-id-cA">ID</div>
+                  <div style="display: none;" id="tool-id-cA-hidden">ID2</div>
                   <div class="task-section" id="task-cA">Task</div>
                   <div class="level-section" id="level-dev-cA">Level</div>
                   <!-- <div class="card-items-1" id="sector-cA">Sector</div> -->
                 </div>
                 <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardA()">
+                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardA('tool-id-cA-hidden')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
@@ -2388,7 +2391,10 @@
                   <li class="list-group-item" id="sec-principles-cA">Sec Principles </li>
                   <!-- <li class="list-group-item" id="task-cA-2">Task </li> -->
                   <!-- <li class="list-group-item" id="level-dev-cA-2">Level </li> -->
-                  <li class="list-group-item" id="tool-type-cA">Tool Type </li>
+                  <li class="list-group-item">
+                    <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
+                    <div id="tool-type-cA"></div>
+                  </li>
                   <li class="list-group-item" id="language-cA">Language </li>
                   <li class="list-group-item" id="url-tool-cA">URL/DOI </li>
                   <li class="list-group-item" id="year-cA">Year </li>
@@ -2402,12 +2408,13 @@
               <div class="card hidden-card" id="card-tool-B">
                 <div class="card-header first-card-section" id="featured-card-B">
                   <div class="id-section" id="tool-id-cB">ID</div>
+                  <div style="display: none;" id="tool-id-cB-hidden">ID2</div>
                   <div class="task-section" id="task-cB">Task</div>
                   <div class="level-section" id="level-dev-cB">Level</div>
                   <!-- <div class="card-items-1" id="sector-cB">Sector</div> -->
                 </div>
                 <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardB()">
+                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardB('tool-id-cB-hidden')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
@@ -2430,7 +2437,10 @@
                   <li class="list-group-item" id="sec-principles-cB">Sec Principles </li>
                   <!-- <li class="list-group-item" id="task-cB-2">Task </li> -->
                   <!-- <li class="list-group-item" id="level-dev-cB-2">Level </li> -->
-                  <li class="list-group-item" id="tool-type-cB">Tool Type </li>
+                  <li class="list-group-item">
+                    <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
+                    <div id="tool-type-cB"></div>
+                  </li>
                   <li class="list-group-item" id="language-cB">Language </li>
                   <li class="list-group-item" id="url-tool-cB">URL/DOI </li>
                   <li class="list-group-item" id="year-cB">Year </li>
@@ -2444,12 +2454,13 @@
               <div class="card hidden-card" id="card-tool-C">
                 <div class="card-header first-card-section" id="featured-card-C">
                   <div class="id-section" id="tool-id-cC">ID</div>
+                  <div style="display: none;" id="tool-id-cC-hidden">ID2</div>
                   <div class="task-section" id="task-cC">Task</div>
                   <div class="level-section" id="level-dev-cC">Level</div>
                   <!-- <div class="card-items-1" id="sector-cC">Sector</div> -->
                 </div>
                 <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardC()">
+                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardC('tool-id-cC-hidden')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
@@ -2472,7 +2483,10 @@
                   <li class="list-group-item" id="sec-principles-cC">Sec Principles </li>
                   <!-- <li class="list-group-item" id="task-cC-2">Task </li> -->
                   <!-- <li class="list-group-item" id="level-dev-cC-2">Level </li> -->
-                  <li class="list-group-item" id="tool-type-cC">Tool Type </li>
+                  <li class="list-group-item">
+                    <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
+                    <div id="tool-type-cC"></div>
+                  </li>
                   <li class="list-group-item" id="language-cC">Language </li>
                   <li class="list-group-item" id="url-tool-cC">URL/DOI </li>
                   <li class="list-group-item" id="year-cC">Year </li>
@@ -2486,12 +2500,13 @@
               <div class="card hidden-card" id="card-tool-D">
                 <div class="card-header first-card-section" id="featured-card-D">
                   <div class="id-section" id="tool-id-cD">ID</div>
+                  <div style="display: none;" id="tool-id-cD-hidden">ID2</div>
                   <div class="task-section" id="task-cD">Task</div>
                   <div class="level-section" id="level-dev-cD">Level</div>
                   <!-- <div class="card-items-1" id="sector-cD">Sector</div> -->
                 </div>
                 <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardD()">
+                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardD('tool-id-cD-hidden')">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
                       <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
                       <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
@@ -2514,7 +2529,10 @@
                   <li class="list-group-item" id="sec-principles-cD">Sec Principles </li>
                   <!-- <li class="list-group-item" id="task-cD-2">Task </li> -->
                   <!-- <li class="list-group-item" id="level-dev-cD-2">Level </li> -->
-                  <li class="list-group-item" id="tool-type-cD">Tool Type </li>
+                  <li class="list-group-item">
+                    <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
+                    <div id="tool-type-cD"></div>
+                  </li>
                   <li class="list-group-item" id="language-cD">Language </li>
                   <li class="list-group-item" id="url-tool-cD">URL/DOI </li>
                   <li class="list-group-item" id="year-cD">Year </li>
@@ -2666,6 +2684,9 @@
 
   <script src="JS/main.js"></script>
   <script src="JS/wordsAnimation.js"></script>
+  <script>
+    feather.replace()
+  </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
 </body>
 </html>
