@@ -2361,19 +2361,13 @@
             <div class="col-md group-cards mb-5">
               <div class="card hidden-card" id="card-tool-A">
                 <div class="card-header first-card-section" id="featured-card-A">
-                  <div class="id-section" id="tool-id-cA">ID</div>
-                  <div style="display: none;" id="tool-id-cA-hidden">ID2</div>
-                  <div class="task-section" id="task-cA">Task</div>
-                  <div class="level-section" id="level-dev-cA">Level</div>
-                  <!-- <div class="card-items-1" id="sector-cA">Sector</div> -->
-                </div>
-                <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardA('tool-id-cA-hidden')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                  </button>
+                  <div class="first-card-section">
+                    <div class="id-section" id="tool-id-cA">ID</div>
+                    <div style="display: none;" id="tool-id-cA-hidden">ID2</div>
+                    <div class="task-section" id="task-cA">Task</div>
+                    <div class="level-section" id="level-dev-cA">Level</div>
+                  </div>
+                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i>
                 </div>
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cA">Resource Title</h5>
@@ -2387,10 +2381,24 @@
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cA">Principles</ul>
                 </div>
-                <ul class="list-group list-group-flush textLeft">
-                  <li class="list-group-item" id="sec-principles-cA">Sec Principles </li>
-                </ul>
-                <div class="card-body no-padding">
+                
+                <div class="card-body border-sections lowprinciples-card-section textLeft" id="sec-principles-cA">Sec. Principles </div>
+
+                <div class="card-body accordion border-sections no-padding textLeft">
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinksA" aria-expanded="false" aria-controls="collapseLinksA">
+                        <i>Important Links</i>
+                      </button>
+                    </h2>
+                    <div id="collapseLinksA" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="url-tool-cA"> URL/DOI </div>
+                      <div class="accordion-body" id="links-cA"> Links </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col sixth-card-section textLeft">
                       <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
@@ -2401,16 +2409,32 @@
                       <div id="language-cA"></div>
                     </div>
                   </div>
-                </div>  
-                <ul class="list-group list-group-flush textLeft">
-                  <!-- <li class="list-group-item" id="task-cA-2">Task </li> -->
-                  <!-- <li class="list-group-item" id="level-dev-cA-2">Level </li> -->
-                  <li class="list-group-item" id="url-tool-cA">URL/DOI </li>
-                  <li class="list-group-item" id="year-cA">Year </li>
-                  <li class="list-group-item" id="sector-cA-2">Sector </li>
-                  <li class="list-group-item" id="authors-cA">Authors </li>
-                </ul>
-                <div class="card-body textLeft" id="links-cA">Links </div>
+                </div>
+                
+                <div class="card-body border-sections no-padding">
+                  <div class="row">
+                    <div class="col ninth-card-section textLeft">
+                      <p class="card-text text-ninth-card-section"><i>Year</i></p>
+                      <div id="year-cA"></div>
+                    </div>
+                    <div class="col tenth-card-section textLeft">
+                      <p class="card-text text-tenth-card-section"><i>Sector</i></p>
+                      <div id="sector-cA"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body accordion border-sections no-padding textLeft">
+                    <div class="accordion-item no-borders">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuthorsA" aria-expanded="false" aria-controls="collapseAuthorsA">
+                          <i>Authors / Owners</i>
+                        </button>
+                      </h2>
+                      <div id="collapseAuthorsA" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body" id="authors-cA"></div>
+                      </div>
+                    </div>
+                </div>
               </div>
             </div>
             <div class="col-md group-cards">
@@ -2420,15 +2444,7 @@
                   <div style="display: none;" id="tool-id-cB-hidden">ID2</div>
                   <div class="task-section" id="task-cB">Task</div>
                   <div class="level-section" id="level-dev-cB">Level</div>
-                  <!-- <div class="card-items-1" id="sector-cB">Sector</div> -->
-                </div>
-                <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardB('tool-id-cB-hidden')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                  </button>
+                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardB('tool-id-cB-hidden')"></i>
                 </div>
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cB">Resource Title</h5>
@@ -2442,10 +2458,24 @@
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cB">Principles</ul>
                 </div>
-                <ul class="list-group list-group-flush textLeft">
-                  <li class="list-group-item" id="sec-principles-cB">Sec Principles </li>
-                </ul>
-                <div class="card-body no-padding">
+                
+                <div class="card-body border-sections lowprinciples-card-section textLeft" id="sec-principles-cB">Sec. Principles </div>
+
+                <div class="card-body accordion border-sections no-padding textLeft">
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinksB" aria-expanded="false" aria-controls="collapseLinksB">
+                        <i>Important Links</i>
+                      </button>
+                    </h2>
+                    <div id="collapseLinksB" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="url-tool-cB"> URL/DOI </div>
+                      <div class="accordion-body" id="links-cB"> Links </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col sixth-card-section textLeft">
                       <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
@@ -2457,15 +2487,30 @@
                     </div>
                   </div>
                 </div>
-                <ul class="list-group list-group-flush textLeft">
-                  <!-- <li class="list-group-item" id="task-cB-2">Task </li> -->
-                  <!-- <li class="list-group-item" id="level-dev-cB-2">Level </li> -->
-                  <li class="list-group-item" id="url-tool-cB">URL/DOI </li>
-                  <li class="list-group-item" id="year-cB">Year </li>
-                  <li class="list-group-item" id="sector-cB-2">Sector </li>
-                  <li class="list-group-item" id="authors-cB">Authors </li>
-                </ul>
-                <div class="card-body textLeft" id="links-cB">Links </div>
+                <div class="card-body border-sections no-padding">
+                  <div class="row">
+                    <div class="col ninth-card-section textLeft">
+                      <p class="card-text text-ninth-card-section"><i>Year</i></p>
+                      <div id="year-cB"></div>
+                    </div>
+                    <div class="col tenth-card-section textLeft">
+                      <p class="card-text text-tenth-card-section"><i>Sector</i></p>
+                      <div id="sector-cB"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body accordion border-sections no-padding textLeft">
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuthorsB" aria-expanded="false" aria-controls="collapseAuthorsB">
+                        <i>Authors / Owners</i>
+                      </button>
+                    </h2>
+                    <div id="collapseAuthorsB" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="authors-cB"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md group-cards">
@@ -2475,15 +2520,7 @@
                   <div style="display: none;" id="tool-id-cC-hidden">ID2</div>
                   <div class="task-section" id="task-cC">Task</div>
                   <div class="level-section" id="level-dev-cC">Level</div>
-                  <!-- <div class="card-items-1" id="sector-cC">Sector</div> -->
-                </div>
-                <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardC('tool-id-cC-hidden')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                  </button>
+                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardC('tool-id-cC-hidden')"></i>
                 </div>
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cC">Resource Title</h5>
@@ -2497,10 +2534,24 @@
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cC">Principles</ul>
                 </div>
-                <ul class="list-group list-group-flush textLeft">
-                  <li class="list-group-item" id="sec-principles-cC">Sec Principles </li>
-                </ul>
-                <div class="card-body no-padding">
+                
+                <div class="card-body border-sections lowprinciples-card-section textLeft" id="sec-principles-cC">Sec. Principles </div>
+
+                <div class="card-body accordion border-sections no-padding textLeft">
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinksC" aria-expanded="false" aria-controls="collapseLinksC">
+                        <i>Important Links</i>
+                      </button>
+                    </h2>
+                    <div id="collapseLinksC" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="url-tool-cC"> URL/DOI </div>
+                      <div class="accordion-body" id="links-cC"> Links </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col sixth-card-section textLeft">
                       <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
@@ -2512,15 +2563,30 @@
                     </div>
                   </div>
                 </div>
-                <ul class="list-group list-group-flush textLeft">
-                  <!-- <li class="list-group-item" id="task-cC-2">Task </li> -->
-                  <!-- <li class="list-group-item" id="level-dev-cC-2">Level </li> -->
-                  <li class="list-group-item" id="url-tool-cC">URL/DOI </li>
-                  <li class="list-group-item" id="year-cC">Year </li>
-                  <li class="list-group-item" id="sector-cC-2">Sector </li>
-                  <li class="list-group-item" id="authors-cC">Authors </li>
-                </ul>
-                <div class="card-body textLeft" id="links-cC">Links </div>
+                <div class="card-body border-sections no-padding">
+                  <div class="row">
+                    <div class="col ninth-card-section textLeft">
+                      <p class="card-text text-ninth-card-section"><i>Year</i></p>
+                      <div id="year-cC"></div>
+                    </div>
+                    <div class="col tenth-card-section textLeft">
+                      <p class="card-text text-tenth-card-section"><i>Sector</i></p>
+                      <div id="sector-cC"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body accordion border-sections no-padding textLeft">
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuthorsC" aria-expanded="false" aria-controls="collapseAuthorsC">
+                        <i>Authors / Owners</i>
+                      </button>
+                    </h2>
+                    <div id="collapseAuthorsC" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="authors-cC"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="col-md group-cards">
@@ -2530,15 +2596,7 @@
                   <div style="display: none;" id="tool-id-cD-hidden">ID2</div>
                   <div class="task-section" id="task-cD">Task</div>
                   <div class="level-section" id="level-dev-cD">Level</div>
-                  <!-- <div class="card-items-1" id="sector-cD">Sector</div> -->
-                </div>
-                <div class="container textRight">
-                  <button type="button" class="btn btn-primary buttonClose" onclick="cleanCardD('tool-id-cD-hidden')">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-circle" viewBox="0 0 16 16">
-                      <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"></path>
-                      <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"></path>
-                    </svg>
-                  </button>
+                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardD('tool-id-cD-hidden')"></i>
                 </div>
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cD">Resource Title</h5>
@@ -2552,10 +2610,24 @@
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cD">Principles</ul>
                 </div>
-                <ul class="list-group list-group-flush textLeft">
-                  <li class="list-group-item" id="sec-principles-cD">Sec Principles </li>
-                </ul>
-                <div class="card-body no-padding">
+                
+                <div class="card-body border-sections lowprinciples-card-section textLeft" id="sec-principles-cD">Sec. Principles </div>
+
+                <div class="card-body accordion border-sections no-padding textLeft">
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseLinksD" aria-expanded="false" aria-controls="collapseLinksD">
+                        <i>Important Links</i>
+                      </button>
+                    </h2>
+                    <div id="collapseLinksD" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="url-tool-cD"> URL/DOI </div>
+                      <div class="accordion-body" id="links-cD"> Links </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col sixth-card-section textLeft">
                       <p class="card-text text-sixth-card-section"><i>Tool Type</i></p>
@@ -2567,15 +2639,30 @@
                     </div>
                   </div>
                 </div>
-                <ul class="list-group list-group-flush textLeft">
-                  <!-- <li class="list-group-item" id="task-cD-2">Task </li> -->
-                  <!-- <li class="list-group-item" id="level-dev-cD-2">Level </li> -->
-                  <li class="list-group-item" id="url-tool-cD">URL/DOI </li>
-                  <li class="list-group-item" id="year-cD">Year </li>
-                  <li class="list-group-item" id="sector-cD-2">Sector </li>
-                  <li class="list-group-item" id="authors-cD">Authors </li>
-                </ul>
-                <div class="card-body textLeft" id="links-cD">Links </div>
+                <div class="card-body border-sections no-padding">
+                  <div class="row">
+                    <div class="col ninth-card-section textLeft">
+                      <p class="card-text text-ninth-card-section"><i>Year</i></p>
+                      <div id="year-cD"></div>
+                    </div>
+                    <div class="col tenth-card-section textLeft">
+                      <p class="card-text text-tenth-card-section"><i>Sector</i></p>
+                      <div id="sector-cD"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body accordion border-sections no-padding textLeft">
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuthorsD" aria-expanded="false" aria-controls="collapseAuthorsD">
+                        <i>Authors / Owners</i>
+                      </button>
+                    </h2>
+                    <div id="collapseAuthorsD" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="authors-cD"></div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

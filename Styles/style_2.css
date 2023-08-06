@@ -4312,7 +4312,19 @@ footer {
     margin-right: 12px;
 }
 
+.border-sections {
+    border-top: inherit;
+}
+
 /* Primera seccion */
+
+.icon-button-close {
+    font-size: 1.1rem;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    cursor: pointer;
+}
 
 .first-card-section {
     display: flex;
@@ -4381,10 +4393,6 @@ footer {
 .buttonClose {
     position: absolute;
     right: 1%;
-}
-
-.icon-ngo {
-    margin-bottom: 0rem;
 }
 
 .color-R {
@@ -4572,6 +4580,75 @@ footer {
     margin-bottom: 0rem;
     margin-right: 0.55rem;
 }
+
+/* Novena seccion */
+
+.ninth-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.text-ninth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Decima seccion */
+
+.tenth-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.text-tenth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.icon-fa-sector {
+    height: 1.25em;
+    margin-top: 0.15rem;
+    margin-bottom: 0rem;
+    margin-right: 0.5rem;
+}
+
+/* Seccion Autores */
+
+.no-borders {
+    border: none;
+}
+
+.button-no-padding {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: black;
+    outline: 0;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+/* Seccion Sec Principios */
+
+.lowprinciples-card-section {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+
+
+
+
 
 
  

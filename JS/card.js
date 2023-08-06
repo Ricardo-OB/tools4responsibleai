@@ -75,7 +75,6 @@ async function showCardTool(id) {
                     idHiddenCA.innerHTML = id;
                     taskCA.innerHTML = task;
                     levelDevCA.innerHTML = levelDev;
-                    // sectorCA.innerHTML = sector;
                     titleCA.innerHTML = name;
                     otherTitleCA.innerHTML = otherName;
                     stageCA.innerHTML = stage;
@@ -86,7 +85,8 @@ async function showCardTool(id) {
                     toolTypeCA.innerHTML = toolType;
                     languageCA.innerHTML = language;
                     yearCA.innerHTML = year;
-                    sectorCA2.innerHTML = sector; // duplicated
+                    sectorCA.innerHTML = sector;
+                    // sectorCA2.innerHTML = sector; // duplicated
                     authorsCA.innerHTML = authors;              
                     urlCA.innerHTML = urldoi;
                     linksCA.innerHTML = links;
@@ -100,7 +100,6 @@ async function showCardTool(id) {
                     idHiddenCB.innerHTML = id;
                     taskCB.innerHTML = task;
                     levelDevCB.innerHTML = levelDev;
-                    // sectorCB.innerHTML = sector;
                     titleCB.innerHTML = name;
                     otherTitleCB.innerHTML = otherName;
                     stageCB.innerHTML = stage;
@@ -111,7 +110,8 @@ async function showCardTool(id) {
                     toolTypeCB.innerHTML = toolType;
                     languageCB.innerHTML = language;
                     yearCB.innerHTML = year;
-                    sectorCB2.innerHTML = sector; // duplicated
+                    sectorCB.innerHTML = sector;
+                    // sectorCB2.innerHTML = sector; // duplicated
                     authorsCB.innerHTML = authors;              
                     urlCB.innerHTML = urldoi;
                     linksCB.innerHTML = links;
@@ -125,7 +125,6 @@ async function showCardTool(id) {
                     idHiddenCC.innerHTML = id;
                     taskCC.innerHTML = task;
                     levelDevCC.innerHTML = levelDev;
-                    // sectorCC.innerHTML = sector;
                     titleCC.innerHTML = name;
                     otherTitleCC.innerHTML = otherName;
                     stageCC.innerHTML = stage;
@@ -136,7 +135,8 @@ async function showCardTool(id) {
                     toolTypeCC.innerHTML = toolType;
                     languageCC.innerHTML = language;
                     yearCC.innerHTML = year;
-                    sectorCC2.innerHTML = sector; // duplicated
+                    sectorCC.innerHTML = sector;
+                    // sectorCC2.innerHTML = sector; // duplicated
                     authorsCC.innerHTML = authors;              
                     urlCC.innerHTML = urldoi;
                     linksCC.innerHTML = links;
@@ -150,7 +150,6 @@ async function showCardTool(id) {
                     idHiddenCD.innerHTML = id;
                     taskCD.innerHTML = task;
                     levelDevCD.innerHTML = levelDev;
-                    // sectorCD.innerHTML = sector;
                     titleCD.innerHTML = name;
                     otherTitleCD.innerHTML = otherName;
                     stageCD.innerHTML = stage;
@@ -161,7 +160,8 @@ async function showCardTool(id) {
                     toolTypeCD.innerHTML = toolType;
                     languageCD.innerHTML = language;
                     yearCD.innerHTML = year;
-                    sectorCD2.innerHTML = sector; // duplicated
+                    sectorCD.innerHTML = sector;
+                    // sectorCD2.innerHTML = sector; // duplicated
                     authorsCD.innerHTML = authors;              
                     urlCD.innerHTML = urldoi;
                     linksCD.innerHTML = links;
@@ -227,10 +227,10 @@ async function getInfoTool(id) {
                  "Dimensionality Reduction": "<div class='badge-task color-DR'>DR</div>", 
                  "Times Series": "<div class='badge-task color-TS'>TS</div>"};
 
-    iconsSector = {"Private": '<i class="fa fa-solid fa-circle"></i>', 
-                   "Public": '<i class="fa fa-solid fa-square"></i>', 
-                   "NGO": '<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-diamond-fill icon-ngo" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/></svg>', 
-                   "Academic": '<i class="fa fa-solid fa-plus"></i>'};
+    iconsSector = {"Private": '<i class="fa fa-solid fa-circle icon-fa-sector"></i>', 
+                   "Public": '<i class="fa fa-solid fa-square icon-fa-sector"></i>', 
+                   "NGO": '<svg xmlns="http://www.w3.org/2000/svg" class="bi bi-diamond-fill icon-fa-sector" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M6.95.435c.58-.58 1.52-.58 2.1 0l6.515 6.516c.58.58.58 1.519 0 2.098L9.05 15.565c-.58.58-1.519.58-2.098 0L.435 9.05a1.482 1.482 0 0 1 0-2.098L6.95.435z"/></svg>', 
+                   "Academic": '<i class="fa fa-solid fa-plus icon-fa-sector"></i>'};
 
     iconsToolType = {"Website": '<i class="bi bi-globe2 icon-bootstrap-tool-type" title="Website"></i>',
         	         "Code": '<i class="bi bi-github icon-bootstrap-tool-type" title="Open source code on GitHub"></i>',
@@ -366,7 +366,7 @@ async function getInfoTool(id) {
     let Sector = "";
     let arraySector = preSector.split("; ");
     if (arraySector.length > 1) {
-        arraySector.forEach(element => Sector += iconsSector[element] + "&nbsp;");
+        arraySector.forEach(element => Sector += iconsSector[element]);
     } else {
         Sector = iconsSector[preSector];
     }
