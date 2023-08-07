@@ -2359,24 +2359,36 @@
         <section class="py-1 text-center text-light container-fluid">
           <div class="row mx-3">
             <div class="col-md group-cards mb-5">
-              <div class="card hidden-card" id="card-tool-A">
-                <div class="card-header first-card-section" id="featured-card-A">
-                  <div class="first-card-section">
-                    <div class="id-section" id="tool-id-cA">ID</div>
-                    <div style="display: none;" id="tool-id-cA-hidden">ID2</div>
-                    <div class="task-section" id="task-cA">Task</div>
-                    <div class="level-section" id="level-dev-cA">Level</div>
-                  </div>
-                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i>
+              <div class="card hidden-card card-A" id="card-tool-A">
+                
+                <div class="card-header close-button-hide div-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')">
+                  <!-- <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i> -->
+                  <i class="bi bi-x" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i>
                 </div>
+                <div class="card-header header-card-A">
+                  <div class="row">
+                    <div class="col first-card-section">
+                      <div class="id-section" id="tool-id-cA">ID</div>
+                      <div style="display: none;" id="tool-id-cA-hidden">ID2</div>
+                      <div class="task-section" id="task-cA">Task</div>
+                      <div class="level-section" id="level-dev-cA">Level</div>
+                    </div>
+                    <div class="col col-md-auto button-close-flex">
+                      <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cA">Resource Title</h5>
                   <p class="card-text" id="other-title-cA">Other title or description.</p>
                 </div>
+
                 <div class="card-body third-card-section textLeft">
                   <p class="card-text text-third-card-section"><i>AI Life Cycle Stage</i></p>
                   <ul class="list-group-flush ul-third-card-section" id="stage-cA">Stage</ul>
                 </div>
+
                 <div class="card-body fourth-card-section textLeft">
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cA">Principles</ul>
@@ -2423,37 +2435,53 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card-body accordion border-sections no-padding textLeft">
-                    <div class="accordion-item no-borders">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuthorsA" aria-expanded="false" aria-controls="collapseAuthorsA">
-                          <i>Authors / Owners</i>
-                        </button>
-                      </h2>
-                      <div id="collapseAuthorsA" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                        <div class="accordion-body" id="authors-cA"></div>
-                      </div>
+                  <div class="accordion-item no-borders">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed button-no-padding" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAuthorsA" aria-expanded="false" aria-controls="collapseAuthorsA">
+                        <i>Authors / Owners</i>
+                      </button>
+                    </h2>
+                    <div id="collapseAuthorsA" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body" id="authors-cA"></div>
                     </div>
+                  </div>
                 </div>
+                
               </div>
             </div>
             <div class="col-md group-cards">
-              <div class="card hidden-card" id="card-tool-B">
-                <div class="card-header first-card-section" id="featured-card-B">
-                  <div class="id-section" id="tool-id-cB">ID</div>
-                  <div style="display: none;" id="tool-id-cB-hidden">ID2</div>
-                  <div class="task-section" id="task-cB">Task</div>
-                  <div class="level-section" id="level-dev-cB">Level</div>
-                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardB('tool-id-cB-hidden')"></i>
+              <div class="card hidden-card card-B" id="card-tool-B">
+
+                <div class="card-header close-button-hide div-close" title="Close Tool Card" onclick="cleanCardB('tool-id-cB-hidden')">
+                  <!-- <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i> -->
+                  <i class="bi bi-x" title="Close Tool Card" onclick="cleanCardB('tool-id-cB-hidden')"></i>
                 </div>
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col first-card-section">
+                      <div class="id-section" id="tool-id-cB">ID</div>
+                      <div style="display: none;" id="tool-id-cB-hidden">ID2</div>
+                      <div class="task-section" id="task-cB">Task</div>
+                      <div class="level-section" id="level-dev-cB">Level</div>
+                    </div>
+                    <div class="col col-md-auto button-close-flex">
+                      <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardB('tool-id-cB-hidden')"></i>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cB">Resource Title</h5>
                   <p class="card-text" id="other-title-cB">Other title or description.</p>
                 </div>
+
                 <div class="card-body third-card-section textLeft">
                   <p class="card-text text-third-card-section"><i>AI Life Cycle Stage</i></p>
                   <ul class="list-group-flush ul-third-card-section" id="stage-cB">Stage</ul>
                 </div>
+
                 <div class="card-body fourth-card-section textLeft">
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cB">Principles</ul>
@@ -2487,6 +2515,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col ninth-card-section textLeft">
@@ -2499,6 +2528,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card-body accordion border-sections no-padding textLeft">
                   <div class="accordion-item no-borders">
                     <h2 class="accordion-header">
@@ -2511,25 +2541,40 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
             <div class="col-md group-cards">
-              <div class="card hidden-card" id="card-tool-C">
-                <div class="card-header first-card-section" id="featured-card-C">
-                  <div class="id-section" id="tool-id-cC">ID</div>
-                  <div style="display: none;" id="tool-id-cC-hidden">ID2</div>
-                  <div class="task-section" id="task-cC">Task</div>
-                  <div class="level-section" id="level-dev-cC">Level</div>
-                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardC('tool-id-cC-hidden')"></i>
+              <div class="card hidden-card card-C" id="card-tool-C">
+
+                <div class="card-header close-button-hide div-close" title="Close Tool Card" onclick="cleanCardC('tool-id-cC-hidden')">
+                  <!-- <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i> -->
+                  <i class="bi bi-x" title="Close Tool Card" onclick="cleanCardC('tool-id-cC-hidden')"></i>
                 </div>
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col first-card-section">
+                      <div class="id-section" id="tool-id-cC">ID</div>
+                      <div style="display: none;" id="tool-id-cC-hidden">ID2</div>
+                      <div class="task-section" id="task-cC">Task</div>
+                      <div class="level-section" id="level-dev-cC">Level</div>
+                    </div>
+                    <div class="col col-md-auto button-close-flex">
+                      <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardC('tool-id-cC-hidden')"></i>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cC">Resource Title</h5>
                   <p class="card-text" id="other-title-cC">Other title or description.</p>
                 </div>
+
                 <div class="card-body third-card-section textLeft">
                   <p class="card-text text-third-card-section"><i>AI Life Cycle Stage</i></p>
                   <ul class="list-group-flush ul-third-card-section" id="stage-cC">Stage</ul>
                 </div>
+
                 <div class="card-body fourth-card-section textLeft">
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cC">Principles</ul>
@@ -2563,6 +2608,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col ninth-card-section textLeft">
@@ -2575,6 +2621,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card-body accordion border-sections no-padding textLeft">
                   <div class="accordion-item no-borders">
                     <h2 class="accordion-header">
@@ -2587,25 +2634,40 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
             <div class="col-md group-cards">
-              <div class="card hidden-card" id="card-tool-D">
-                <div class="card-header first-card-section" id="featured-card-D">
-                  <div class="id-section" id="tool-id-cD">ID</div>
-                  <div style="display: none;" id="tool-id-cD-hidden">ID2</div>
-                  <div class="task-section" id="task-cD">Task</div>
-                  <div class="level-section" id="level-dev-cD">Level</div>
-                  <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardD('tool-id-cD-hidden')"></i>
+              <div class="card hidden-card card-D" id="card-tool-D">
+
+                <div class="card-header close-button-hide div-close" title="Close Tool Card" onclick="cleanCardD('tool-id-cD-hidden')">
+                  <!-- <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i> -->
+                  <i class="bi bi-x" title="Close Tool Card" onclick="cleanCardD('tool-id-cD-hidden')"></i>
                 </div>
+                <div class="card-header">
+                  <div class="row">
+                    <div class="col first-card-section">
+                      <div class="id-section" id="tool-id-cD">ID</div>
+                      <div style="display: none;" id="tool-id-cD-hidden">ID2</div>
+                      <div class="task-section" id="task-cD">Task</div>
+                      <div class="level-section" id="level-dev-cD">Level</div>
+                    </div>
+                    <div class="col col-md-auto button-close-flex">
+                      <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardD('tool-id-cD-hidden')"></i>
+                    </div>
+                  </div>
+                </div>
+
                 <div class="card-body textLeft">
                   <h5 class="card-title" id="title-cD">Resource Title</h5>
                   <p class="card-text" id="other-title-cD">Other title or description.</p>
                 </div>
+
                 <div class="card-body third-card-section textLeft">
                   <p class="card-text text-third-card-section"><i>AI Life Cycle Stage</i></p>
                   <ul class="list-group-flush ul-third-card-section" id="stage-cD">Stage</ul>
                 </div>
+
                 <div class="card-body fourth-card-section textLeft">
                   <p class="card-text text-fourth-card-section"><i>High Level Principle</i></p>
                   <ul class="list-group-flush ul-fourth-card-section" id="principles-cD">Principles</ul>
@@ -2639,6 +2701,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col ninth-card-section textLeft">
@@ -2651,6 +2714,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="card-body accordion border-sections no-padding textLeft">
                   <div class="accordion-item no-borders">
                     <h2 class="accordion-header">
@@ -2663,6 +2727,7 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>

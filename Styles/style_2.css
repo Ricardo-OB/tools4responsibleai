@@ -10,6 +10,14 @@ body{
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#265077", endColorstr="#1E4258", GradientType=1);
 }
 
+.bck {
+    background: hsla(209, 52%, 31%, 1);
+    background: linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
+    background: -moz-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
+    background: -webkit-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#265077", endColorstr="#1E4258", GradientType=1);
+}
+
 
 .cardsAuthors {
     display: flex;
@@ -4301,6 +4309,7 @@ footer {
 }
 
 /* Cards Tools */
+
 .hidden-card {
     display: none;
 }
@@ -4318,12 +4327,60 @@ footer {
 
 /* Primera seccion */
 
+.div-close {
+    background-color: rgb(165, 36, 36);
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0.075rem;
+    padding-bottom: 0.075rem;
+    cursor: pointer;
+}
+
+.close-button-hide {
+    display: none;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-A:hover .close-button-hide {
+    display: flex;
+}
+
+.card-B:hover .close-button-hide {
+    display: flex;
+}
+
+.card-C:hover .close-button-hide {
+    display: flex;
+}
+
+.card-D:hover .close-button-hide {
+    display: flex;
+}
+
 .icon-button-close {
     font-size: 1.1rem;
     margin-top: 0rem;
     margin-right: 0rem;
     margin-bottom: 0rem;
     cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon-button-close:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.75);
+}
+
+.button-close-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .first-card-section {
@@ -4444,7 +4501,7 @@ footer {
     margin-bottom: 0rem;
 }
 
-/* Tercera Seccion */
+/* Cuarta Seccion */
 
 .fourth-card-section {
     border-top: inherit;
@@ -4461,6 +4518,23 @@ footer {
     margin-top: 0rem;
     margin-bottom: 0rem;
 }
+
+/* Seccion Sec Principios */
+
+.lowprinciples-card-section {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.div-low-principles {
+    display: none;
+    min-height: 120px;
+}
+
+.accordion-rotate {
+    transform: rotate(270deg);
+}
+
 
 /* Sexta Seccion */
 
@@ -4636,13 +4710,6 @@ footer {
     border-color: black;
     outline: 0;
     box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
-}
-
-/* Seccion Sec Principios */
-
-.lowprinciples-card-section {
-    padding-top: 0.4rem;
-    padding-bottom: 0.4rem;
 }
 
 

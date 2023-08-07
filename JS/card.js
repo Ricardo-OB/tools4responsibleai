@@ -345,8 +345,10 @@ async function getInfoTool(id) {
     let LowPrinciple = "";
     if (arrayLowPrinciple.length > 1) {
         LowPrinciple = preLowPrinciple.replace(/; /g, ", ");
+        //LowPrinciple = arrayHighPrinciple.forEach(element => LowPrinciple += '<li>' + element + '</li>');
     } else {
         LowPrinciple = preLowPrinciple;
+        //LowPrinciple = '<li>' + preLowPrinciple + '</li>';
     }
     //#endregion
 
@@ -472,4 +474,15 @@ async function cleanCardD(toolID){
 
     let cardD = document.getElementById("card-tool-D");
     cardD.style.display = 'none';
+}
+
+async function showhideP(idSection) {
+    let sect = document.getElementById(idSection);
+    
+    if (sect.style.display == 'none') {
+        sect.style.display = 'flex';
+    } else {
+        sect.style.display = 'none';
+    }
+
 }
