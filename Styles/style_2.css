@@ -4311,9 +4311,8 @@ footer {
 /* Cite section */
 
 .cite-section {
-    background-color: rgba(255, 255, 255, 0.26);;
+    background-color: rgba(255, 255, 255, 0.26);
     border-radius: 0.6rem;
-    width: 60rem;
     margin-top: 1.5rem;
 }
 
@@ -4324,6 +4323,10 @@ pre {
     margin-left: -4rem;
     overflow: auto;
     font-size: .875em;
+}
+
+.btn-copy:hover {
+    background-color: rgba(125, 233, 53, 0.39);
 }
 
 /* Scrollbar */
@@ -4359,7 +4362,7 @@ pre {
 }
 
 .group-cards {
-    width: 24rem;
+    width: 24rem !important;
     float: none;
     margin-left: 12px;
     margin-right: 12px;
