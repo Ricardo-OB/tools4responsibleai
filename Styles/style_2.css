@@ -10,6 +10,14 @@ body{
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#265077", endColorstr="#1E4258", GradientType=1);
 }
 
+.bck {
+    background: hsla(209, 52%, 31%, 1);
+    background: linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
+    background: -moz-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
+    background: -webkit-linear-gradient(180deg, hsla(209, 52%, 31%, 1) 23%, hsla(203, 49%, 23%, 1) 58%, hsla(210, 94%, 13%, 1) 94%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr="#265077", endColorstr="#1E4258", GradientType=1);
+}
+
 
 .cardsAuthors {
     display: flex;
@@ -4159,8 +4167,17 @@ body{
     transform: scale(3);
 }
 
-.littleCircleH:hover .number {
+.littleCircleH:hover .number{
     opacity: 1;
+}
+
+.active-circle-hover {
+    z-index: 1 !important;
+    transform: scale(3);
+}
+
+.active-circle-number-hover {
+    opacity: 1 !important;
 }
 
 .number {
@@ -4291,19 +4308,127 @@ footer {
     background: rgba(82, 182, 154) !important;
 }
 
+/* Cite section */
+
+.cite-section {
+    background-color: rgba(255, 255, 255, 0.26);
+    border-radius: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+pre {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: -4rem;
+    overflow: auto;
+    font-size: .875em;
+}
+
+.btn-copy:hover {
+    background-color: rgba(125, 233, 53, 0.39);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.65rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(27, 27, 27, 0.45);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.card::-webkit-scrollbar {
+    width: 0.4rem;
+}
+.card::-webkit-scrollbar-thumb {
+    background-color: rgba(27, 27, 27, 0.3);
+    border-radius: 3px;
+}
+.card::-webkit-scrollbar-track{
+    background: transparent;
+}
+
 /* Cards Tools */
+
 .hidden-card {
     display: none;
+    height: 33rem;
+    overflow-y: scroll;
 }
 
 .group-cards {
-    width: 24rem;
+    width: 24rem !important;
     float: none;
     margin-left: 12px;
     margin-right: 12px;
 }
 
+.border-sections {
+    border-top: inherit;
+}
+
 /* Primera seccion */
+
+.div-close {
+    background-color: rgb(165, 36, 36);
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    padding-top: 0.075rem;
+    padding-bottom: 0.075rem;
+    cursor: pointer;
+}
+
+.close-button-hide {
+    display: none;
+    transition: all 0.3s ease-in-out;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.card-A:hover .close-button-hide {
+    display: flex;
+}
+
+.card-B:hover .close-button-hide {
+    display: flex;
+}
+
+.card-C:hover .close-button-hide {
+    display: flex;
+}
+
+.card-D:hover .close-button-hide {
+    display: flex;
+}
+
+.icon-button-close {
+    font-size: 1.1rem;
+    margin-top: 0rem;
+    margin-right: 0rem;
+    margin-bottom: 0rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.icon-button-close:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.75);
+}
+
+.button-close-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+}
 
 .first-card-section {
     display: flex;
@@ -4374,10 +4499,6 @@ footer {
     right: 1%;
 }
 
-.icon-ngo {
-    margin-bottom: 0rem;
-}
-
 .color-R {
     background-color: #F67C7C;
 }
@@ -4427,7 +4548,7 @@ footer {
     margin-bottom: 0rem;
 }
 
-/* Tercera Seccion */
+/* Cuarta Seccion */
 
 .fourth-card-section {
     border-top: inherit;
@@ -4445,8 +4566,211 @@ footer {
     margin-bottom: 0rem;
 }
 
+/* Seccion Sec Principios */
+
+.lowprinciples-card-section {
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    font-size: 0.85rem;
+}
+
+.div-low-principles {
+    display: none;
+    min-height: 120px;
+}
+
+.text-associated-principles {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 0.4rem;
+    padding-bottom: 0rem;
+}
 
 
+/* Sexta Seccion */
+
+.sixth-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.icon-bootstrap-tool-type {
+    font-size: 1.3rem;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-fa-tool-type {
+    height: 1.125em;
+    margin-top: 0rem;
+    margin-bottom: 0.2rem;
+    margin-right: 0.6rem;
+}
+
+.icon-ib-tool-type {
+    height: 1.125em;
+    margin-top: -0.35rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-ib2-tool-type {
+    height: 1.4em;
+    margin-top: -0.35rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-if-tool-type {
+    height: 1.25em;
+    margin-top: -0.255rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-if2-tool-type {
+    height: 1.5em;
+    margin-top: -0.275rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-if3-tool-type {
+    height: 1.75em;
+    margin-top: -0.275rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.text-sixth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Septima seccion */
+
+.seventh-card-section-A {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.seventh-card-section-B {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.seventh-card-section-C {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.seventh-card-section-D {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.text-seventh-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.no-padding {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+}
+
+.icon-fa-language {
+    height: 1.45em;
+    margin-top: 0.15rem;
+    margin-bottom: 0rem;
+    margin-right: 0.6rem;
+}
+
+.icon-if-language {
+    height: 1.25em;
+    margin-top: 0.2rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+.icon-ib-language {
+    height: 1.3em;
+    margin-top: 0.15rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
+/* Novena seccion */
+
+.ninth-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.text-ninth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+/* Decima seccion */
+
+.tenth-card-section {
+    border-top: inherit;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+}
+
+.text-tenth-card-section {
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+}
+
+.icon-fa-sector {
+    height: 1.25em;
+    margin-top: 0.15rem;
+    margin-bottom: 0rem;
+    margin-right: 0.5rem;
+}
+
+/* Seccion Autores */
+
+.no-borders {
+    border: none;
+}
+
+.button-no-padding {
+    padding-left: 0rem;
+    padding-right: 0rem;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: white;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+.accordion-button:focus {
+    z-index: 3;
+    border-color: black;
+    outline: 0;
+    box-shadow: inset 0 calc(-1 * var(--bs-accordion-border-width)) 0 var(--bs-accordion-border-color);
+}
+
+
+
+
+
+
+
+ 
+    
 
 
 .seccionNoDisponible {
