@@ -4308,10 +4308,54 @@ footer {
     background: rgba(82, 182, 154) !important;
 }
 
+/* Cite section */
+
+.cite-section {
+    background-color: rgba(255, 255, 255, 0.26);;
+    border-radius: 0.6rem;
+    width: 60rem;
+    margin-top: 1.5rem;
+}
+
+pre {
+    display: flex;
+    margin-top: 0rem;
+    margin-bottom: 0rem;
+    margin-left: -4rem;
+    overflow: auto;
+    font-size: .875em;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+    width: 0.65rem;
+}
+::-webkit-scrollbar-thumb {
+    background-color: rgba(27, 27, 27, 0.45);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+.card::-webkit-scrollbar {
+    width: 0.4rem;
+}
+.card::-webkit-scrollbar-thumb {
+    background-color: rgba(27, 27, 27, 0.3);
+    border-radius: 3px;
+}
+.card::-webkit-scrollbar-track{
+    background: transparent;
+}
+
 /* Cards Tools */
 
 .hidden-card {
     display: none;
+    height: 33rem;
+    overflow-y: scroll;
 }
 
 .group-cards {
@@ -4524,6 +4568,7 @@ footer {
 .lowprinciples-card-section {
     padding-top: 0.4rem;
     padding-bottom: 0.4rem;
+    font-size: 0.85rem;
 }
 
 .div-low-principles {
@@ -4531,8 +4576,11 @@ footer {
     min-height: 120px;
 }
 
-.accordion-rotate {
-    transform: rotate(270deg);
+.text-associated-principles {
+    margin-top: auto;
+    margin-bottom: auto;
+    padding-top: 0.4rem;
+    padding-bottom: 0rem;
 }
 
 

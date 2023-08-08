@@ -476,13 +476,21 @@ async function cleanCardD(toolID){
     cardD.style.display = 'none';
 }
 
-async function showhideP(idSection) {
-    let sect = document.getElementById(idSection);
-    
-    if (sect.style.display == 'none') {
-        sect.style.display = 'flex';
-    } else {
-        sect.style.display = 'none';
-    }
-
-}
+// Copy section
+document.addEventListener("DOMContentLoaded", function() {
+    const copyButton = document.getElementById("copyButton");
+    const codeElement = document.querySelector(".cite-section code");
+  
+    copyButton.addEventListener("click", function() {
+      const textToCopy = codeElement.textContent;
+      const tempTextArea = document.createElement("textarea");
+      tempTextArea.value = textToCopy;
+  
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      document.execCommand("copy");
+      document.body.removeChild(tempTextArea);
+    });
+});
+  
+  
