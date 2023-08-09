@@ -4986,3 +4986,14 @@ pre {
     padding-right: 25rem !important;
 }
 
+/* About */
+
+.link-custom {
+    color: rgb(74, 169, 233);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link-custom:hover {
+    font-weight: bold;
+}
