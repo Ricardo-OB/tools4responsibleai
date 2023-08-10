@@ -6,7 +6,7 @@ URL address: https://ricardo-ob.github.io/tools4responsibleai/
 
 ## Folder Organization
  
- The `csv` folder contains the appendix A of the research article (`File Name`), a csv file with 352 rows corresponding to resources/tools.
+ The `csv` folder contains the appendix A of the research article (`final_resources_v2`), a csv file with 352 rows corresponding to resources/tools.
 
  The csv file is processed with the `main.js`, `showTools.js`, `cards.js` files, contained in the `JS` folder.
 

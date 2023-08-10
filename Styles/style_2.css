@@ -4566,6 +4566,21 @@ pre {
     margin-bottom: 0rem;
 }
 
+/* Seccion URL */
+
+.accordion-header {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-bootstrap-url {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
 /* Seccion Sec Principios */
 
 .lowprinciples-card-section {
@@ -4986,3 +5001,14 @@ pre {
     padding-right: 25rem !important;
 }
 
+/* About */
+
+.link-custom {
+    color: rgb(74, 169, 233);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.link-custom:hover {
+    font-weight: bold;
+}
