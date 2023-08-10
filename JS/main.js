@@ -1,4 +1,3 @@
-console.log("Working...");
 
 async function processCSV(url) {
     const options = {
@@ -13,10 +12,10 @@ async function processCSV(url) {
 
     //console.log(jsonDataRaw);
 
-    for (let i=0; i<48; i++){
-        let row = jsonDataRaw[i];
-        let dataRow = row["Other Links"];
-    }
+    // for (let i=0; i<48; i++){
+    //     let row = jsonDataRaw[i];
+    //     let dataRow = row["Other Links"];
+    // }
 
     //console.log(jsonDataRaw.length);
 
@@ -141,28 +140,8 @@ async function processCSV(url) {
         table.innerHTML = 'There is no data in Excel';
     }
 
-    //initializePerfectScrollbar();
 }
 
-// const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools-ethical-dev-ai/master/csv/herramientas_prueba.csv';
 const url_main = 'https://raw.githubusercontent.com/Ricardo-OB/tools4responsibleai/master/csv/final_resources_v2.csv';
-
-async function initializePerfectScrollbar() {
-    
-    const tableContainer = document.querySelector('.table-responsive');
-    const table = document.getElementById('display_excel_data');
-
-    if (table.rows.length > 5) {
-        const psVertical = new PerfectScrollbar(tableContainer, {
-            suppressScrollX: true,
-        });
-    }
-
-    if (table.rows[0].cells.length > 5) {
-        const psHorizontal = new PerfectScrollbar(table, {
-            suppressScrollY: true,
-        });
-    }
-}
 
 processCSV(url_main);

@@ -1,5 +1,44 @@
+console.log("Working...");
+
+async function addTitles() {
+    let allNumbers = document.getElementsByClassName("number");
+    let allCircles = document.getElementsByClassName("tiny-circle-shape");
+
+    let infoDict = await getIdName();
+
+    for (let i=0; i<allNumbers.length; i++) {
+        let num = allNumbers[i].innerHTML;
+        allNumbers[i].title = infoDict[num];
+        allCircles[i].title = infoDict[num];
+    }
+}
+
+async function getIdName() {
+
+    const url = 'https://raw.githubusercontent.com/Ricardo-OB/tools4responsibleai/master/csv/final_resources_v2.csv';
+    const options = {
+        url,
+        responseType: "arraybuffer"
+    }
+    let axiosResponse = await axios(options);
+    const workbook = XLSX.read(axiosResponse.data);
+
+    let firstSheetName = workbook.SheetNames[0];
+    let jsonDataRaw = XLSX.utils.sheet_to_json(workbook.Sheets[firstSheetName]);
+
+    let dict = {};
+    
+    for (let i=0; i<jsonDataRaw.length; i++){
+        let row = jsonDataRaw[i];
+        dict[row["ID"].toString()] = row["Name"].toString();
+    }
+
+    return dict;
+}
+
+
 async function showCardTool(id) {
-    console.log(id);
+    // console.log(id);
 
     let [cardA, cardB, cardC, cardD] = [document.getElementById("card-tool-A"), document.getElementById("card-tool-B"), document.getElementById("card-tool-C"), document.getElementById("card-tool-D")];
     let jsonCards = {"cardA": cardA, "cardB": cardB, "cardC": cardC, "cardD": cardD};
@@ -42,7 +81,7 @@ async function showCardTool(id) {
 
     let component_tool = document.getElementById(id);
     let num_tool = component_tool.innerText;
-    console.log(num_tool);
+    // console.log(num_tool);
 
     let infoTool = getInfoTool(num_tool);
 
@@ -478,6 +517,9 @@ async function cleanCardD(toolID){
 
 // Copy section
 document.addEventListener("DOMContentLoaded", function() {
+
+    addTitles();
+
     const copyButton = document.getElementById("copyButton");
     const codeElement = document.querySelector(".cite-section code");
   
@@ -492,5 +534,3 @@ document.addEventListener("DOMContentLoaded", function() {
       document.body.removeChild(tempTextArea);
     });
 });
-  
-  

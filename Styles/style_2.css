@@ -4566,6 +4566,21 @@ pre {
     margin-bottom: 0rem;
 }
 
+/* Seccion URL */
+
+.accordion-header {
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-bootstrap-url {
+    font-size: 1.3rem;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+    margin-right: 0.55rem;
+}
+
 /* Seccion Sec Principios */
 
 .lowprinciples-card-section {
