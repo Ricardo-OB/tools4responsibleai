@@ -5012,3 +5012,57 @@ pre {
 .link-custom:hover {
     font-weight: bold;
 }
+
+.text-img {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+
+[class*=" imghvr-"] figcaption, [class^=imghvr-] figcaption {
+    background-color: rgba(73, 80, 87, 0.722);
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: #fff;
+}
+
+[class*=" imghvr-"], [class^=imghvr-] {
+    border-radius: 0.25rem;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    max-width: 100%;
+    background-color: rgba(73, 80, 87, 0.722);
+    color: #fff;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transform: translateZ(0);
+}
+
+.social-link {
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgb(143, 142, 142);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(102, 102, 102);
+    border-radius: 50%;
+    transition: all 0.3s;
+    font-size: 1rem;
+    text-decoration: none;
+}
+  
+.social-link:hover, .social-link:focus {
+    background: rgb(221, 221, 221);
+    text-decoration: none;
+    color: rgb(37, 37, 37);
+}
