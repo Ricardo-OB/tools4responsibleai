@@ -74,7 +74,7 @@ body{
     border-color: #ffffff00;
     border-width: 1px;
     border-style: solid;
-    border-radius: 25x;
+    border-radius: 10px;
     font-family: 'Chakra Petch', sans-serif;
 }
 
@@ -441,19 +441,6 @@ body{
     cursor: pointer;
 }
 
-.numberCircle {
-    font: 32px Arial, sans-serif;
-    width: 2em;
-    height: 2em;
-    box-sizing: initial;
-    background: #fff;
-    border: 0.1em solid #666;
-    color: #666;
-    text-align: center;
-    border-radius: 50%;
-    line-height: 2em;
-    box-sizing: content-box;
-}
 
 .circle-1 {
     top: 250px !important;
@@ -4809,11 +4796,62 @@ pre {
     }
 }
 
-@media(max-width: 1366px) {
+@media (min-width: 769px) and (max-width: 1365px) {
+    .firstDivider, .secondDivider, .thirdDivider, .fourDivider, .fiveDivider, .sixDivider { display: none; }
+
+    .titleCircle_1 {
+        position: absolute;
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 14%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 45%;
+        right: 0%;
+        top: -8% !important;
+        bottom: 5%;
+    }
+
+    .titleCircle_5 {
+        position: absolute;
+        padding-top: 2.5px;
+        padding-left: 5px;
+        width: 9%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 46.5%;
+        right: 0%;
+        top: 100% !important;
+        bottom: 0% !important;
+    }
+
+    .group-cards-style {
+        margin-top: 45px !important;
+    }
+}
+
+@media (max-width: 1366px) {
     #title-diagram{
         text-align: left;
         padding-bottom: 10px;
         padding-left: 11px;
+    }
+
+    .group-cards-style {
+        margin-top: 45px !important;
+    }
+
+    .card-D {
+        margin-top: 20px;
+        width: 25em;
+    }
+
+    .group-card-d {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
     }
 
     .titleCircle_1{
@@ -4910,6 +4948,110 @@ pre {
     .group-cards-style {
         margin-top: 70px;
     }
+
+    .firstDivider {
+        width: 375px;
+        position: absolute;
+        left: 54.25%;
+        right: 18%;
+        top: 50%;
+        /* Ajusta la posición vertical de la línea */
+        bottom: 0%;
+        height: 2px;
+        /* Altura de la línea */
+        background-color: white;
+        /* Color de la línea */
+    }
+    
+    .secondDivider {
+        width: 375px;
+        position: absolute;
+        left: 13%;
+        right: 55%;
+        top: 50%;
+        /* Ajusta la posición vertical de la línea */
+        bottom: 0%;
+        height: 2px;
+        /* Altura de la línea */
+        background-color: white;
+        /* Color de la línea */
+    }
+    
+    .thirdDivider {
+        position: absolute;
+        width: 376px;
+        /* Ancho de la línea */
+        height: 2px;
+        /* Altura de la línea */
+        background-color: white;
+        /* Color de la línea */
+        transform: rotate(-55deg);
+        /* Ajuste de la posición y rotación */
+        left: 45.45%;
+        right: 0%;
+        bottom: 0%;
+        top: 18.75%;
+    }
+    
+    .fourDivider {
+        position: absolute;
+        width: 376px;
+        /* Ancho de la línea */
+        height: 2px;
+        /* Altura de la línea */
+        background-color: white;
+        /* Color de la línea */
+        transform: rotate(-55deg);
+        /* Ajuste de la posición y rotación */
+        left: 21.8%;
+        right: 0%;
+        bottom: 0%;
+        top: 81.5%;
+    }
+    
+    .fiveDivider {
+        position: absolute;
+        width: 376px;
+        /* Ancho de la línea */
+        height: 2px;
+        /* Altura de la línea */
+        background-color: white;
+        /* Color de la línea */
+        transform: rotate(55deg);
+        /* Ajuste de la posición y rotación */
+        left: 21.75%;
+        right: 0%;
+        bottom: 0%;
+        top: 18.5%;
+    }
+    
+    .sixDivider {
+        position: absolute;
+        width: 376px;
+        /* Ancho de la línea */
+        height: 2px;
+        /* Altura de la línea */
+        background-color: white;
+        /* Color de la línea */
+        transform: rotate(55deg);
+        /* Ajuste de la posición y rotación */
+        left: 45.2%;
+        right: 0%;
+        bottom: 0%;
+        top: 81%;
+    }
+}
+
+/* Typology */
+
+.title-typology {
+    text-align: left;
+    padding-bottom: 10px;
+    padding-left: 11px;
+}
+
+.justify-text {
+    text-align: justify;
 }
 
 /* Animacion palabras */
