@@ -4780,14 +4780,6 @@ pre {
 
 
 
-
-
-
-
- 
-    
-
-
 .seccionNoDisponible {
     display: none;
     /* Oculta la sección por defecto */
@@ -4817,6 +4809,109 @@ pre {
     }
 }
 
+@media(max-width: 1366px) {
+    #title-diagram{
+        text-align: left;
+        padding-bottom: 10px;
+        padding-left: 11px;
+    }
+
+    .titleCircle_1{
+        position: absolute;
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 14%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 45%;
+        right: 0%;
+        top: -35%;
+        bottom: 5%;
+    }
+
+    .titleCircle_2 {
+        position: absolute;
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 12%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 86%;
+        right: 0%;
+        top: 13%;
+        bottom: 5%;
+    }
+
+    .titleCircle_3 {
+        position: absolute;
+        text-align: right;
+        padding-top: 5px;
+        padding-right: 15px;
+        width: 12%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 2%;
+        right: 0%;
+        top: 13%;
+        bottom: 5%;
+    }
+
+    .titleCircle_4 {
+        position: absolute;
+        padding-top: 5px;
+        padding-left: 5px;
+        width: 17%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 86%;
+        right: 0%;
+        top: 77%;
+        bottom: 5%;
+    }
+
+    .titleCircle_5 {
+        position: absolute;
+        padding-top: 2.5px;
+        padding-left: 5px;
+        width: 9%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 46.5%;
+        right: 0%;
+        top: 123%;
+        bottom: 5%;
+
+    }
+
+    .titleCircle_6 {
+        position: absolute;
+        text-align: right;
+        padding-top: 5px;
+        padding-right: 15px;
+        width: 9%;
+        /* Ancho de la línea */
+        height: 6%;
+        /* Altura de la línea */
+        left: 4%;
+        right: 0%;
+        top: 77%;
+        bottom: 5%;
+    }
+
+    .table-classification {
+        margin-top: 80px;
+    }
+
+    .group-cards-style {
+        margin-top: 70px;
+    }
+}
+
 /* Animacion palabras */
 
 .slide-animation {
@@ -4826,7 +4921,7 @@ pre {
 .text {
     position: relative;
 }
-  
+
 .panim1 {
     display: inline-block;
     vertical-align: top;
@@ -4843,23 +4938,23 @@ pre {
     opacity: 0;
     white-space: pre;
 }
-  
+
 .letter {
     display: inline-block;
     position: relative;
     transform: translateZ(25px);
     transform-origin: 50% 50% 25px;
 }
-  
+
 .letter.out {
     transform: rotateX(90deg);
     transition: transform 0.32s cubic-bezier(0.55, 0.055, 0.675, 0.19);
 }
-  
+
 .letter.behind {
     transform: rotateX(-90deg);
 }
-  
+
 .letter.in {
     transform: rotateX(0deg);
     transition: transform 0.38s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -5060,7 +5155,7 @@ pre {
     font-size: 1rem;
     text-decoration: none;
 }
-  
+
 .social-link:hover, .social-link:focus {
     background: rgb(221, 221, 221);
     text-decoration: none;
