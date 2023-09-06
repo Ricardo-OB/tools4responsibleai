@@ -4353,6 +4353,7 @@ pre {
     float: none;
     margin-left: 12px;
     margin-right: 12px;
+    padding-top: 1em;
 }
 
 .border-sections {
@@ -4828,7 +4829,7 @@ pre {
     }
 
     .group-cards-style {
-        margin-top: 45px !important;
+        margin-top: 100px !important;
     }
 }
 
@@ -4840,12 +4841,7 @@ pre {
     }
 
     .group-cards-style {
-        margin-top: 45px !important;
-    }
-
-    .card-D {
-        margin-top: 20px;
-        width: 25em;
+        margin-top: 100px !important;
     }
 
     .group-card-d {
