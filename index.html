@@ -55,14 +55,14 @@
             </h1>
           </div>
           <p class="lead text-light">
-            The use of systems based on Artificial Intelligence (AI) is becoming more and more common in our society. Machine Learning and Deep Learning algorithms are found from entertainment applications to support software in the health sector. However, the implementation of this emerging technology brings with it risks and social and ethical implications. Without an ethical or responsible development of the systems, this technology can undermine the autonomy, privacy or equity of people, even affecting human rights. 
+            The use of systems based on Artificial Intelligence (AI) is becoming more and more common in our society. Machine Learning and Deep Learning algorithms are found from entertainment applications to support software in the health sector. However, the implementation of this emerging technology brings with it risks and social and ethical implications. Without an ethical or responsible development of the systems, this technology can undermine the autonomy, privacy or equity of people, even affecting human rights.
             <br><br>
             Taking into account the approaches for responsible development and governance of AI (ethical principles, guidelines, technical tools, among others) and the limitations when putting them into practice by more technical personnel. We present a diagram with different typologies where the stages of the AI life cycle, high-level ethical principles and the tools that can help to comply with these principles (technical and abstract resources) are distinguished, as well as other relevant information (level of development, homework, language).
             Our research was based on a systematic review where we found <span class="boldText">352 resources or tools</span> which we hope may be useful for responsible AI development, both for developers and for leaders or decision makers.
           </p>
           <div class="d-inline">
             <p>
-              <a href="#title-diagram" class="btn btn-primary margin-right col-3 my-2 mt-5">See Tipology</a>
+              <a href="#title-diagram" class="btn btn-primary margin-right col-3 my-2 mt-5">See Typology</a>
               <a href="#title-cite" class="btn btn-primary col-3 my-2 mt-5">Cite as</a>
             </p>
           </div>
@@ -73,20 +73,18 @@
       <div id="canvas-container">
         <canvas id="canvas"></canvas>
         <section class="py-5 text-center container text-light">
-          <div class="row py-lg-5 mt-5" id="secondSection">
-            <h2 class="boldText text-light" id="title-diagram">Tipology</h2>
-            
-            <div class="container menu-1">
-              <div class="form-floating form-floating-1-custom">
-                <select class="form-select form-select-1-custom text-light" id="floatingSelect" onchange="showTools(this.value)">
-                  <option selected value="1-150" class="options-menu-1">1 - 150</option>
-                  <option value="151-300" class="options-menu-1">151 - 300</option>
-                  <option value="301-352" class="options-menu-1">301 - 352</option>
-                </select>
-                <label class="text-light custom-label" for="floatingSelect">Number of Tools</label>
-              </div>
+          <h2 class="boldText text-light" id="title-diagram">Typology</h2>
+          <div class="container menu-1">
+            <div class="form-floating form-floating-1-custom">
+              <select class="form-select form-select-1-custom text-light" id="floatingSelect" onchange="showTools(this.value)">
+                <option selected value="1-150" class="options-menu-1">1 - 150</option>
+                <option value="151-300" class="options-menu-1">151 - 300</option>
+                <option value="301-352" class="options-menu-1">301 - 352</option>
+              </select>
+              <label class="text-light custom-label" for="floatingSelect">Number of Tools</label>
             </div>
-
+          </div>
+          <div class="row py-lg-5 mt-5 mb-5" id="secondSection">
             <div class="center">
               <div class="firstCircle">
                 <div class="badge p-1 badgeAll" id="badge_E"><span>E</span></div><!-- Explicability -->
@@ -2358,10 +2356,9 @@
         </section>
 
         <section class="py-1 text-center text-light container-fluid">
-          <div class="row mx-3">
-            <div class="col-md group-cards mb-1">
+          <div class="row mx-3 group-cards-style">
+            <div class="col-md group-cards">
               <div class="card hidden-card card-A" id="card-tool-A">
-                
                 <div class="card-header close-button-hide div-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')">
                   <!-- <i class="bi bi-x-circle icon-button-close" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i> -->
                   <i class="bi bi-x" title="Close Tool Card" onclick="cleanCardA('tool-id-cA-hidden')"></i>
@@ -2425,7 +2422,7 @@
                     </div>
                   </div>
                 </div>
-                
+
                 <div class="card-body border-sections no-padding">
                   <div class="row">
                     <div class="col ninth-card-section textLeft">
@@ -2451,7 +2448,7 @@
                     </div>
                   </div>
                 </div>
-                
+
               </div>
             </div>
             <div class="col-md group-cards">
@@ -2745,8 +2742,8 @@
 
       <section class="py-1 text-center container text-light">
         <div class="container-fluid text-light mt-5 mb-5">
-          <div class="row">
-            <div class="col table-responsive">
+          <div class="row table-classification">
+            <div class="col table-responsive ">
               <p class="boldText">Task</p>
               <table class="table table-bordered text-light border-success" id="firstSection">
                 <thead>
@@ -2898,7 +2895,7 @@
                 </svg>
               </clipboard-copy>
             </div>
-          </div>  
+          </div>
         </div>
       </div>
     </section>
